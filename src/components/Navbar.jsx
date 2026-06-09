@@ -65,8 +65,8 @@ const Navbar = () => {
 
       {/* Backdrop overlay for mobile sidebar */}
       {mobileActive && (
-        <div 
-          className="fixed inset-0 top-[52px] bg-black/60 backdrop-blur-sm z-40 lg:hidden"
+        <div
+          className="fixed inset-0 top-[49px] bg-black/60 backdrop-blur-sm z-40 lg:hidden"
           onClick={closeMobile}
         />
       )}

@@ -40,9 +40,9 @@ const ProductDetails = () => {
       return;
     }
 
-    const ownerNumber = "917698972036";
+    const ownerNumber = "+919228019999";
     const message = `*Jitesh Trading Delivery Request*\n\nHello, I would like to purchase:\n📦 *Product:* ${product.category} ${product.name}\n👤 *Name:* ${name}\n🔢 *Quantity:* ${qty}\n📍 *City:* ${city}\n\nPlease let me know the availability and payment details.`;
-    window.open(`https://api.whatsapp.com/send?phone=${ownerNumber}&text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
 
   const renderIcon = (icon) => {

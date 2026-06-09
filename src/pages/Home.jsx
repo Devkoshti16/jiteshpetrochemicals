@@ -1,8 +1,54 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+const slides = [
+  {
+    image: '/assets/images/slider_industrial.png',
+    tag: 'Established 1981',
+    title: (
+      <>
+        Premium Industrial <span className="text-primary">Lubricants.</span>
+      </>
+    ),
+    desc: 'Crafting high-quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
+    link1: '/#lubricants',
+    link1Text: 'Industrial Products',
+    link2: '/#about',
+    link2Text: 'Our Story'
+  },
+  {
+    image: '/assets/images/slider_automotive.png',
+    tag: 'Flagship Brands: OZONE & JITO',
+    title: (
+      <>
+        High-Performance <span className="text-primary">Automotive Oils.</span>
+      </>
+    ),
+    desc: 'Advanced formula engine oils engineered for maximum performance, fuel efficiency, and engine longevity under tough conditions.',
+    link1: '/#lubricants',
+    link1Text: 'Explore Lubricants',
+    link2: '/#contact',
+    link2Text: 'Bulk Inquiry'
+  },
+  {
+    image: '/assets/images/slider_textile.png',
+    tag: 'Specialty Formulations',
+    title: (
+      <>
+        Textile & Specialty <span className="text-primary">Chemicals.</span>
+      </>
+    ),
+    desc: 'Premium quality loom lubricants and metalworking fluids designed for precision operations and high-speed machinery.',
+    link1: '/#chemicals',
+    link1Text: 'Special Chemicals',
+    link2: '/#contact',
+    link2Text: 'Get in Touch'
+  }
+];
+
 const Home = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     // Reset SEO title for Home
@@ -54,9 +100,17 @@ const Home = () => {
     heroElements.forEach(el => el.classList.add('active'));
   }, []);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+
   const handleContactSubmit = (e) => {
     e.preventDefault();
-    const ownerNumber = "917698972036";
+    const ownerNumber = "91";
     const waMessage = `*New Inquiry from Website*\n\n👤 *Name:* ${formData.name}\n📧 *Email:* ${formData.email}\n💬 *Message:* ${formData.message}`;
     window.open(`https://api.whatsapp.com/send?phone=${ownerNumber}&text=${encodeURIComponent(waMessage)}`, '_blank', 'noopener,noreferrer');
     setFormData({ name: '', email: '', message: '' });
@@ -66,38 +120,73 @@ const Home = () => {
     <main>
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center pt-20 bg-brand-panel overflow-hidden">
-        {/* Background Video */}
+        {/* Slider Backgrounds */}
         <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-            poster="/assets/images/hero-bg.jpg"
-          >
-            <source src="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {slides.map((slide, idx) => (
+            <div
+              key={idx}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                }`}
+            >
+              {/* Background Image with slight zoom transition */}
+              <img
+                src={slide.image}
+                alt={slide.tag}
+                className={`w-full h-full object-cover transition-transform duration-[6000ms] ease-out ${idx === currentSlide ? 'scale-105' : 'scale-100'
+                  }`}
+              />
+              {/* Dark Overlay to ensure text readability */}
+              <div className="absolute inset-0 bg-brand-main/75"></div>
+            </div>
+          ))}
         </div>
 
-        {/* Dark Overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-brand-main/80 z-10"></div>
+        {/* Slider Content */}
+        <div className="container relative z-20 w-full grid grid-cols-1 grid-rows-1 py-12 sm:py-20">
+          {slides.map((slide, idx) => (
+            <div
+              key={idx}
+              className={`col-start-1 row-start-1 w-full transition-all duration-[800ms] ease-in-out transform ${idx === currentSlide
+                ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
+                : 'opacity-0 translate-y-10 pointer-events-none z-0'
+                }`}
+            >
+              <div className="max-w-[850px]">
+                <div className="relative inline-block px-4 py-1.5 bg-brand-panel border-l-[3px] border-l-primary text-brand-text font-heading text-[0.9rem] uppercase tracking-[2px] mb-4 sm:mb-6 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-full before:bg-primary before:shadow-[0_0_10px_#FF6600,0_0_20px_rgba(255,102,0,0.5)] before:animate-[rightleft_3s_cubic-bezier(0.4,0,0.2,1)_infinite]">
+                  {slide.tag}
+                </div>
+                <h1 className="text-[clamp(1.8rem,6vw,4rem)] mb-4 sm:mb-5 font-bold leading-tight tracking-wide text-brand-text uppercase">
+                  {slide.title}
+                </h1>
+                <p className="text-sm sm:text-base md:text-lg text-brand-muted max-w-[650px] mb-8 sm:mb-10 leading-relaxed">
+                  {slide.desc}
+                </p>
+                <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1 w-full max-w-[420px] sm:flex sm:gap-5 sm:max-w-none">
+                  <Link to={slide.link1} className="btn-primary w-full sm:w-auto text-center">{slide.link1Text}</Link>
+                  <Link to={slide.link2} className="btn-secondary w-full sm:w-auto text-center">{slide.link2Text}</Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-        <div className="container relative z-20 reveal">
-          <div className="relative inline-block px-4 py-1.5 bg-brand-panel border-l-[3px] border-l-primary text-brand-text font-heading text-[0.9rem] uppercase tracking-[2px] mb-6 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-full before:bg-primary before:shadow-[0_0_10px_#FF6600,0_0_20px_rgba(255,102,0,0.5)] before:animate-[rightleft_3s_cubic-bezier(0.4,0,0.2,1)_infinite]">
-            Established 1981
-          </div>
-          <h1 className="text-[clamp(2rem,8vw,5.5rem)] mb-5 font-bold leading-tight">
-            Premium Oil Making & <span className="text-primary">Bulk Supply.</span>
-          </h1>
-          <p className="text-lg text-brand-muted max-w-[600px] mb-10">
-            Leading manufacturers and bulk suppliers of high-quality engine oils, industrial lubricants, and specialty chemicals since 1981.
-          </p>
-          <div className="flex gap-5 max-sm:flex-col">
-            <Link to="/#lubricants" className="btn-primary">Explore Products</Link>
-            <Link to="/#about" className="btn-secondary">Our Story</Link>
-          </div>
+        {/* Indicator Dots */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3">
+          {slides.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              className="p-2 -m-2 cursor-pointer group"
+              aria-label={`Go to slide ${idx + 1}`}
+            >
+              <div
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === currentSlide
+                  ? 'bg-primary w-6 shadow-[0_0_10px_rgba(255,102,0,0.8)]'
+                  : 'bg-brand-muted/40 group-hover:bg-brand-muted'
+                  }`}
+              />
+            </button>
+          ))}
         </div>
       </section>
 
@@ -143,10 +232,11 @@ const Home = () => {
           <h3 className="brand-title reveal" id="lubricants">lubricants Categories</h3>
           <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px] mb-20">
             {[
-              { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'ozone-auto-new.png' },
-              { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'ozone-industrial.png' },
+              { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
+              { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
+              { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' },
               { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'ozone-textile.png' },
-              { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' }
+              
             ].map((item, idx) => (
               <div key={item.id} className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`} id={item.id}>
                 <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
@@ -190,7 +280,7 @@ const Home = () => {
                 <svg className="w-7 h-7 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <div>
                   <h4 className="text-[1.2rem] mb-1">Phone / WhatsApp</h4>
-                  <p className="text-brand-muted">+91 92280 19999<br />+91 98983 55221</p>
+                  <p className="text-brand-muted">+91 <br />+91 98983 55221</p>
                 </div>
               </div>
             </div>
