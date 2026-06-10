@@ -236,7 +236,7 @@ const Home = () => {
               { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
               { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' },
               { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'ozone-textile.png' },
-              
+
             ].map((item, idx) => (
               <div key={item.id} className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`} id={item.id}>
                 <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
@@ -280,7 +280,14 @@ const Home = () => {
                 <svg className="w-7 h-7 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <div>
                   <h4 className="text-[1.2rem] mb-1">Phone / WhatsApp</h4>
-                  <p className="text-brand-muted">+91 <br />+91 98983 55221</p>
+                  <a className="text-brand-muted hover:text-primary transition-all" href="tel:+919898355221">+91 98983 55221</a>
+                </div>
+              </div>
+              <div className="flex gap-5">
+                <svg className="w-7 h-7 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div>
+                  <h4 className="text-[1.2rem] mb-1">Email</h4>
+                  <a className="text-brand-muted hover:text-primary transition-all" href="mailto:jitco11@gmail.com">jitco11@gmail.com</a>
                 </div>
               </div>
             </div>
