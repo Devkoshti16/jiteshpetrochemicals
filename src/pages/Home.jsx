@@ -192,14 +192,14 @@ const Home = () => {
 
       {/* About Section */}
       <section id="about" className="section-padding bg-brand-panel border-b border-brand-border">
-        <div className="container grid md:grid-cols-2 gap-10 md:gap-[60px] items-center">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[60px] items-center">
           <div className="reveal fade-left">
-            <h2 className="text-[clamp(2rem,5vw,3.2rem)] mb-[30px]">
+            <h2 className="font-heading text-4xl sm:text-3xl md:text-4xl xl:text-5xl mb-2 sm:mb-4 md:mb-6 lg:mb-[30px]">
               Four Decades of <br /><span className="text-primary">Oil Manufacturing</span>
             </h2>
-            <p className="text-brand-muted mb-6 text-[1.05rem]">Based in Surat, Gujarat, Jitesh Trading Company has been a trusted name in the manufacturing and bulk distribution of premium oils since 1981.</p>
-            <p className="text-brand-muted mb-6 text-[1.05rem]">We craft the finest engine oils, gear fluids, and industrial lubricants, ensuring high-volume supply with unmatched quality through our flagship brands: <strong>OZONE</strong> and <strong>JITO</strong>.</p>
-            <ul className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-5 mt-10 pt-10 border-t border-brand-border">
+            <p className="text-brand-muted text-sm sm:text-base md:text-lg">Based in Surat, Gujarat, Jitesh Trading Company has been a trusted name in the manufacturing and bulk distribution of premium oils since 1981.</p>
+            <p className="text-brand-muted my-3 sm:my-4 md:my-6 text-sm sm:text-base md:text-lg">We craft the finest engine oils, gear fluids, and industrial lubricants, ensuring high-volume supply with unmatched quality through our flagship brands: <strong>OZONE</strong> and <strong>JITO</strong>.</p>
+            <ul className="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-5 mt-10 pt-10 border-t border-brand-border">
               <li>
                 <h3 className="stat-number counter text-5xl mb-1" data-target="40" data-suffix="+">0+</h3>
                 <p className="text-[0.9rem] text-primary uppercase tracking-wider font-heading font-semibold">Years Experience</p>
@@ -264,7 +264,7 @@ const Home = () => {
 
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-brand-panel border-t border-brand-border">
-        <div className="container grid md:grid-cols-2 gap-10 md:gap-[60px] items-start">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[60px] items-start">
           <div className="reveal fade-left">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] mb-[25px]">Get in <span className="text-primary">Touch</span></h2>
             <p className="text-brand-muted mb-10 text-[1.05rem]">Connect with us for inquiries and bulk orders.</p>

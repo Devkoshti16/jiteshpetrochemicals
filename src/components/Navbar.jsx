@@ -81,7 +81,7 @@ const Navbar = () => {
           <li><Link to="/#about" className="nav-link lg:py-6" onClick={closeMobile}>About</Link></li>
 
           <li className={`relative group ${activeDropdown === 'lubricants' ? 'active' : ''}`}>
-            <a href="#" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'lubricants')}>
+            <a href="javascript:void(0)" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'lubricants')}>
               Lubricants <span className="text-[0.8em] ml-1.5">&#9662;</span>
             </a>
             <ul className="nav-dropdown">
@@ -117,11 +117,11 @@ const Navbar = () => {
           </li>
 
           <li className={`relative group ${activeDropdown === 'chemicals' ? 'active' : ''}`}>
-            <a href="#" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
+            <a href="javascript:void(0)" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
               Specialty Chemicals <span className="text-[0.8em] ml-1.5">&#9662;</span>
             </a>
             <ul className="nav-dropdown">
-              <li><a href="#chemicals" className="nav-dropdown-item w-full">Coming soon...</a></li>
+              <li><a href="/#chemicals" className="nav-dropdown-item w-full">Coming soon...</a></li>
             </ul>
           </li>
 

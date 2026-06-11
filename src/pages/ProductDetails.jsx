@@ -46,14 +46,31 @@ const ProductDetails = () => {
   };
 
   const renderIcon = (icon) => {
-    if (icon === 'shield') return <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6600" strokeWidth="2" className="mb-[15px]"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>;
-    if (icon === 'thermometer') return <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6600" strokeWidth="2" className="mb-[15px]"><path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-3-4.5-8.5-4.5-8.5s-4.5 5.5-4.5 8.5c0 2.5 2 4.5 4.5 4.5z"></path><path d="M11.5 13.5c1.5 0 2.5-1 2.5-2.5 0-2-2.5-5.5-2.5-5.5s-2.5 3.5-2.5 5.5c0 1.5 1 2.5 2.5 2.5z"></path></svg>;
-    return <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6600" strokeWidth="2" className="mb-[15px]"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>;
+    if (icon === 'shield') {
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feature-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+      );
+    }
+    if (icon === 'thermometer') {
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feature-icon">
+          <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+        </svg>
+      );
+    }
+    return (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feature-icon">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+    );
   };
 
   return (
     <section className="section-padding bg-brand-main pt-[120px] pb-24">
-      <div className="container">
+      <div className="container lg:pt-[10px]">
         {/* Breadcrumbs */}
         <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 md:mb-6 font-body text-brand-muted text-[0.95rem] reveal">
           <Link to="/" className="text-brand-text hover:text-primary transition-colors">Home</Link>
@@ -68,14 +85,14 @@ const ProductDetails = () => {
         </div>
 
         {/* Product Hero */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-[50px] items-start mb-20 reveal seq-1">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-[50px] items-start md:mb-10 xl:mb-20 reveal seq-1">
           <div className="bg-brand-panel border overflow-hidden border-brand-border rounded-lg p-0 lg:p-5 flex justify-center items-center lg:sticky lg:top-[100px]">
             <img src={product.image} alt={product.name} className="w-full max-w-[500px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.4)]" />
           </div>
 
           <div className="modal-details">
             <div className="badge mb-2.5">{product.category}</div>
-            <h1 className="text-[clamp(2rem,5vw,3.5rem)] mb-[15px]">
+            <h1 className="text-[clamp(2rem,5vw,3.5rem)] mb-2 lg:mb-[15px]">
               {product.name.split(' ')[0]} <span className="text-primary">{product.name.substring(product.name.indexOf(' ') + 1)}</span>
             </h1>
 
@@ -115,16 +132,34 @@ const ProductDetails = () => {
         </div>
 
         {/* Features Section */}
-        <div className="mt-20 pt-[60px] border-t border-brand-border reveal">
-          <h2 className="text-3xl mb-2.5">Product <span className="text-primary">Features</span></h2>
-          <p className="text-brand-muted max-w-[600px]">Engineered specifically for maximum performance and longevity in high-stress environments.</p>
+        <div className="mt-12 sm:mt-16 lg:mt-20 xl:mt-24 pt-[20px] md:pt-[40px] lg:pt-[60px] xl:pt-[80px] border-t border-brand-border reveal">
+          <span className="text-primary font-heading font-semibold text-xs tracking-[0.2em] uppercase mb-2 block">Performance & Quality</span>
+          <h2 className="xl:text-4xl lg:text-3xl md:text-3xl text-2xl sm:text-2xl mb-4 font-heading font-extrabold uppercase tracking-wide">
+            Product <span className="text-primary">Features</span>
+          </h2>
+          <div className="w-16 h-[3px] bg-gradient-to-r from-primary to-transparent mb-6"></div>
+          <p className="text-brand-muted max-w-[600px] leading-relaxed mb-12">
+            Engineered specifically for maximum performance, protection, and longevity in demanding high-stress environments.
+          </p>
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 lg:gap-[30px] mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10">
             {product.features.map((feat, i) => (
-              <div className={`bg-brand-panel p-[30px] border border-brand-border border-t-[3px] border-t-primary rounded-md transition-all duration-300 hover:border-primary hover:-translate-y-1.25 reveal seq-${i + 1}`} key={i}>
-                {renderIcon(feat.icon)}
-                <h4 className="text-[1.2rem] text-brand-text mb-[10px]">{feat.title}</h4>
-                <p className="text-brand-muted text-[0.95rem]">{feat.description}</p>
+              <div className={`feature-card group/card reveal seq-${i + 1}`} key={i}>
+                <div className="feature-card-glow" />
+                <div className="feature-card-index">{`0${i + 1}`}</div>
+
+                <div className="feature-icon-wrapper">
+                  {renderIcon(feat.icon)}
+                </div>
+
+                <h4 className="text-[1.25rem] text-brand-text mb-3 transition-colors duration-300 group-hover/card:text-primary">
+                  {feat.title}
+                </h4>
+                <p className="text-brand-muted text-[0.95rem] leading-relaxed group-hover/card:text-brand-text/90 transition-colors duration-300">
+                  {feat.description}
+                </p>
+
+                <div className="feature-card-accent" />
               </div>
             ))}
           </div>
