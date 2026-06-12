@@ -1,37 +1,5 @@
 export const products = [
   //===================== Auto Products =====================//
-  // {
-  //   id: 'engine-oil-20w-40',
-  //   name: 'Engine Oil 20W-40',
-  //   category: 'OZONE AUTO',
-  //   price: '₹320',
-  //   priceUnit: '/ Liter (Bulk Pricing)',
-  //   image: '/assets/images/ozone-auto-new.png',
-  //   description: 'Premium multigrade engine oil crafted with advanced additive technology to provide superior protection against engine wear, sludge formation, and thermal breakdown. Ideal for modern 4-stroke engines operating under severe conditions.',
-  //   specs: [
-  //     { label: 'Viscosity', value: 'SAE 20W-40' },
-  //     { label: 'API Level', value: 'SL / CF' },
-  //     { label: 'Application', value: '4-Stroke Engines' },
-  //     { label: 'Key Benefit', value: 'Thermal Stability' }
-  //   ],
-  //   features: [
-  //     {
-  //       title: 'Superior Wear Protection',
-  //       description: 'Advanced anti-wear additives significantly reduce friction and metal-to-metal contact, extending engine life.',
-  //       icon: 'shield'
-  //     },
-  //     {
-  //       title: 'Thermal Stability',
-  //       description: 'Resists oil degradation under extreme heat, preventing sludge build-up and ensuring consistent viscosity.',
-  //       icon: 'thermometer'
-  //     },
-  //     {
-  //       title: 'High Mileage',
-  //       description: 'Formulated to maintain peak performance over extended drain intervals, saving maintenance costs.',
-  //       icon: 'clock'
-  //     }
-  //   ]
-  // },
 
   // Trans Multi-A //
   {
@@ -537,37 +505,37 @@ export const products = [
   },
 
   //===================== Textile Products =====================//
-  {
-    id: 'textile-oil-68',
-    name: 'Textile Oil 68',
-    category: 'OZONE TEXTILE',
-    price: '₹280',
-    priceUnit: '/ Liter (Bulk Pricing)',
-    image: '/assets/images/ozone-textile.png',
-    description: 'High-performance anti-wear textile oil designed for heavy-duty textile machinery. It provides excellent oxidation stability and protects against rust and corrosion.',
-    specs: [
-      { label: 'Viscosity Grade', value: 'ISO VG 68' },
-      { label: 'Application', value: 'Textile Machinery' },
-      { label: 'Key Benefit', value: 'Anti-Wear Protection' }
-    ],
-    features: [
-      {
-        title: 'Excellent Oxidation Stability',
-        description: 'Ensures long fluid life and prevents sludge formation under high operating temperatures.',
-        icon: 'thermometer'
-      },
-      {
-        title: 'Outstanding Anti-Wear',
-        description: 'Advanced additives protect pumps and valves from wear, reducing maintenance downtime.',
-        icon: 'shield'
-      },
-      {
-        title: 'High Mileage',
-        description: 'Formulated to maintain peak performance over extended drain intervals, saving maintenance costs.',
-        icon: 'clock'
-      }
-    ]
-  },
+  // {
+  //   id: 'textile-oil-68',
+  //   name: 'Textile Oil 68',
+  //   category: 'OZONE TEXTILE',
+  //   price: '₹280',
+  //   priceUnit: '/ Liter (Bulk Pricing)',
+  //   image: '/assets/images/ozone-textile.png',
+  //   description: 'High-performance anti-wear textile oil designed for heavy-duty textile machinery. It provides excellent oxidation stability and protects against rust and corrosion.',
+  //   specs: [
+  //     { label: 'Viscosity Grade', value: 'ISO VG 68' },
+  //     { label: 'Application', value: 'Textile Machinery' },
+  //     { label: 'Key Benefit', value: 'Anti-Wear Protection' }
+  //   ],
+  //   features: [
+  //     {
+  //       title: 'Excellent Oxidation Stability',
+  //       description: 'Ensures long fluid life and prevents sludge formation under high operating temperatures.',
+  //       icon: 'thermometer'
+  //     },
+  //     {
+  //       title: 'Outstanding Anti-Wear',
+  //       description: 'Advanced additives protect pumps and valves from wear, reducing maintenance downtime.',
+  //       icon: 'shield'
+  //     },
+  //     {
+  //       title: 'High Mileage',
+  //       description: 'Formulated to maintain peak performance over extended drain intervals, saving maintenance costs.',
+  //       icon: 'clock'
+  //     }
+  //   ]
+  // },
 
   // ozone fineknit //
   {

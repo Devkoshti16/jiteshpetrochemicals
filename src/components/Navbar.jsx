@@ -96,19 +96,29 @@ const Navbar = () => {
                   <li key={cat.id} className={`relative group/nested border-b border-white/10 last:border-none ${activeNested === cat.id ? 'group-active/nested' : ''}`}>
                     {catProducts.length > 0 ? (
                       <>
-                        <a href="#" className="nav-dropdown-item" onClick={(e) => handleNestedClick(e, cat.id)}>
-                          {cat.name} <span className="text-[0.8em]">&#9656;</span>
-                        </a>
-                        <ul className="nav-dropdown-nested">
+                        <Link
+                          to={`/products?category=OZONE ${cat.id.toUpperCase()}`}
+                          className="nav-dropdown-item"
+                          onClick={(e) => {
+                            if (window.innerWidth < 1024) {
+                              handleNestedClick(e, cat.id);
+                            } else {
+                              closeMobile();
+                            }
+                          }}
+                        >
+                          {cat.name} <span className="text-[0.8em] lg:hidden">&#9656;</span>
+                        </Link>
+                        {/* <ul className="nav-dropdown-nested">
                           {catProducts.map(p => (
                             <li key={p.id} className="border-b border-white/10 last:border-none">
                               <Link to={`/product/${p.id}`} className="nav-dropdown-item w-full !text-brand-text" onClick={closeMobile}>{p.name}</Link>
                             </li>
                           ))}
-                        </ul>
+                        </ul> */}
                       </>
                     ) : (
-                      <Link to={`/#ozone-${cat.id}`} className="nav-dropdown-item w-full" onClick={closeMobile}>{cat.name}</Link>
+                      <Link to={`/products?category=OZONE ${cat.id.toUpperCase()}`} className="nav-dropdown-item w-full" onClick={closeMobile}>{cat.name}</Link>
                     )}
                   </li>
                 );

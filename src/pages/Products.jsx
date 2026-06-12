@@ -1,62 +1,103 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { products } from '../data/products';
 
 const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
 
 const Products = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const queryCat = searchParams.get('category');
 
+  // Safe validation check to initialize active category state
+  const getInitialCategory = () => {
+    if (queryCat && categories.includes(queryCat)) {
+      return queryCat;
+    }
+    return 'All';
+  };
+
+  const [activeCategory, setActiveCategory] = useState(getInitialCategory);
+
+  // Sync state when URL query parameter changes (e.g., clicks from Navbar or Home)
+  useEffect(() => {
+    const urlCat = searchParams.get('category');
+    if (urlCat && categories.includes(urlCat)) {
+      setActiveCategory(urlCat);
+    } else if (!urlCat) {
+      setActiveCategory('All');
+    }
+  }, [searchParams]);
+
+  // Sync search params with state when category button is clicked
+  const handleCategoryChange = (cat) => {
+    setActiveCategory(cat);
+    if (cat === 'All') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ category: cat });
+    }
+  };
+
+  // SEO - runs once
   useEffect(() => {
     document.title = 'Products | Jitesh Trading Company';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute('content', 'Browse our full range of OZONE premium industrial lubricants, automotive oils, textile oils, and metalwork fluids by Jitesh Trading Company.');
     }
-
-    const revealElements = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('active');
-        obs.unobserve(entry.target);
-      });
-    }, { threshold: 0.1 });
-    revealElements.forEach(el => observer.observe(el));
-    return () => observer.disconnect();
   }, []);
+
+  // Reveal observer - re-runs on every category change so new cards animate in
+  useEffect(() => {
+    // Small delay to let React flush the new DOM before observing
+    const timeout = setTimeout(() => {
+      const revealElements = document.querySelectorAll('.reveal:not(.active)');
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('active');
+          obs.unobserve(entry.target);
+        });
+      }, { threshold: 0.05 });
+      revealElements.forEach(el => observer.observe(el));
+      return () => observer.disconnect();
+    }, 50);
+    return () => clearTimeout(timeout);
+  }, [activeCategory]);
 
   const filtered = activeCategory === 'All'
     ? products
     : products.filter(p => p.category === activeCategory);
 
   return (
-    <main>
-      <section className="section-padding bg-brand-main pt-[120px]">
+    <main className="bg-brand-main">
+      <section className="section-padding pt-[100px]! sm:pt-[130px]! md:pt-[120px]! pb-24">
         <div className="container">
 
           {/* Header */}
-          <div className="text-center mb-[60px] reveal">
-            <h1 className="text-[clamp(2rem,5vw,3.5rem)] mb-4">
+          <div className="text-center mb-[20px] sm:mb-[40px] md:mb-[60px] reveal">
+            <span className="text-primary font-heading font-semibold text-xs tracking-[0.2em] uppercase mb-2 block">
+              Flagship Lubricants
+            </span>
+            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-heading font-extrabold mb-4 uppercase tracking-wide">
               Our <span className="text-primary">Products</span>
             </h1>
-            <div className="w-[60px] h-1 bg-primary mx-auto my-5"></div>
-            <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">
-              Explore our complete range of premium OZONE lubricants engineered for every industry.
+            <div className="w-16 h-[3px] bg-gradient-to-r from-primary to-transparent mx-auto mb-6"></div>
+            <p className="text-brand-muted text-[1.1rem] max-w-[620px] mx-auto leading-relaxed">
+              Explore our complete range of premium OZONE lubricants engineered for every industrial, textile, and automotive need.
             </p>
           </div>
 
           {/* Category Filter Tabs */}
-          <div className="flex flex-wrap gap-3 justify-center mb-12 reveal">
+          <div className="flex flex-wrap md:gap-3.5 gap-2 justify-center lg:mb-16 mb-10 reveal">
             {categories.map(cat => (
               <button
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 text-[0.85rem] font-heading uppercase tracking-wider border transition-all duration-300 cursor-pointer ${
-                  activeCategory === cat
-                    ? 'bg-primary border-primary text-white'
-                    : 'bg-transparent border-brand-border text-brand-muted hover:border-primary hover:text-white'
-                }`}
+                onClick={() => handleCategoryChange(cat)}
+                className={`px-6 md:py-2.5 py-1.5 sm:py-1.5 md:px-6 px-4 md:text-[0.85rem] text-[0.75rem] font-heading font-semibold uppercase tracking-wider border rounded-md transition-all duration-300 cursor-pointer ${activeCategory === cat
+                  ? 'bg-primary border-primary text-white shadow-[0_4px_12px_rgba(255,102,0,0.35)]'
+                  : 'bg-brand-panel/40 border-brand-border text-brand-muted hover:border-primary hover:text-white hover:bg-brand-panel/80'
+                  }`}
               >
                 {cat === 'All' ? 'All Products' : cat.replace('OZONE ', '')}
               </button>
@@ -64,64 +105,32 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 md:gap-[30px]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
             {filtered.map((product, idx) => (
-              <div
+              <Link
                 key={product.id}
-                className={`bg-brand-panel border border-brand-border group hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] transition-all duration-300 flex flex-col reveal seq-${(idx % 3) + 1}`}
+                to={`/product/${product.id}`}
+                className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`}
               >
                 {/* Product Image */}
-                <div className="h-[210px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
+                <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
                   />
-                  <div className="absolute top-3 left-3 bg-primary/90 text-white text-[0.72rem] font-heading uppercase tracking-wider px-2.5 py-1">
-                    {product.category}
+                  <div className="absolute top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]">
+                    {product.category.replace('OZONE ', '')}
                   </div>
                 </div>
 
-                {/* Product Info */}
-                <div className="p-[25px] flex flex-col flex-1">
-                  <h2 className="text-[1.25rem] mb-2 font-bold text-brand-text">{product.name}</h2>
-                  <p className="text-brand-muted text-[0.9rem] mb-4 leading-relaxed line-clamp-3">{product.description}</p>
-
-                  {/* Key Specs */}
-                  <div className="grid grid-cols-2 gap-2 mb-5">
-                    {product.specs.slice(0, 2).map((spec, i) => (
-                      <div key={i} className="bg-white/[0.03] border border-white/[0.06] p-2.5 rounded">
-                        <span className="block text-[0.72rem] text-brand-muted uppercase tracking-wider mb-0.5">{spec.label}</span>
-                        <strong className="text-white text-[0.88rem] leading-tight block">{spec.value}</strong>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Features Preview */}
-                  <div className="mb-5 flex flex-col gap-2">
-                    {product.features.slice(0, 3).map((feat, i) => (
-                      <div key={i} className="flex items-start gap-2">
-                        <span className="text-primary mt-0.5 shrink-0">
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                          </svg>
-                        </span>
-                        <span className="text-brand-muted text-[0.85rem]">{feat.title}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* View Details Button */}
-                  <div className="mt-auto">
-                    <Link
-                      to={`/product/${product.id}`}
-                      className="btn-primary w-full text-center block text-sm"
-                    >
-                      View Full Details
-                    </Link>
-                  </div>
+                {/* Product Name */}
+                <div className="px-4 py-4 border-t border-white/[0.04]">
+                  <h2 className="text-[0.95rem] font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center">
+                    {product.name}
+                  </h2>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

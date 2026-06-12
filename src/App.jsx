@@ -5,6 +5,7 @@ import Lenis from 'lenis'
 // Pages
 import Home from './pages/Home.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
+import Products from './pages/Products.jsx'
 
 // Components
 import Navbar from './components/Navbar.jsx'
@@ -68,6 +69,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
       <Footer />
