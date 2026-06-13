@@ -8,5 +8,10 @@
   "trailingSlash": false,
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "src/data/products.json"
+    }
+  }
 }
