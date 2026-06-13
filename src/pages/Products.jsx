@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { products } from '../data/products';
+import { products as staticProducts } from '../data/products';
 
-const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
+const categories = ['All', 'OZONE AUTO', 'OZONE INDUSTRIAL', 'OZONE TEXTILE', 'OZONE METALWORK'];
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const queryCat = searchParams.get('category');
+  
+  const [productsList, setProductsList] = useState(staticProducts);
 
   // Safe validation check to initialize active category state
   const getInitialCategory = () => {
@@ -27,6 +29,23 @@ const Products = () => {
       setActiveCategory('All');
     }
   }, [searchParams]);
+
+  // Fetch live products from API with static fallback
+  useEffect(() => {
+    fetch('/api/products')
+      .then(res => {
+        if (!res.ok) throw new Error('API server returned error');
+        return res.json();
+      })
+      .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
+          setProductsList(data);
+        }
+      })
+      .catch(err => {
+        console.warn('Backend API offline or database empty. Using static products fallback.', err);
+      });
+  }, []);
 
   // Sync search params with state when category button is clicked
   const handleCategoryChange = (cat) => {
@@ -63,11 +82,11 @@ const Products = () => {
       return () => observer.disconnect();
     }, 50);
     return () => clearTimeout(timeout);
-  }, [activeCategory]);
+  }, [activeCategory, productsList]);
 
   const filtered = activeCategory === 'All'
-    ? products
-    : products.filter(p => p.category === activeCategory);
+    ? productsList
+    : productsList.filter(p => p.category === activeCategory);
 
   return (
     <main className="bg-brand-main">

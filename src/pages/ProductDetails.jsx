@@ -1,10 +1,29 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { products } from '../data/products';
+import { useEffect, useState } from 'react';
+import { products as staticProducts } from '../data/products';
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const product = products.find(p => p.id === id);
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/products/${id}`)
+      .then(res => {
+        if (!res.ok) throw new Error('Not found in API');
+        return res.json();
+      })
+      .then(data => {
+        setProduct(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        const found = staticProducts.find(p => p.id === id);
+        setProduct(found || null);
+        setLoading(false);
+      });
+  }, [id]);
 
   useEffect(() => {
     // Dynamic SEO
@@ -25,7 +44,16 @@ const ProductDetails = () => {
       });
     }, { threshold: 0.15 });
     revealElements.forEach(el => revealObserver.observe(el));
+    return () => revealObserver.disconnect();
   }, [id, product]);
+
+  if (loading) {
+    return (
+      <main className="min-h-screen bg-brand-main pt-[150px] pb-20 flex justify-center items-center text-brand-muted">
+        Loading product details...
+      </main>
+    );
+  }
 
   if (!product) return <Navigate to="/" />;
 

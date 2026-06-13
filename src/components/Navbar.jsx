@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { products } from '../data/products';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileActive, setMobileActive] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [activeNested, setActiveNested] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -40,21 +38,12 @@ const Navbar = () => {
   const closeMobile = () => {
     setMobileActive(false);
     setActiveDropdown(null);
-    setActiveNested(null);
   };
 
   const handleDropdownClick = (e, menuName) => {
     if (window.innerWidth < 1024) {
       e.preventDefault();
       setActiveDropdown(activeDropdown === menuName ? null : menuName);
-      if (activeDropdown !== menuName) setActiveNested(null);
-    }
-  };
-
-  const handleNestedClick = (e, menuName) => {
-    if (window.innerWidth < 1024) {
-      e.preventDefault();
-      setActiveNested(activeNested === menuName ? null : menuName);
     }
   };
 
@@ -90,39 +79,17 @@ const Navbar = () => {
                 { id: 'industrial', name: 'Industrial' },
                 { id: 'textile', name: 'Textile' },
                 { id: 'metalwork', name: 'Metalwork' }
-              ].map((cat) => {
-                const catProducts = products.filter(p => p.category.toLowerCase().includes(cat.id));
-                return (
-                  <li key={cat.id} className={`relative group/nested border-b border-white/10 last:border-none ${activeNested === cat.id ? 'group-active/nested' : ''}`}>
-                    {catProducts.length > 0 ? (
-                      <>
-                        <Link
-                          to={`/products?category=OZONE ${cat.id.toUpperCase()}`}
-                          className="nav-dropdown-item"
-                          onClick={(e) => {
-                            if (window.innerWidth < 1024) {
-                              handleNestedClick(e, cat.id);
-                            } else {
-                              closeMobile();
-                            }
-                          }}
-                        >
-                          {cat.name} <span className="text-[0.8em] lg:hidden">&#9656;</span>
-                        </Link>
-                        {/* <ul className="nav-dropdown-nested">
-                          {catProducts.map(p => (
-                            <li key={p.id} className="border-b border-white/10 last:border-none">
-                              <Link to={`/product/${p.id}`} className="nav-dropdown-item w-full !text-brand-text" onClick={closeMobile}>{p.name}</Link>
-                            </li>
-                          ))}
-                        </ul> */}
-                      </>
-                    ) : (
-                      <Link to={`/products?category=OZONE ${cat.id.toUpperCase()}`} className="nav-dropdown-item w-full" onClick={closeMobile}>{cat.name}</Link>
-                    )}
-                  </li>
-                );
-              })}
+              ].map((cat) => (
+                <li key={cat.id} className="border-b border-white/10 last:border-none">
+                  <Link
+                    to={`/products?category=OZONE ${cat.id.toUpperCase()}`}
+                    className="nav-dropdown-item w-full"
+                    onClick={closeMobile}
+                  >
+                    {cat.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
 
