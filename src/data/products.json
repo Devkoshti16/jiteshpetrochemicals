@@ -8,10 +8,22 @@
     "image": "/assets/images/automotive/ozone-trans-multi-a.png",
     "description": "Ozone+ Trans Multi-A is specially formulated from highly refined mineral oils that impart thermo-oxidative stability, wearing, dispersancy, foaming and desired friction characteristics. Extremely high viscosity index ensures adequate low temperature fluidity, assists in good cold start performance and good foam control leads to smooth gear shifting.",
     "specs": [
-      { "label": "Type", "value": "Transmission Fluid" },
-      { "label": "Grade", "value": "Type A / Suffix A" },
-      { "label": "Application", "value": "Automatic Transmissions, Power Steering, Synchromesh Manual Transmissions, LCVs, Trucks, Buses" },
-      { "label": "Available Packs", "value": "500ml, 1 Ltr, 5 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Transmission Fluid"
+      },
+      {
+        "label": "Grade",
+        "value": "Type A / Suffix A"
+      },
+      {
+        "label": "Application",
+        "value": "Automatic Transmissions, Power Steering, Synchromesh Manual Transmissions, LCVs, Trucks, Buses"
+      },
+      {
+        "label": "Available Packs",
+        "value": "500ml, 1 Ltr, 5 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -50,10 +62,22 @@
     "image": "/assets/images/automotive/turbo_mini_15W40.png",
     "description": "Ozone+ Turbo Mini is a new age diesel engine oil recommended for new age mini turbo engines, mini trucks & pickup vans. Specially formulated to meet the demanding requirements of mini turbo engines that require higher temperature range and load carrying capacity.",
     "specs": [
-      { "label": "Type", "value": "Diesel Engine Oil" },
-      { "label": "Grade", "value": "SAE 15W-40" },
-      { "label": "Application", "value": "Mini Turbo Engines, Mini Trucks & Pickup Vans" },
-      { "label": "Available Packs", "value": "3 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Diesel Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 15W-40"
+      },
+      {
+        "label": "Application",
+        "value": "Mini Turbo Engines, Mini Trucks & Pickup Vans"
+      },
+      {
+        "label": "Available Packs",
+        "value": "3 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -92,10 +116,22 @@
     "image": "/assets/images/automotive/gear-multi-80w90.png",
     "description": "Premium grade multigrade gear oil providing excellent lubrication for automotive transmissions, axles and final drives. Offers superior extreme pressure performance and protection against oxidation, rust and corrosion.",
     "specs": [
-      { "label": "Type", "value": "Gear Oil" },
-      { "label": "Grade", "value": "80W-90" },
-      { "label": "Application", "value": "Manual Transmission, Hypoid, Spiral Bevel & Worm Gear Axles" },
-      { "label": "Available Packs", "value": "1L, 5L, 10L, 20L, 210L" }
+      {
+        "label": "Type",
+        "value": "Gear Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "80W-90"
+      },
+      {
+        "label": "Application",
+        "value": "Manual Transmission, Hypoid, Spiral Bevel & Worm Gear Axles"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1L, 5L, 10L, 20L, 210L"
+      }
     ],
     "features": [
       {
@@ -124,10 +160,22 @@
     "image": "/assets/images/automotive/fast-4t-scootec.png",
     "description": "High performance 4-stroke engine oil specially formulated for gearless scooters and bikes with dry clutch applications. Provides excellent film protection under high stress and temperature conditions.",
     "specs": [
-      { "label": "Grade", "value": "SAE 10W-30" },
-      { "label": "API", "value": "SL" },
-      { "label": "JASO", "value": "MB" },
-      { "label": "Available Packs", "value": "800ml, 210L" }
+      {
+        "label": "Grade",
+        "value": "SAE 10W-30"
+      },
+      {
+        "label": "API",
+        "value": "SL"
+      },
+      {
+        "label": "JASO",
+        "value": "MB"
+      },
+      {
+        "label": "Available Packs",
+        "value": "800ml, 210L"
+      }
     ],
     "features": [
       {
@@ -156,10 +204,22 @@
     "image": "/assets/images/automotive/fast-4t-10w30.png",
     "description": "Fuel-efficient motorcycle engine oil formulated for bikes and scooters with wet clutch systems. Provides superior wear protection, engine cleanliness and smooth clutch operation.",
     "specs": [
-      { "label": "Grade", "value": "SAE 10W-30" },
-      { "label": "API", "value": "SL" },
-      { "label": "JASO", "value": "MA" },
-      { "label": "Available Packs", "value": "900ml, 210L" }
+      {
+        "label": "Grade",
+        "value": "SAE 10W-30"
+      },
+      {
+        "label": "API",
+        "value": "SL"
+      },
+      {
+        "label": "JASO",
+        "value": "MA"
+      },
+      {
+        "label": "Available Packs",
+        "value": "900ml, 210L"
+      }
     ],
     "features": [
       {
@@ -188,10 +248,22 @@
     "image": "/assets/images/automotive/desart-cool.png",
     "description": "Green type engine coolant concentrate designed for passenger cars, tractors, LCVs and HCVs. Provides excellent cooling performance and protection against rust and corrosion.",
     "specs": [
-      { "label": "Type", "value": "Engine Coolant Concentrate" },
-      { "label": "Color", "value": "Green" },
-      { "label": "Mix Ratio", "value": "1:2 (Coolant : Water)" },
-      { "label": "Available Packs", "value": "1L, 5L, 10L, 20L, 210L" }
+      {
+        "label": "Type",
+        "value": "Engine Coolant Concentrate"
+      },
+      {
+        "label": "Color",
+        "value": "Green"
+      },
+      {
+        "label": "Mix Ratio",
+        "value": "1:2 (Coolant : Water)"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1L, 5L, 10L, 20L, 210L"
+      }
     ],
     "features": [
       {
@@ -220,10 +292,22 @@
     "image": "/assets/images/automotive/cng-super-2t.png",
     "description": "Semi-synthetic, low-smoke two-stroke engine oil for 2-wheelers, 3-wheelers and outboard boats. Enhances engine performance while minimizing deposits and spark plug fouling.",
     "specs": [
-      { "label": "Type", "value": "Two Stroke Engine Oil" },
-      { "label": "API", "value": "TC" },
-      { "label": "JASO", "value": "FC" },
-      { "label": "Available Packs", "value": "500ml, 1L, 210L" }
+      {
+        "label": "Type",
+        "value": "Two Stroke Engine Oil"
+      },
+      {
+        "label": "API",
+        "value": "TC"
+      },
+      {
+        "label": "JASO",
+        "value": "FC"
+      },
+      {
+        "label": "Available Packs",
+        "value": "500ml, 1L, 210L"
+      }
     ],
     "features": [
       {
@@ -252,9 +336,18 @@
     "image": "/assets/images/automotive/gear-multi-85w140.png",
     "description": "Ozone+ Gear Multi 85W-140 is a premium multigrade gear oil engineered to provide excellent lubrication across a wide range of automotive transmissions, axles, and final drives. It delivers outstanding extreme pressure capabilities and protects critical components from oxidative degradation, rust, and corrosion.",
     "specs": [
-      { "label": "Type", "value": "Premium Multigrade Gear Oil" },
-      { "label": "Viscosity Grade", "value": "SAE 85W-140" },
-      { "label": "Available Packs", "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Premium Multigrade Gear Oil"
+      },
+      {
+        "label": "Viscosity Grade",
+        "value": "SAE 85W-140"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -288,11 +381,26 @@
     "image": "/assets/images/automotive/gear-ep-140.png",
     "description": "Ozone+ Gear EP 140 is a high-performance monograde extreme pressure gear oil formulated from superior base stocks with exceptional thermal and chemical stability. Recommended for passenger cars, buses, tractors, and trucks requiring API GL-4 level protection.",
     "specs": [
-      { "label": "Type", "value": "Monograde Extreme Pressure Gear Oil" },
-      { "label": "Grade", "value": "SAE 140 / API GL-4" },
-      { "label": "Kinematic Viscosity @ 100°C", "value": "30.6 mm²/s" },
-      { "label": "Viscosity Index", "value": "93" },
-      { "label": "Available Packs", "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Monograde Extreme Pressure Gear Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 140 / API GL-4"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "30.6 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "93"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -321,11 +429,26 @@
     "image": "/assets/images/automotive/krit-5w30.png",
     "description": "Ozone+ Krit 5W30 is a premium semi-synthetic car engine oil designed using advanced film-forming technology. It delivers outstanding oxidative stability and heat resistance to counter persistent stop-and-go city driving conditions while extending engine lifecycle.",
     "specs": [
-      { "label": "Type", "value": "Premium Semi-Synthetic Engine Oil" },
-      { "label": "Grade", "value": "SAE 5W-30 / API SN/CF" },
-      { "label": "Kinematic Viscosity @ 100°C", "value": "11.96 mm²/s" },
-      { "label": "Viscosity Index", "value": "144" },
-      { "label": "Available Packs", "value": "1L, 3L, 3.5L, 210L" }
+      {
+        "label": "Type",
+        "value": "Premium Semi-Synthetic Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 5W-30 / API SN/CF"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "11.96 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "144"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1L, 3L, 3.5L, 210L"
+      }
     ],
     "features": [
       {
@@ -354,11 +477,26 @@
     "image": "/assets/images/automotive/gear-ep-90.png",
     "description": "Ozone+ Gear EP 90 is a monograde extreme pressure gear oil made from premium base stocks. It features excellent thermal and chemical stability to provide longer trouble-free operation across manual transmissions, hypoid axles, and steering gear units.",
     "specs": [
-      { "label": "Type", "value": "Monograde Extreme Pressure Gear Oil" },
-      { "label": "Grade", "value": "SAE 90 / API GL-4" },
-      { "label": "Kinematic Viscosity @ 100°C", "value": "16.5 mm²/s" },
-      { "label": "Viscosity Index", "value": "93" },
-      { "label": "Available Packs", "value": "500ml, 1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Monograde Extreme Pressure Gear Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 90 / API GL-4"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "16.5 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "93"
+      },
+      {
+        "label": "Available Packs",
+        "value": "500ml, 1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -387,12 +525,30 @@
     "image": "/assets/images/automotive/cruzer-jked-15w50.png",
     "description": "Ozone+ Cruzer Jked is a fully synthetic cruiser bike engine oil specially developed with PEST technology for high-performance cruiser bike engines. It ensures superior prevention against clutch slippage, delivers excellent shear stability, and provides smoother performance under harsh operating conditions.",
     "specs": [
-      { "label": "Type", "value": "Fully Synthetic Cruiser Bike Engine Oil" },
-      { "label": "Grade", "value": "SAE 15W50 / API SN / JASO MA 2" },
-      { "label": "Kinematic Viscosity @ 100°C", "value": "18.5 mm²/s" },
-      { "label": "Viscosity Index", "value": "150" },
-      { "label": "TBN", "value": "9.7 mg KOH/gm" },
-      { "label": "Available Packs", "value": "2.5 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Fully Synthetic Cruiser Bike Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 15W50 / API SN / JASO MA 2"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "18.5 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "150"
+      },
+      {
+        "label": "TBN",
+        "value": "9.7 mg KOH/gm"
+      },
+      {
+        "label": "Available Packs",
+        "value": "2.5 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -421,12 +577,30 @@
     "image": "/assets/images/automotive/fast-4t-20w40.png",
     "description": "Ozone+ Fast 4T provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
     "specs": [
-      { "label": "Type", "value": "4-Stroke Motorcycle Engine Oil" },
-      { "label": "Grade", "value": "SAE 20W-40 / API SL & below" },
-      { "label": "Kinematic Viscosity @ 100°C", "value": "5.5 mm²/s" },
-      { "label": "Viscosity Index", "value": "120" },
-      { "label": "TBN", "value": "7.9 mg KOH/gm" },
-      { "label": "Available Packs", "value": "900ml, 1 Liter, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "4-Stroke Motorcycle Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 20W-40 / API SL & below"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "5.5 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "120"
+      },
+      {
+        "label": "TBN",
+        "value": "7.9 mg KOH/gm"
+      },
+      {
+        "label": "Available Packs",
+        "value": "900ml, 1 Liter, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -455,9 +629,18 @@
     "image": "/assets/images/ozone-industrial.png",
     "description": "High-performance anti-wear hydraulic oil designed for heavy-duty industrial machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
     "specs": [
-      { "label": "Viscosity Grade", "value": "ISO VG 68" },
-      { "label": "Application", "value": "Industrial Hydraulics" },
-      { "label": "Key Benefit", "value": "Anti-Wear Protection" }
+      {
+        "label": "Viscosity Grade",
+        "value": "ISO VG 68"
+      },
+      {
+        "label": "Application",
+        "value": "Industrial Hydraulics"
+      },
+      {
+        "label": "Key Benefit",
+        "value": "Anti-Wear Protection"
+      }
     ],
     "features": [
       {
@@ -486,11 +669,26 @@
     "image": "/assets/images/ozone-textile.png",
     "description": "Ozone+ FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
     "specs": [
-      { "label": "Type", "value": "Washable Circular Knitting Machine Oil" },
-      { "label": "Application", "value": "High-Speed Needle Knitting Machines, Circular Knitting Machines, Knitting Needles & Full Fashion Machines" },
-      { "label": "Viscosity Grade Options", "value": "22, 32, 46" },
-      { "label": "Viscosity Index", "value": ">110" },
-      { "label": "Available Packs", "value": "20 Ltrs, 50 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Washable Circular Knitting Machine Oil"
+      },
+      {
+        "label": "Application",
+        "value": "High-Speed Needle Knitting Machines, Circular Knitting Machines, Knitting Needles & Full Fashion Machines"
+      },
+      {
+        "label": "Viscosity Grade Options",
+        "value": "22, 32, 46"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": ">110"
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 50 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -519,11 +717,26 @@
     "image": "/assets/images/ozone-textile.png",
     "description": "Ozone+ Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
     "specs": [
-      { "label": "Type", "value": "Energy Efficient Spindle Oil" },
-      { "label": "Application", "value": "High-speed spindles, machine tool spindle bearings, timing gears, positive displacement blowers, and precision machine tools hydraulics" },
-      { "label": "Viscosity Grade Options", "value": "12, 22" },
-      { "label": "Viscosity Index", "value": "90 Min." },
-      { "label": "Available Packs", "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs" }
+      {
+        "label": "Type",
+        "value": "Energy Efficient Spindle Oil"
+      },
+      {
+        "label": "Application",
+        "value": "High-speed spindles, machine tool spindle bearings, timing gears, positive displacement blowers, and precision machine tools hydraulics"
+      },
+      {
+        "label": "Viscosity Grade Options",
+        "value": "12, 22"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "90 Min."
+      },
+      {
+        "label": "Available Packs",
+        "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
     ],
     "features": [
       {
@@ -547,14 +760,23 @@
     "id": "metalwork-oil-68",
     "name": "Metalwork Oil 68",
     "category": "OZONE METALWORK",
-    "price": "₹280",
+    "price": "Contact for Price",
     "priceUnit": "/ Liter (Bulk Pricing)",
     "image": "/assets/images/ozone-industrial.png",
     "description": "High-performance anti-wear metalwork oil designed for heavy-duty metalwork machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
     "specs": [
-      { "label": "Viscosity Grade", "value": "ISO VG 68" },
-      { "label": "Application", "value": "Metalwork Machinery" },
-      { "label": "Key Benefit", "value": "Anti-Wear Protection" }
+      {
+        "label": "Viscosity Grade",
+        "value": "ISO VG 68"
+      },
+      {
+        "label": "Application",
+        "value": "Metalwork Machinery"
+      },
+      {
+        "label": "Key Benefit",
+        "value": "Anti-Wear Protection"
+      }
     ],
     "features": [
       {

@@ -51,6 +51,21 @@ const Admin = () => {
     }
   }, [isLoggedIn]);
 
+  // Lock background scroll when modal is open (including Lenis scroll support)
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('no-scroll');
+      if (window.lenis) window.lenis.stop();
+    } else {
+      document.body.classList.remove('no-scroll');
+      if (window.lenis) window.lenis.start();
+    }
+    return () => {
+      document.body.classList.remove('no-scroll');
+      if (window.lenis) window.lenis.start();
+    };
+  }, [isModalOpen]);
+
   const verifyToken = async (authToken) => {
     try {
       const res = await fetch('/api/auth/verify', {
