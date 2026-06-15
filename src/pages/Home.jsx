@@ -244,8 +244,8 @@ const Home = () => {
               {[
                 { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
                 { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
-                { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' },
-                { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'ozone-textile.png' },
+                { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'slider_metalwork.png' },
+                { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'slider_textile.png' },
 
               ].map((item, idx) => (
                 <Link
