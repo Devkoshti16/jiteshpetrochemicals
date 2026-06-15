@@ -48,16 +48,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full py-1.5 z-[1000] transition-all duration-300 border-b border-brand-border">
-      {/* Background layer for color and blur (avoids containing block issue on fixed children) */}
-      <div className={`absolute inset-0 -z-10 bg-brand-main transition-all duration-300 ${scrolled ? 'bg-brand-main/95 backdrop-blur-sm' : ''}`} />
-
+    <nav className="fixed top-0 w-full py-1.5 z-[1000] transition-all duration-300 border-b border-brand-border bg-brand-main">
       {/* Backdrop overlay for mobile sidebar */}
       {mobileActive && (
-        <div
-          className="fixed inset-0 top-[49px] bg-black/60 backdrop-blur-sm z-40 lg:hidden"
-          onClick={closeMobile}
-        />
+        <div className="fixed inset-0 top-[49px] bg-black/60 backdrop-blur-sm z-40 lg:hidden" onClick={closeMobile} />
       )}
 
       <div className="container flex justify-between items-center">

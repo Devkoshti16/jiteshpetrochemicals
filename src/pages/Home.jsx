@@ -262,7 +262,7 @@ const Home = () => {
               </Link>
             ))}
           </div>
-          <div className="scroll-mt-25" id="chemicals">
+          <div id="chemicals">
             <h3 className="brand-title reveal">special chemicals</h3>
             <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
               <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
