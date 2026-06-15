@@ -11,7 +11,7 @@ const slides = [
       </>
     ),
     desc: 'Crafting high-quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
-    link1: '/#lubricants',
+    link1: '/products?category=OZONE INDUSTRIAL',
     link1Text: 'Industrial Products',
     link2: '/#about',
     link2Text: 'Our Story'
@@ -25,7 +25,7 @@ const slides = [
       </>
     ),
     desc: 'Advanced formula engine oils engineered for maximum performance, fuel efficiency, and engine longevity under tough conditions.',
-    link1: '/#lubricants',
+    link1: '/products?category=OZONE AUTOMOTIVE',
     link1Text: 'Explore Lubricants',
     link2: '/#contact',
     link2Text: 'Bulk Inquiry'
@@ -39,7 +39,7 @@ const slides = [
       </>
     ),
     desc: 'Premium quality loom lubricants and metalworking fluids designed for precision operations and high-speed machinery.',
-    link1: '/#chemicals',
+    link1: '/products?category=OZONE TEXTILE',
     link1Text: 'Special Chemicals',
     link2: '/#contact',
     link2Text: 'Get in Touch'
@@ -131,8 +131,8 @@ const Home = () => {
   };
 
   return (
-    <main>
-      {/* Hero Section */}
+    <>
+      {/* Hero Section Start Here */}
       <section id="home" className="relative min-h-screen flex items-center pt-20 bg-brand-panel overflow-hidden">
         {/* Slider Backgrounds */}
         <div className="absolute inset-0 z-0">
@@ -197,28 +197,29 @@ const Home = () => {
           ))}
         </div>
       </section>
+      {/* Hero Section End Here */}
 
-      {/* About Section */}
+      {/* About Section Start Here */}
       <section id="about" className="section-padding bg-brand-panel border-b border-brand-border">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[60px] items-center">
           <div className="reveal fade-left">
-            <h2 className="font-heading text-4xl sm:text-3xl md:text-4xl xl:text-5xl mb-2 sm:mb-4 md:mb-6 lg:mb-[30px]">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-3xl xl:text-5xl mb-2 sm:mb-4 md:mb-6 lg:mb-[30px]">
               Four Decades of <br /><span className="text-primary">Oil Manufacturing</span>
             </h2>
             <p className="text-brand-muted text-sm sm:text-base md:text-lg">Based in Surat, Gujarat, Jitesh Trading Company has been a trusted name in the manufacturing and bulk distribution of premium oils since 1981.</p>
             <p className="text-brand-muted my-3 sm:my-4 md:my-6 text-sm sm:text-base md:text-lg">We craft the finest engine oils, gear fluids, and industrial lubricants, ensuring high-volume supply with unmatched quality through our flagship brands: <strong>OZONE</strong> and <strong>JITO</strong>.</p>
             <ul className="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-5 mt-10 pt-10 border-t border-brand-border">
               <li>
-                <h3 className="stat-number counter text-5xl mb-1" data-target="40" data-suffix="+">0+</h3>
-                <p className="text-[0.9rem] text-primary uppercase tracking-wider font-heading font-semibold">Years Experience</p>
+                <h3 className="stat-number counter md:text-5xl text-3xl mb-1" data-target="40" data-suffix="+">0+</h3>
+                <p className="md:text-[0.9rem] text-sm text-primary uppercase tracking-wider font-heading font-semibold">Years Experience</p>
               </li>
               <li>
-                <h3 className="stat-number counter text-5xl mb-1" data-target="500" data-suffix="+">0+</h3>
-                <p className="text-[0.9rem] text-primary uppercase tracking-wider font-heading font-semibold">Industry Partners</p>
+                <h3 className="stat-number counter md:text-5xl text-3xl mb-1" data-target="500" data-suffix="+">0+</h3>
+                <p className="md:text-[0.9rem] text-sm text-primary uppercase tracking-wider font-heading font-semibold">Industry Partners</p>
               </li>
               <li>
-                <h3 className="stat-number counter text-5xl mb-1" data-target="100" data-suffix="%">0%</h3>
-                <p className="text-[0.9rem] text-primary uppercase tracking-wider font-heading font-semibold">Quality Assured</p>
+                <h3 className="stat-number counter md:text-5xl text-3xl mb-1" data-target="100" data-suffix="%">0%</h3>
+                <p className="md:text-[0.9rem] text-sm text-primary uppercase tracking-wider font-heading font-semibold">Quality Assured</p>
               </li>
             </ul>
           </div>
@@ -227,8 +228,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* About Section End Here */}
 
-      {/* Products Section */}
+      {/* Products Section Start Here */}
       <section id="products" className="section-padding bg-brand-main">
         <div className="container">
           <div className="text-center mb-[70px] reveal">
@@ -236,47 +238,50 @@ const Home = () => {
             <div className="w-[60px] h-1 bg-primary mx-auto my-5"></div>
             <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>OZONE</strong> & <strong>JITO</strong>.</p>
           </div>
+          <div id="lubricants">
+            <h3 className="brand-title reveal">lubricants Categories</h3>
+            <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px] mb-20">
+              {[
+                { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
+                { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
+                { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' },
+                { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'ozone-textile.png' },
 
-          <h3 className="brand-title reveal" id="lubricants">lubricants Categories</h3>
-          <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px] mb-20">
-            {[
-              { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
-              { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
-              { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'ozone-metal.png' },
-              { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'ozone-textile.png' },
-
-            ].map((item, idx) => (
-              <Link
-                to={`/products?category=${item.id.replace('-', ' ').toUpperCase()}`}
-                key={item.id}
-                className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`}
-                id={item.id}
-              >
-                <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
-                  <img src={`/assets/images/${item.img}`} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                <div className="p-[30px]">
-                  <h3 className="text-[1.4rem] mb-3">{item.title}</h3>
-                  <p className="text-brand-muted text-[0.95rem]">{item.desc}</p>
-                </div>
-              </Link>
-            ))}
+              ].map((item, idx) => (
+                <Link
+                  to={`/products?category=${item.id.replace('-', ' ').toUpperCase()}`}
+                  key={item.id}
+                  className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`}
+                  id={item.id}
+                >
+                  <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
+                    <img src={`/assets/images/${item.img}`} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                  <div className="md:p-[30px] p-4">
+                    <h3 className="md:text-[1.4rem] text-lg mb-3">{item.title}</h3>
+                    <p className="md:text-[0.95rem] text-sm text-brand-muted">{item.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
+
           <div id="chemicals">
             <h3 className="brand-title reveal">special chemicals</h3>
             <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
               <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
-                <div className="p-[30px] text-center">
-                  <h3 className="text-[2.2rem] text-primary mb-2.5">Coming Soon</h3>
-                  <p className="text-[1.1rem] text-brand-muted">Our premium JITO product line is currently under development. Stay tuned for exciting updates!</p>
+                <div className="md:p-[30px] p-4 text-center">
+                  <h3 className="md:text-[2.2rem] text-[1.7rem] text-primary mb-2.5">Coming Soon</h3>
+                  <p className="md:text-[1.1rem] text-brand-muted">Our premium JITO product line is currently under development. Stay tuned for exciting updates!</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* Products Section End Here */}
 
-      {/* Contact Section */}
+      {/* Contact Section Start Here */}
       <section id="contact" className="section-padding bg-brand-panel border-t border-brand-border">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[60px] items-start">
           <div className="reveal fade-left">
@@ -316,7 +321,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </main>
+      {/* Contact Section End Here */}
+    </>
   );
 };
 

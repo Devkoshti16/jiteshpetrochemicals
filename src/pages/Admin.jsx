@@ -331,7 +331,7 @@ const Admin = () => {
   }
 
   return (
-    <main className="min-h-screen bg-brand-main pt-[130px] pb-24 text-brand-text">
+    <main className="min-h-screen bg-brand-main pt-[70px] pb-24 text-brand-text">
       <div className="container">
 
         {/* Header Dashboard */}

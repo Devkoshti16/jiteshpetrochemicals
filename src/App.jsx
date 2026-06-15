@@ -43,7 +43,7 @@ function Layout() {
       {/* <Loader /> */}
       <Navbar />
 
-      <main className="pt-[52px]"> {/* Navbar fixed hai, isliye content ko dabne se bachane ke liye padding dedi */}
+      <main className="lg:pt-[87px] md:pt-[80px] pt-[55px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />

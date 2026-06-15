@@ -56,7 +56,8 @@ const Navbar = () => {
 
       <div className="container flex justify-between items-center">
         <Link to="/" className="font-heading text-3xl font-bold tracking-[3px] text-white" onClick={closeMobile}>
-          JITESH<span className="text-primary">.</span>
+          {/* JITESH<span className="text-primary">.</span> */}
+          <img src="/assets/images/logo1.png" alt="logo" className='md:w-[130px] w-[80px]' />
         </Link>
 
         <ul data-lenis-prevent className={`flex lg:items-center gap-6 lg:gap-8 transition-all duration-300 max-lg:fixed max-lg:top-[52px] max-lg:w-[80%] max-lg:h-[calc(100vh-52px)] max-lg:bg-brand-panel max-lg:flex-col max-lg:items-start max-lg:p-6 sm:max-lg:p-10 max-lg:border-t max-lg:border-l max-lg:border-brand-border max-lg:overflow-y-auto max-lg:z-50 ${mobileActive ? 'max-lg:right-0' : 'max-lg:-right-full'}`}>
