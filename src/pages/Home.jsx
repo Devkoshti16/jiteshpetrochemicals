@@ -43,6 +43,20 @@ const slides = [
     link1Text: 'Special Chemicals',
     link2: '/#contact',
     link2Text: 'Get in Touch'
+  },
+  {
+    image: '/assets/images/slider_metalwork.png',
+    tag: 'Premium Metalworking',
+    title: (
+      <>
+        Metalworking <span className="text-primary">Lubricants.</span>
+      </>
+    ),
+    desc: 'Premium quality Metalworking lubricants designed for precision operations and high-speed machinery.',
+    link1: '/products?category=OZONE METALWORK',
+    link1Text: 'Explore Lubricants',
+    link2: '/#contact',
+    link2Text: 'Bulk Inquiry'
   }
 ];
 
@@ -132,7 +146,7 @@ const Home = () => {
               <img
                 src={slide.image}
                 alt={slide.tag}
-                className={`w-full h-full object-cover transition-transform duration-[6000ms] ease-out ${idx === currentSlide ? 'scale-105' : 'scale-100'
+                className={`w-full h-full object-cover transition-transform duration-[10000ms] ease-out ${idx === currentSlide ? 'scale-110' : 'scale-100'
                   }`}
               />
               {/* Dark Overlay to ensure text readability */}
@@ -171,19 +185,13 @@ const Home = () => {
         </div>
 
         {/* Indicator Dots */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3">
+        <div className="absolute md:bottom-8 bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex gap-3">
           {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className="p-2 -m-2 cursor-pointer group"
-              aria-label={`Go to slide ${idx + 1}`}
-            >
-              <div
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === currentSlide
-                  ? 'bg-primary w-6 shadow-[0_0_10px_rgba(255,102,0,0.8)]'
-                  : 'bg-brand-muted/40 group-hover:bg-brand-muted'
-                  }`}
+            <button key={idx} onClick={() => setCurrentSlide(idx)} className="p-2 -m-2 cursor-pointer group" aria-label={`Go to slide ${idx + 1}`}>
+              <div className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === currentSlide
+                ? 'bg-primary w-6 shadow-[0_0_10px_rgba(255,102,0,0.8)]'
+                : 'bg-brand-muted/40 group-hover:bg-brand-muted'
+                }`}
               />
             </button>
           ))}
@@ -255,7 +263,7 @@ const Home = () => {
             ))}
           </div>
 
-          <h3 className="brand-title reveal" id="chemicals">special chemicals</h3>
+          <h3 className="brand-title reveal scroll-mt-25" id="chemicals">special chemicals</h3>
           <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
             <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
               <div className="p-[30px] text-center">

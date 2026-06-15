@@ -34,6 +34,29 @@ function ScrollHandler() {
   return null;
 }
 
+// Layout Wrapper Component: Router ke andar hona zaroori hai
+function Layout() {
+  return (
+    <>
+      <ScrollHandler />
+      {/* Agar aapke paas global Loader hai toh usko yahan rakh sakte hain */}
+      {/* <Loader /> */}
+      <Navbar />
+
+      <main className="pt-[52px]"> {/* Navbar fixed hai, isliye content ko dabne se bachane ke liye padding dedi */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
 function App() {
   useEffect(() => {
     // Initialize Lenis for buttery smooth scrolling
@@ -65,16 +88,7 @@ function App() {
 
   return (
     <Router>
-      <ScrollHandler />
-      <Loader />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/admin" element={<Admin />} />
-      </Routes>
-      <Footer />
+      <Layout />
     </Router>
   )
 }

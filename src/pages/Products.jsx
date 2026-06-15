@@ -7,7 +7,7 @@ const categories = ['All', 'OZONE AUTO', 'OZONE INDUSTRIAL', 'OZONE TEXTILE', 'O
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const queryCat = searchParams.get('category');
-  
+
   const [productsList, setProductsList] = useState(staticProducts);
 
   // Safe validation check to initialize active category state
@@ -138,14 +138,14 @@ const Products = () => {
                     alt={product.name}
                     className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
                   />
-                  <div className="absolute top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]">
+                  <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]">
                     {product.category.replace('OZONE ', '')}
                   </div>
                 </div>
 
                 {/* Product Name */}
                 <div className="px-4 py-4 border-t border-white/[0.04]">
-                  <h2 className="text-[0.95rem] font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center">
+                  <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center">
                     {product.name}
                   </h2>
                 </div>

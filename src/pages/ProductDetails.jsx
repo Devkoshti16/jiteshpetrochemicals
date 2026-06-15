@@ -120,7 +120,7 @@ const ProductDetails = () => {
 
           <div className="modal-details">
             <div className="badge mb-2.5">{product.category}</div>
-            <h1 className="text-[clamp(2rem,5vw,3.5rem)] mb-2 lg:mb-[15px]">
+            <h1 className="text-[clamp(2rem,5vw,3.5rem)] text-ellipsis-two-line mb-2 lg:mb-[15px]">
               {product.name.split(' ')[0]} <span className="text-primary">{product.name.substring(product.name.indexOf(' ') + 1)}</span>
             </h1>
 
