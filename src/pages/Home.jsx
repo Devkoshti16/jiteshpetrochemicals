@@ -262,13 +262,14 @@ const Home = () => {
               </Link>
             ))}
           </div>
-
-          <h3 className="brand-title reveal scroll-mt-25" id="chemicals">special chemicals</h3>
-          <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
-            <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
-              <div className="p-[30px] text-center">
-                <h3 className="text-[2.2rem] text-primary mb-2.5">Coming Soon</h3>
-                <p className="text-[1.1rem] text-brand-muted">Our premium JITO product line is currently under development. Stay tuned for exciting updates!</p>
+          <div className="scroll-mt-25" id="chemicals">
+            <h3 className="brand-title reveal">special chemicals</h3>
+            <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
+              <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
+                <div className="p-[30px] text-center">
+                  <h3 className="text-[2.2rem] text-primary mb-2.5">Coming Soon</h3>
+                  <p className="text-[1.1rem] text-brand-muted">Our premium JITO product line is currently under development. Stay tuned for exciting updates!</p>
+                </div>
               </div>
             </div>
           </div>
