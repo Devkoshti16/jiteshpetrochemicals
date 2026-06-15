@@ -626,7 +626,7 @@
     "category": "OZONE INDUSTRIAL",
     "price": "₹280",
     "priceUnit": "/ Liter (Bulk Pricing)",
-    "image": "/assets/images/ozone-industrial.png",
+    "image": "/assets/images/industrial/hydraulic-oil-68.png",
     "description": "High-performance anti-wear hydraulic oil designed for heavy-duty industrial machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
     "specs": [
       {
@@ -666,7 +666,7 @@
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/ozone-textile.png",
+    "image": "/assets/images/textile/ozone-fin-knit.png",
     "description": "Ozone+ FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
     "specs": [
       {
@@ -709,12 +709,12 @@
     ]
   },
   {
-    "id": "ozone-spin-ee",
+    "id": "ozone spine ee",
     "name": "Ozone+ Spin EE",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/ozone-textile.png",
+    "image": "/assets/images/textile/ozone-spin-ee.png",
     "description": "Ozone+ Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
     "specs": [
       {
@@ -762,7 +762,7 @@
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Liter (Bulk Pricing)",
-    "image": "/assets/images/ozone-industrial.png",
+    "image": "/assets/images/metalwork/metalwork-oil-68.png",
     "description": "High-performance anti-wear metalwork oil designed for heavy-duty metalwork machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
     "specs": [
       {
