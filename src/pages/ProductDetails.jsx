@@ -115,7 +115,7 @@ const ProductDetails = () => {
         {/* Product Hero */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-[50px] items-start md:mb-10 xl:mb-20 reveal seq-1">
           <div className="bg-brand-panel border overflow-hidden border-brand-border rounded-lg p-0 lg:p-5 flex justify-center items-center lg:sticky lg:top-[100px]">
-            <img src={product.image} alt={product.name} className="w-full max-w-[500px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.4)]" />
+            <img src={product.image} alt={product.name} className="w-full max-w-[500px] object-contain rounded-lg drop-shadow-[0_20px_30px_rgba(0,0,0,0.4)]" />
           </div>
 
           <div className="modal-details">
