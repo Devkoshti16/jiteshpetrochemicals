@@ -34,15 +34,17 @@ function ScrollHandler() {
   return null;
 }
 
-// Layout Wrapper Component: Router ke andar hona zaroori hai
 function Layout() {
   return (
     <>
       <ScrollHandler />
-      {/* Agar aapke paas global Loader hai toh usko yahan rakh sakte hain */}
-      {/* <Loader /> */}
+      {/* Loader */}
+      <Loader />
+
+      {/* Navbar */}
       <Navbar />
 
+      {/* Main content */}
       <main className="lg:pt-[87px] md:pt-[80px] pt-[55px]">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -52,6 +54,7 @@ function Layout() {
         </Routes>
       </main>
 
+      {/* Footer */}
       <Footer />
     </>
   );
