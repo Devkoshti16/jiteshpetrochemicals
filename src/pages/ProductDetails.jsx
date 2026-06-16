@@ -97,7 +97,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <section className="section-padding bg-brand-main pt-[120px] pb-24">
+    <section className="section-padding bg-brand-main md:py-24 py-5!">
       <div className="container lg:pt-[10px]">
         {/* Breadcrumbs */}
         <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 md:mb-6 font-body text-brand-muted text-[0.95rem] reveal">
