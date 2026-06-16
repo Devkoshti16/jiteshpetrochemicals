@@ -105,7 +105,7 @@ const ProductDetails = () => {
           <span className="text-primary mx-1 lg:mx-2.5">/</span>
           <Link to="/#products" className="text-brand-text hover:text-primary transition-colors">Lubricants</Link>
           <span className="text-primary mx-1 lg:mx-2.5">/</span>
-          <Link to={`/#ozone-${product.category.replace('OZONE ', '').toLowerCase()}`} className="text-brand-text hover:text-primary transition-colors capitalize">
+          <Link to={`/products?category=${product.category}`} className="text-brand-text hover:text-primary transition-colors capitalize">
             {product.category.replace('OZONE ', '').toLowerCase()}
           </Link>
           <span className="text-primary mx-1 lg:mx-2.5">/</span>
