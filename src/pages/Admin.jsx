@@ -149,6 +149,7 @@ const Admin = () => {
     setFormPrice('Contact for Price');
     setFormPriceUnit('/ Bulk Inquiry');
     setFormImage('');
+    setFileName('');
     setFormDescription('');
     setFormSpecs([{ label: '', value: '' }]);
     setFormFeatures([{ title: '', description: '', icon: 'shield' }]);
@@ -164,6 +165,7 @@ const Admin = () => {
     setFormPrice(product.price || 'Contact for Price');
     setFormPriceUnit(product.priceUnit || '/ Bulk Inquiry');
     setFormImage(product.image || '');
+    setFileName(product.image ? 'Current Image' : '');
     setFormDescription(product.description || '');
     setFormSpecs(product.specs && product.specs.length > 0 ? product.specs : [{ label: '', value: '' }]);
     setFormFeatures(product.features && product.features.length > 0 ? product.features : [{ title: '', description: '', icon: 'shield' }]);
@@ -526,7 +528,29 @@ const Admin = () => {
                     required={!formImage}
                   />
                 </label>
-                <span className="text-[#ff0707] text-xs mt-2">* Image upload limit is 500kb</span>
+                <span className="text-[#ff0707] text-xs mt-2 block">* Image upload limit is 500kb</span>
+
+                {/* Product Image Preview */}
+                {formImage && (
+                  <div className="mt-4 p-3 bg-black/30 border border-brand-border/40 rounded-lg flex items-center gap-4 w-fit">
+                    <div className="w-20 h-20 bg-black/40 rounded border border-brand-border flex items-center justify-center p-1">
+                      <img src={formImage} alt="Product preview" className="max-h-full max-w-full object-contain rounded" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-xs text-white font-semibold">Image Preview</span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setFormImage('');
+                          setFileName('');
+                        }}
+                        className="text-red-400 hover:text-red-500 text-[0.7rem] font-bold uppercase tracking-wider border border-red-500/20 hover:border-red-500/50 px-2.5 py-1 rounded transition-all duration-300 w-fit"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div>
