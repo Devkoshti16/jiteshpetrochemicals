@@ -12,6 +12,16 @@
       "status": 200
     }
   ],
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
   "cleanUrls": true,
   "trailingSlash": false,
   "installCommand": "npm ci",
