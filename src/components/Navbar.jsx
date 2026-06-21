@@ -98,6 +98,7 @@ const Navbar = () => {
           </li>
 
           <li className="lg:hidden"><Link to="/#contact" className="nav-link" onClick={closeMobile}>Get Quote</Link></li>
+          <li><Link to="/admin" className="nav-link">admin</Link></li>
         </ul>
 
         <Link to="/#contact" className="btn-primary-sm bg-primary text-white hidden lg:inline-flex">Get Quote</Link>
