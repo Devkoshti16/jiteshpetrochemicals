@@ -47,9 +47,20 @@ const Products = () => {
       });
   }, []);
 
+  const [vehicleFilter, setVehicleFilter] = useState('All Vehicles');
+  const vehicleTypes = [
+    'Two Wheeler',
+    'Three Wheeler',
+    'Four Wheeler'
+  ];
+
   // Sync search params with state when category button is clicked
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat);
+
+    // reset vehicle filter
+    setVehicleFilter('All Vehicles');
+
     if (cat === 'All') {
       setSearchParams({});
     } else {
@@ -84,9 +95,33 @@ const Products = () => {
     return () => clearTimeout(timeout);
   }, [activeCategory, productsList]);
 
-  const filtered = activeCategory === 'All'
+  let filtered = activeCategory === 'All'
     ? productsList
     : productsList.filter(p => p.category === activeCategory);
+
+  if (
+    activeCategory === 'OZONE AUTO' &&
+    vehicleFilter !== 'All Vehicles'
+  ) {
+    filtered = filtered.filter(
+      p => p.vehicleType === vehicleFilter
+    );
+  }
+  const twoWheelers = filtered.filter(
+    p => p.vehicleType === 'Two Wheeler'
+  );
+
+  const threeWheelers = filtered.filter(
+    p => p.vehicleType === 'Three Wheeler'
+  );
+
+  const fourWheelers = filtered.filter(
+    p => p.vehicleType === 'Four Wheeler'
+  );
+
+  const Hevay = filtered.filter(
+    p => p.vehicleType === 'Hevay'
+  );
 
   return (
     <main className="bg-brand-main">
@@ -123,36 +158,55 @@ const Products = () => {
             ))}
           </div>
 
-          {/* Products Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
-            {filtered.map((product, idx) => (
-              <Link
-                key={product.id}
-                to={`/product/${product.id}`}
-                className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`}
-              >
-                {/* Product Image */}
-                <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-                  />
-                  <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]">
-                    {product.category.replace('OZONE ', '')}
-                  </div>
-                </div>
+          {activeCategory === 'OZONE AUTO' ? (
+            <>
+              <h2 className="badge mb-8 md:text-xl text-lg">
+                Two Wheeler Oils
+              </h2>
 
-                {/* Product Name */}
-                <div className="px-4 py-4 border-t border-white/[0.04]">
-                  <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center">
-                    {product.name}
-                  </h2>
-                </div>
-              </Link>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6 mb-12">
+                {twoWheelers.map((product, idx) => (
+                  <Link key={product.id} to={`/product/${product.id}`} className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`} > {/* Product Image */} <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative"> <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" /> <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]"> {product.category.replace('OZONE ', '')} </div> </div> {/* Product Name */} <div className="px-4 py-4 border-t border-white/[0.04]"> <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center"> {product.name} </h2> </div> </Link>
+                ))}
+              </div>
 
+              <h2 className="badge mb-8 md:text-xl text-lg">
+                Three Wheeler Oils
+              </h2>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6 mb-12">
+                {threeWheelers.map((product, idx) => (
+                  <Link key={product.id} to={`/product/${product.id}`} className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`} > {/* Product Image */} <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative"> <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" /> <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]"> {product.category.replace('OZONE ', '')} </div> </div> {/* Product Name */} <div className="px-4 py-4 border-t border-white/[0.04]"> <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center"> {product.name} </h2> </div> </Link>
+                ))}
+              </div>
+
+              <h2 className="badge mb-8 md:text-xl text-lg">
+                Four Wheeler Oils
+              </h2>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6 mb-12">
+                {fourWheelers.map((product, idx) => (
+                  <Link key={product.id} to={`/product/${product.id}`} className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`} > {/* Product Image */} <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative"> <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" /> <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]"> {product.category.replace('OZONE ', '')} </div> </div> {/* Product Name */} <div className="px-4 py-4 border-t border-white/[0.04]"> <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center"> {product.name} </h2> </div> </Link>
+                ))}
+              </div>
+
+              <h2 className="badge mb-8 md:text-xl text-lg">
+                Hevay vehicle Oils
+              </h2>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
+                {Hevay.map((product, idx) => (
+                  <Link key={product.id} to={`/product/${product.id}`} className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`} > {/* Product Image */} <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative"> <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" /> <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]"> {product.category.replace('OZONE ', '')} </div> </div> {/* Product Name */} <div className="px-4 py-4 border-t border-white/[0.04]"> <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center"> {product.name} </h2> </div> </Link>
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
+              {filtered.map((product, idx) => (
+                <Link key={product.id} to={`/product/${product.id}`} className={`bg-brand-panel/50 border border-brand-border/60 rounded-lg overflow-hidden hover:border-primary/60 transition-all duration-400 hover:shadow-[0_15px_35px_rgba(0,0,0,0.4),0_0_20px_rgba(255,102,0,0.07)] flex flex-col group/card reveal seq-${(idx % 5) + 1}`} > {/* Product Image */} <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative"> <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" /> <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]"> {product.category.replace('OZONE ', '')} </div> </div> {/* Product Name */} <div className="px-4 py-4 border-t border-white/[0.04]"> <h2 className="text-[0.95rem] text-ellipsis-two-line font-heading font-bold text-brand-text group-hover/card:text-primary transition-colors duration-300 leading-snug text-center"> {product.name} </h2> </div> </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </main>
