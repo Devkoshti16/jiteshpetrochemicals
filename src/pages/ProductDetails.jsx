@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/api/products/${id}`)
+    fetch(`/api/products/${id}?t=${Date.now()}`)
       .then(res => {
         if (!res.ok) throw new Error('Not found in API');
         return res.json();

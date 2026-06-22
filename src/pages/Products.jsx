@@ -32,7 +32,7 @@ const Products = () => {
 
   // Fetch live products from API with static fallback
   useEffect(() => {
-    fetch('/api/products')
+    fetch(`/api/products?t=${Date.now()}`)
       .then(res => {
         if (!res.ok) throw new Error('API server returned error');
         return res.json();

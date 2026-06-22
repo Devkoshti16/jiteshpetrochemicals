@@ -11,7 +11,8 @@ app.use(cors({
   origin: ['http://localhost:5173', 'https://jiteshpetrochemicals.vercel.app'],
   credentials: true,
 }));
-app.use(express.json({ limit: '10mb' }));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Wrap a Vercel-style handler for all methods + all sub-paths
 function wrap(handler) {
@@ -28,12 +29,12 @@ app.all('/api/auth/verify', (req, res) => {
 });
 
 // Products routes: GET /api/products, POST /api/products, PUT /api/products/:id, DELETE /api/products/:id
-app.all('/api/products', wrap(productsHandler));
 app.all('/api/products/:id', (req, res) => {
-  // Pass the id as a query param so the handler can read req.query.id
+  console.log(`[Route Match] /api/products/:id matched with req.params.id = "${req.params.id}"`);
   req.query.id = req.params.id;
   productsHandler(req, res);
 });
+app.all('/api/products', wrap(productsHandler));
 
 app.get('/', (req, res) => {
   res.send('Jitesh Petrochemicals API server is running ✓');

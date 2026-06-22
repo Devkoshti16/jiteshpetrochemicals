@@ -4,7 +4,7 @@ import { FaEdit, FaTrash } from 'react-icons/fa';
 import { API_BASE_URL } from '../utils/api.js';
 
 
-const CATEGORIES = ['OZONE AUTO', 'OZONE INDU', 'OZONE TEXTILE', 'OZONE METALWORK'];
+const CATEGORIES = ['AUTO', 'INDUSTRIAL', 'TEXTILE', 'METALWORK'];
 const ICONS = ['shield', 'thermometer', 'clock'];
 
 const Admin = () => {
@@ -464,7 +464,7 @@ const Admin = () => {
                     className="w-full bg-black/20 border border-brand-border rounded px-3.5 py-2.5 text-white focus:outline-none focus:border-primary"
                   >
                     {CATEGORIES.map(cat => (
-                      <option key={cat} value={cat}>{cat}</option>
+                      <option className='bg-brand-main' key={cat} value={cat}>{cat}</option>
                     ))}
                   </select>
                 </div>
