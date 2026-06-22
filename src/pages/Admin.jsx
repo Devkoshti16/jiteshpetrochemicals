@@ -79,7 +79,7 @@ const Admin = () => {
 
   const verifyToken = async (authToken) => {
     try {
-      const res = await fetch(`/api/auth/verify`, {
+      const res = await fetch(`${API_BASE_URL}/api/auth/verify`, {
         headers: { Authorization: `Bearer ${authToken}` },
       });
       if (res.ok) {
@@ -99,7 +99,7 @@ const Admin = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`/api/auth/login`, {
+      const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -130,7 +130,7 @@ const Admin = () => {
   const fetchProducts = async () => {
     setFetchingProducts(true);
     try {
-      const res = await fetch(`/api/products`);
+      const res = await fetch(`${API_BASE_URL}/api/products`);
       if (res.ok) {
         const data = await res.json();
         setProductsList(data);
@@ -178,7 +178,7 @@ const Admin = () => {
     if (!window.confirm('Are you sure you want to delete this product?')) return;
 
     try {
-      const res = await fetch(`/api/products/${productId}`, {
+      const res = await fetch(`${API_BASE_URL}/api/products/${productId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -249,7 +249,7 @@ const Admin = () => {
       features: cleanFeatures
     };
 
-    const url = `${modalMode === 'add' ? '/api/products' : `/api/products/${editingId}`}`;
+    const url = `${modalMode === 'add' ? `${API_BASE_URL}/api/products` : `${API_BASE_URL}/api/products/${editingId}`}`;
     const method = modalMode === 'add' ? 'POST' : 'PUT';
 
     try {
