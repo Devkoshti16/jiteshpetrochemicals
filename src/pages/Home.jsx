@@ -124,7 +124,7 @@ const Home = () => {
 
   const handleContactSubmit = (e) => {
     e.preventDefault();
-    const ownerNumber = "91";
+    const ownerNumber = "+919228019999";
     const waMessage = `*New Inquiry from Website*\n\n👤 *Name:* ${formData.name}\n📧 *Email:* ${formData.email}\n💬 *Message:* ${formData.message}`;
     window.open(`https://api.whatsapp.com/send?phone=${ownerNumber}&text=${encodeURIComponent(waMessage)}`, '_blank', 'noopener,noreferrer');
     setFormData({ name: '', email: '', message: '' });
