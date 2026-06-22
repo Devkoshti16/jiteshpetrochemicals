@@ -191,7 +191,7 @@ const Products = () => {
               </div>
 
               <h2 className="badge mb-8 md:text-xl text-lg">
-                Hevay vehicle Oils
+                Heavy vehicle Oils
               </h2>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
