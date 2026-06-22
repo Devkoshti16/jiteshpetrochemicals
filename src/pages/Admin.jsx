@@ -285,8 +285,8 @@ const Admin = () => {
 
   if (!isLoggedIn) {
     return (
-      <main className="min-h-screen bg-brand-main pt-[150px] pb-20 flex justify-center items-center px-4">
-        <div className="w-full max-w-[450px] bg-brand-panel/40 backdrop-blur-xl border border-brand-border/60 p-8 rounded-2xl shadow-2xl">
+      <div className='flex align-center my-[50px] justify-center'>
+        <div className="w-full xl:max-w-[500px] md:max-w-[60%] max-w-[90%] bg-brand-panel/40 backdrop-blur-xl border border-brand-border/60 md:p-8 p-4 rounded-2xl shadow-2xl">
           <div className="text-center mb-8">
             <h1 className="font-heading text-2xl font-bold tracking-wider text-white">ADMIN PANEL</h1>
             <p className="text-brand-muted text-sm mt-1">Jitesh Trading Company</p>
@@ -330,7 +330,7 @@ const Admin = () => {
             </button>
           </form>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -348,7 +348,7 @@ const Admin = () => {
             <button onClick={openAddModal} className="btn-primary py-3 px-6 rounded-lg font-heading text-sm font-semibold tracking-wider cursor-pointer">
               + ADD NEW PRODUCT
             </button>
-            <button onClick={handleLogout} className="border border-brand-border hover:border-red-500/50 hover:text-red-400 py-3 px-5 rounded-lg text-sm transition-all duration-300 cursor-pointer">
+            <button onClick={handleLogout} className="border border-brand-border hover:border-red-500/50 hover:text-red-400 py-3 px-5 rounded-sm text-sm transition-all duration-300 cursor-pointer">
               LOGOUT
             </button>
           </div>
