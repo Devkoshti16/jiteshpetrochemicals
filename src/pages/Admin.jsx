@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import { API_BASE_URL } from '../utils/api.js';
 
 
 const CATEGORIES = ['OZONE AUTO', 'OZONE INDU', 'OZONE TEXTILE', 'OZONE METALWORK'];
