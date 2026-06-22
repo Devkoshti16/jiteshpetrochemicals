@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEdit, FaTrash } from 'react-icons/fa';
-import { API_BASE_URL } from '../utils/api';
+
 
 const CATEGORIES = ['OZONE AUTO', 'OZONE INDU', 'OZONE TEXTILE', 'OZONE METALWORK'];
 const ICONS = ['shield', 'thermometer', 'clock'];
@@ -79,7 +79,7 @@ const Admin = () => {
 
   const verifyToken = async (authToken) => {
     try {
-      const res = await fetch(`${API_BASE_URL}/api/auth/verify`, {
+      const res = await fetch(`/api/auth/verify`, {
         headers: { Authorization: `Bearer ${authToken}` },
       });
       if (res.ok) {
@@ -99,7 +99,7 @@ const Admin = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
+      const res = await fetch(`/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -130,7 +130,7 @@ const Admin = () => {
   const fetchProducts = async () => {
     setFetchingProducts(true);
     try {
-      const res = await fetch(`${API_BASE_URL}/api/products`);
+      const res = await fetch(`/api/products`);
       if (res.ok) {
         const data = await res.json();
         setProductsList(data);
@@ -178,7 +178,7 @@ const Admin = () => {
     if (!window.confirm('Are you sure you want to delete this product?')) return;
 
     try {
-      const res = await fetch(`${API_BASE_URL}/api/products/${productId}`, {
+      const res = await fetch(`/api/products/${productId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -249,7 +249,7 @@ const Admin = () => {
       features: cleanFeatures
     };
 
-    const url = `${API_BASE_URL}${modalMode === 'add' ? '/api/products' : `/api/products/${editingId}`}`;
+    const url = `${modalMode === 'add' ? '/api/products' : `/api/products/${editingId}`}`;
     const method = modalMode === 'add' ? 'POST' : 'PUT';
 
     try {

@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "backend": "node backend/server.js",
+    "server": "node backend/server.js",
     "build": "npx vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .js,.jsx",
-    "lint:css": "stylelint \"src/**/*.css\""
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "postinstall": "chmod +x ./node_modules/.bin/vite"
   },
   "engines": {
     "node": ">=18"
