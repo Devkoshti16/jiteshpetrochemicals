@@ -19,13 +19,27 @@ function ScrollHandler() {
 
   useEffect(() => {
     if (!hash) {
-      window.scrollTo(0, 0);
+      if (window.lenis) {
+        window.lenis.scrollTo(0, {
+          immediate: true,
+          force: true,
+        });
+      } else {
+        window.scrollTo(0, 0);
+      }
     } else {
       setTimeout(() => {
         const id = hash.replace('#', '');
         const element = document.getElementById(id);
+
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          if (window.lenis) {
+            window.lenis.scrollTo(element, {
+              offset: -100,
+            });
+          } else {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
         }
       }, 100);
     }
