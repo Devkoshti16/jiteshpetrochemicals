@@ -19,7 +19,10 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "src/data/products.json"
+      }
     },
     {
       "src": "package.json",
@@ -30,10 +33,5 @@
   "trailingSlash": false,
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "functions": {
-    "api/*.js": {
-      "includeFiles": "src/data/products.json"
-    }
-  }
+  "outputDirectory": "dist"
 }
