@@ -122,7 +122,7 @@ const Products = () => {
   );
 
   const Hevay = filtered.filter(
-    p => p.vehicleType === 'Hevay'
+    p => p.vehicleType === 'Heavy Vehicle'
   );
 
   return (
