@@ -31,22 +31,7 @@ const Products = () => {
     }
   }, [searchParams]);
 
-  // Fetch live products from API with static fallback
-  useEffect(() => {
-    fetch(`/api/products?t=${Date.now()}`)
-      .then(res => {
-        if (!res.ok) throw new Error('API server returned error');
-        return res.json();
-      })
-      .then(data => {
-        if (Array.isArray(data) && data.length > 0) {
-          setProductsList(data);
-        }
-      })
-      .catch(err => {
-        console.warn('Backend API offline or database empty. Using static products fallback.', err);
-      });
-  }, []);
+
 
   const [vehicleFilter, setVehicleFilter] = useState('All Vehicles');
   const vehicleTypes = [

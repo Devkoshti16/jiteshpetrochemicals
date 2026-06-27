@@ -6,7 +6,6 @@ import Lenis from 'lenis'
 import Home from './pages/Home.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
 import Products from './pages/Products.jsx'
-import Admin from './pages/Admin.jsx'
 
 // Components
 import Navbar from './components/Navbar.jsx'
@@ -64,7 +63,6 @@ function Layout() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
 

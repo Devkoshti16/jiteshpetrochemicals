@@ -9,20 +9,9 @@ const ProductDetails = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/api/products/${id}?t=${Date.now()}`)
-      .then(res => {
-        if (!res.ok) throw new Error('Not found in API');
-        return res.json();
-      })
-      .then(data => {
-        setProduct(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        const found = staticProducts.find(p => p.id === id);
-        setProduct(found || null);
-        setLoading(false);
-      });
+    const found = staticProducts.find(p => p.id === id);
+    setProduct(found || null);
+    setLoading(false);
   }, [id]);
 
   useEffect(() => {
