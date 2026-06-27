@@ -634,53 +634,13 @@
     ]
   },
   {
-    "id": "hydraulic-oil-68",
-    "name": "Hydraulic Oil 68",
-    "category": "OZONE INDUSTRIAL",
-    "price": "₹280",
-    "priceUnit": "/ Liter (Bulk Pricing)",
-    "image": "/assets/images/industrial/hydraulic-oil-68.png",
-    "description": "High-performance anti-wear hydraulic oil designed for heavy-duty industrial machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
-    "specs": [
-      {
-        "label": "Viscosity Grade",
-        "value": "ISO VG 68"
-      },
-      {
-        "label": "Application",
-        "value": "Industrial Hydraulics"
-      },
-      {
-        "label": "Key Benefit",
-        "value": "Anti-Wear Protection"
-      }
-    ],
-    "features": [
-      {
-        "title": "Excellent Oxidation Stability",
-        "description": "Ensures long fluid life and prevents sludge formation under high operating temperatures.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "High Mileage",
-        "description": "Formulated to maintain peak performance over extended drain intervals, saving maintenance costs.",
-        "icon": "clock"
-      },
-      {
-        "title": "Outstanding Anti-Wear",
-        "description": "Advanced additives protect pumps and valves from wear, reducing maintenance downtime.",
-        "icon": "shield"
-      }
-    ]
-  },
-  {
-    "id": "ozone-fineknit",
-    "name": "Ozone+ FineKnit",
+    "id": "fineknit",
+    "name": "FineKnit ",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/textile/ozone-fin-knit.png",
-    "description": "Ozone+ FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
+    "image": "/assets/images/textile/finknit.png",
+    "description": "FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
     "specs": [
       {
         "label": "Type",
@@ -722,13 +682,13 @@
     ]
   },
   {
-    "id": "ozone spine ee",
-    "name": "Ozone+ Spin EE",
+    "id": "spine ee",
+    "name": "Spin EE",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/textile/ozone-spin-ee.png",
-    "description": "Ozone+ Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
+    "image": "/assets/images/textile/spin-ee.png",
+    "description": "Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
     "specs": [
       {
         "label": "Type",
@@ -885,6 +845,241 @@
       {
         "title": "Rust & Corrosion Resistance",
         "description": "Superior resistance to rust & corrosion and extends tool life.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "fors-ep",
+    "name": "Fors EP",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/fors-ep.png",
+    "description": "Ozone+ Fors EP is a high performance all-purpose non-critical gear oil. It is specially formulated for non-critical lubrication systems and oiling applications involving lubrication bearings, open gears, enclosed gears, highly loaded slides and guideways of machine tools.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Premium Grade Non-Critical Gear Oil (AISE.224, David Brown SI.53.101 [E], AGMA 9005 E02 and strong FAG FE-8)"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in non-critical lubrication systems and all types of hand oiling applications."
+      },
+      {
+        "label": "Available Packs",
+        "value": "10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "High Wear Protection",
+        "description": "Formulated to protect open and enclosed gears as well as bearings from wear under pressure.",
+        "icon": "shield"
+      },
+      {
+        "title": "Foaming Minimization",
+        "description": "Minimizes foaming tendency to provide excellent lubrication performance.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Wide Viscosity Range",
+        "description": "Available in a wide range of viscosities to meet specific equipment lubrication demands.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "koarct",
+    "name": "Koarct ",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/koarct.png",
+    "description": "Ozone+ Compressor / Koarct is a mineral-type air compressor oil developed to deliver optimum value and operation through enhanced wear protection, long life, and high system efficiency. It also provides incomparable corrosion protection & highest oxidative strength.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Mineral Type Compressor Oil (ISO VG 32, 46, 68, 150, 220)"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in centrifugal, reciprocating, rotary screw, rotary vane & dry screw compressors."
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Thermal & Oxidation Protection",
+        "description": "Superior thermal stability and oxidation protection for cleaner compressor internals.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Wear & Corrosion Protection",
+        "description": "Excellent wear & corrosion protection with seal compatibility.",
+        "icon": "shield"
+      },
+      {
+        "title": "Anti-Foaming",
+        "description": "Excellent anti-foaming and demulsibility properties.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "proplast",
+    "name": "Proplast ",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/proplast.png",
+    "description": "Ozone+ Proplast is a heavily paraffined processing fluid, free from daylight fluorescence. It is odourless, tasteless, and colourless, providing improved flexibility and flow during the application and compound processing.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Hydro Treated Heavy Content Paraffinic Fluid"
+      },
+      {
+        "label": "Application",
+        "value": "Applicable to all processing of thermoplastics like Co-polymerisation, Vulcanization, Moulding, etc. The chemistry also complies with processing of Elastomers & Rubber Compounding."
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Thermal & Temperature Resistance",
+        "description": "Excellent thermal stability and temperature resistance during moulding and compounding.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Improved Flexibility",
+        "description": "Provides improved flexibility and durability to final thermoplastic products.",
+        "icon": "shield"
+      },
+      {
+        "title": "Optimizing Flow",
+        "description": "Optimizes flow and workability, completely non-staining.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "chain-lub-prime",
+    "name": "Chain Lub Prime",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/chain-lub-prime.png",
+    "description": "Ozone+ Chain Lub Prime is a primary level lubricant specially designed to lubricate chains, hinges, joints, and slideways at higher temperatures. It provides excellent anti-friction properties with optimum wear and oxidation resistance.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "High Temperature Chain Oil"
+      },
+      {
+        "label": "Application",
+        "value": "Lubricating chains, hinges, joints & slideways at higher temperatures, including conveying systems."
+      },
+      {
+        "label": "Available Packs",
+        "value": "5 Ltrs, 20 Ltrs, 50 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Thermal & Oxidative Stability",
+        "description": "Ensures excellent thermal stability and oxidation resistance at elevated temperatures.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Lowest Friction",
+        "description": "Ensures lowest friction, excellent film formation, and wear protection.",
+        "icon": "shield"
+      },
+      {
+        "title": "Excellent Adhesion",
+        "description": "Excellent creep and adhesion properties with resistance to water and steam.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "therm-ht",
+    "name": "THERM HT",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/therm-ht.png",
+    "description": "Ozone+ Therm-HT Oil is a high performance thermic fluid specially formulated for thermic fluid heating systems. Its special chemical composition provides excellent anti-oxidant properties and high & low temperature stability.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Heat Transfer Oil 500/600"
+      },
+      {
+        "label": "Application",
+        "value": "Used where high temperatures are required at low pressures. Recommended for heat transfer systems running from 40ºC to 300ºC."
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "High Thermal Stability",
+        "description": "Possesses high thermal stability and low volatility to prevent oil degradation.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Rust & Oxidation Resistance",
+        "description": "Inherent oxidation resistance and excellent protection against corrosion & rust.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
+    "id": "static",
+    "name": "Static",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/static.png",
+    "description": "Ozone+ Static Series Oils are engineered anti-wear oils designed to resist thermal & oxidative breakdown, provide extended drain intervals, and protect against equipment wear.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "High Quality Anti-Wear Oils (ISO VG 22, 32, 46, 68, 100, 150, 220, 320, 460)"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in all earthmoving equipment, hydraulic systems, and other industrial motives."
+      },
+      {
+        "label": "Available Packs",
+        "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Excellent Wear Protection",
+        "description": "Advanced anti-wear properties protect pumps, motors, and hydraulic components.",
+        "icon": "shield"
+      },
+      {
+        "title": "Thermal & Hydrolytic Stability",
+        "description": "High thermal & hydrolytic stability to minimize sludge & varnish.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Low Foaming Tendency",
+        "description": "Low foaming tendency and good oxidative strength for better fluidity.",
         "icon": "clock"
       }
     ]

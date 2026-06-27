@@ -8,11 +8,7 @@ const ProductCard = ({ product, idx = 0 }) => {
     >
       {/* Product Image */}
       <div className="flex items-center justify-center bg-black/25 aspect-square overflow-hidden relative">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-        />
+        <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
 
         <div className="absolute text-left top-3 left-3 bg-primary text-white text-[0.65rem] font-heading font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-[0_4px_8px_rgba(255,102,0,0.3)]">
           {product.category.replace('OZONE ', '')}
