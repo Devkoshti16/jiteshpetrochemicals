@@ -770,37 +770,122 @@
     ]
   },
   {
-    "id": "metalwork-oil-68",
-    "name": "Metalwork Oil 68",
+    "id": "orecut-direct",
+    "name": "OreCut Direct",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
-    "priceUnit": "/ Liter (Bulk Pricing)",
-    "image": "/assets/images/metalwork/metalwork-oil-68.png",
-    "description": "High-performance anti-wear metalwork oil designed for heavy-duty metalwork machinery. It provides excellent oxidation stability and protects against rust and corrosion.",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/orecut-direct.png",
+    "description": "Ozone+ Ore cut Direct Neat Cutting Oil designed for medium to severe cutting operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built up edges and increasing the life of machine tools & components.",
     "specs": [
       {
-        "label": "Viscosity Grade",
-        "value": "ISO VG 68"
+        "label": "Type & Gradation",
+        "value": "Extreme Pressure Straight Cutting & Grinding Oil"
       },
       {
         "label": "Application",
-        "value": "Metalwork Machinery"
+        "value": "For severe machining (ferrous and non-ferrous metals). More particularly suitable for precision turning and current machining operations on copper alloys, precision turning steels, medium to hard steels; could be used on aluminium alloys and stainless steels."
       },
       {
-        "label": "Key Benefit",
-        "value": "Anti-Wear Protection"
+        "label": "Pack Size Available",
+        "value": "20 Ltrs, 210 Ltrs"
       }
     ],
     "features": [
       {
-        "title": "Excellent Oxidation Stability",
-        "description": "Ensures long fluid life and prevents sludge formation under high operating temperatures.",
+        "title": "Accelerates Heat Removal",
+        "description": "Accelerates heat removal from tool and work piece.",
         "icon": "thermometer"
       },
       {
-        "title": "Outstanding Anti-Wear",
-        "description": "Advanced additives protect pumps and valves from wear, reducing maintenance downtime.",
+        "title": "Better Surface Finish",
+        "description": "Produces better surface finish and lowers power consumption.",
         "icon": "shield"
+      },
+      {
+        "title": "Corrosion Protection",
+        "description": "Excellent residual corrosion protection and excellent cooling properties.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "ore-qunch",
+    "name": "Ore-Qunch",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/ore-qunch.png",
+    "description": "Ozone+ Ore-Qunch is quenching oil which enhance and accelerate metal quenching performance. Its special chemical composition provides excellent thermal & oxidative strength & rapid heat dissipation, high flash point to minimize fire hazard.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Metal Quenching Oil (VG 33, 44)"
+      },
+      {
+        "label": "Application",
+        "value": "Ozone+ Ore-Qunch is recommended for use to accelerate quenching operations & are mainly used in hardening plain carbon and alloyed quenching steels."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Rapid Heat Dissipation",
+        "description": "Rapid heat dissipation and exhibits high quenching speed.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Minimize Fire Hazard",
+        "description": "High flash point to minimize fire hazard and low volatility.",
+        "icon": "shield"
+      },
+      {
+        "title": "Thermal & Oxidative Strength",
+        "description": "Excellent thermal & oxidative strength.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "orecut-sol",
+    "name": "Orecut Sol",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/ore-sol.png",
+    "description": "Ozone+ Orecut Sol is semi-synthetic, non-staining general use cutting lubricant that facilitates metal cutting, produces clean sharp edges and extends cutting tool life. It specially designed for use on ferrous & non-ferrous metals, including copper, brass and aluminium. The low odor formula is pleasant to work with and compatible with manual or motor driven cutting tools.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Semi Synthetic Soluble Cutting Fluid for all metals"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for tapping, threading, drilling, sawing, shearing, turning, and reaming metal parts, pipes, conduit screws, bolt holes, housings, aluminium sheets, gears and chains."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Stable Emulsion",
+        "description": "Forms highly stable emulsion and resists oil separation.",
+        "icon": "shield"
+      },
+      {
+        "title": "Cooling & Lubricating",
+        "description": "Excellent cooling & lubricating properties, compatible with all metals.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Rust & Corrosion Resistance",
+        "description": "Superior resistance to rust & corrosion and extends tool life.",
+        "icon": "clock"
       }
     ]
   }
