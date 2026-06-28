@@ -70,17 +70,14 @@ const Navbar = () => {
             </a>
             <ul className="nav-dropdown">
               {[
+                { id: 'all', name: 'All Products' },
                 { id: 'auto', name: 'Auto' },
                 { id: 'industrial', name: 'Industrial' },
                 { id: 'textile', name: 'Textile' },
                 { id: 'metalwork', name: 'Metalwork' }
               ].map((cat) => (
                 <li key={cat.id} className="border-b border-white/10 last:border-none">
-                  <Link
-                    to={`/products?category=OZONE ${cat.id.toUpperCase()}`}
-                    className="nav-dropdown-item w-full"
-                    onClick={closeMobile}
-                  >
+                  <Link to={`/products${cat.id === 'all' ? '' : `?category=OZONE ${cat.id.toUpperCase()}`}`} className="nav-dropdown-item w-full" onClick={closeMobile} >
                     {cat.name}
                   </Link>
                 </li>

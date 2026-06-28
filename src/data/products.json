@@ -581,13 +581,13 @@
     ]
   },
   {
-    "id": "fast-4t-20w-40",
-    "name": "Fast 4T 20W 40",
+    "id": "ride-20w-40",
+    "name": "Ride 20W 40",
     "category": "OZONE AUTO",
     "vehicleType": "Two Wheeler",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/fast-4t-20w40.png",
+    "image": "/assets/images/automotive/ride-20w40.png",
     "description": "Ozone+ Fast 4T provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
     "specs": [
       {
