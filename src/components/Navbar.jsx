@@ -89,8 +89,19 @@ const Navbar = () => {
             <a href="javascript:void(0)" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
               Specialty Chemicals <span className="text-[0.8em] ml-1.5">&#9662;</span>
             </a>
-            <ul className="nav-dropdown">
+            {/* <ul className="nav-dropdown">
               <li><a href="/#chemicals" className="nav-dropdown-item w-full">Coming soon...</a></li>
+            </ul> */}
+            <ul className="nav-dropdown">
+              {[
+                { id: "coming-soon", name: "Coming Soon...", to: "/#chemicals" },
+              ].map((cat) => (
+                <li key={cat.id} className="border-b border-white/10 last:border-none">
+                  <Link to={cat.to} className="nav-dropdown-item w-full" onClick={closeMobile} >
+                    {cat.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
 
