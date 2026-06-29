@@ -267,14 +267,18 @@ const Home = () => {
           </div>
 
           <div id="chemicals">
-            <h3 className="brand-title reveal">special chemicals</h3>
+            <h3 className="brand-title reveal">Special Chemicals</h3>
             <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
-              <div className="product-card reveal seq-1 min-h-[250px] flex items-center justify-center bg-gradient-to-br from-brand-panel to-black" id="jito-coming-soon">
-                <div className="md:p-[30px] p-4 text-center">
-                  <h3 className="md:text-[2.2rem] text-[1.7rem] text-primary mb-2.5">Coming Soon</h3>
-                  <p className="md:text-[1.1rem] text-brand-muted">Our premium JITO product line is currently under development. Stay tuned for exciting updates!</p>
+              <Link to="/specialty-chemicals" className="bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-1">
+                <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary flex items-center justify-center bg-black/20">
+                  <img src="/assets/images/logo2.png" alt="JITO Specialty Chemicals" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 group-hover:scale-105" />
                 </div>
-              </div>
+                <div className="md:p-[30px] p-4">
+                  <span className="text-primary text-xs font-heading font-bold uppercase tracking-widest mb-2 block">JITO Brand</span>
+                  <h3 className="md:text-[1.4rem] text-lg mb-3">Specialty Chemicals</h3>
+                  <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Premium rust preventives, anti-corrosion compounds, and specialty surface treatment products engineered for industrial protection.</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
