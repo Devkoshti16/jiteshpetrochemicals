@@ -92,7 +92,7 @@ const ProductDetails = () => {
         <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 md:mb-6 font-body text-brand-muted text-[0.95rem] reveal">
           <Link to="/" className="text-brand-text hover:text-primary transition-colors">Home</Link>
           <span className="text-primary mx-1 lg:mx-2.5">/</span>
-          <Link to="/#products" className="text-brand-text hover:text-primary transition-colors">Lubricants</Link>
+          <Link to="/#lubricants" className="text-brand-text hover:text-primary transition-colors">Lubricants</Link>
           <span className="text-primary mx-1 lg:mx-2.5">/</span>
           <Link to={`/products?category=${product.category}`} className="text-brand-text hover:text-primary transition-colors capitalize">
             {product.category.replace('OZONE ', '').toLowerCase()}

@@ -230,60 +230,57 @@ const Home = () => {
       </section>
       {/* About Section End Here */}
 
-      {/* Products Section Start Here */}
-      <section id="products" className="section-padding bg-brand-main">
+      {/* Lubricants Products Section Start Here */}
+      <section id="lubricants" className="section-padding pb-0! bg-brand-main">
         <div className="container">
           <div className="text-center mb-[70px] reveal">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)]">Our <span className="text-primary">Brands & Products</span></h2>
             <div className="w-[60px] h-1 bg-primary mx-auto my-5"></div>
             <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>OZONE</strong> & <strong>JITO</strong>.</p>
           </div>
-          <div id="lubricants">
-            <h3 className="brand-title reveal">lubricants Categories</h3>
-            <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px] mb-20">
-              {[
-                { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
-                { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
-                { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'slider_metalwork.png' },
-                { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'slider_textile.png' },
+          <h3 className="brand-title reveal">lubricants Categories</h3>
+          <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
+            {[
+              { id: 'ozone-auto', title: 'Auto', desc: 'High-performance engine oils and automotive lubricants engineered for maximum engine life.', img: 'slider_automotive.png' },
+              { id: 'ozone-industrial', title: 'Industrial', desc: 'Hydraulic oils and compressor fluids perfectly suited for heavy manufacturing operations.', img: 'slider_industrial.png' },
+              { id: 'ozone-metalwork', title: 'Metalwork', desc: 'Premium cutting fluids and rust preventives designed for precision metalworking.', img: 'slider_metalwork.png' },
+              { id: 'ozone-textile', title: 'Textile', desc: 'Specialty loom oils and textile lubricants crafted for high-speed weaving machinery.', img: 'slider_textile.png' },
 
-              ].map((item, idx) => (
-                <Link
-                  to={`/products?category=${item.id.replace('-', ' ').toUpperCase()}`}
-                  key={item.id}
-                  className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`}
-                  id={item.id}
-                >
-                  <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
-                    <img src={`/assets/images/${item.img}`} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
-                  <div className="md:p-[30px] p-4">
-                    <h3 className="md:text-[1.4rem] text-lg mb-3">{item.title}</h3>
-                    <p className="md:text-[0.95rem] text-sm text-brand-muted">{item.desc}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div id="chemicals">
-            <h3 className="brand-title reveal">Special Chemicals</h3>
-            <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
-              <Link to="/specialty-chemicals" className="bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-1">
-                <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary flex items-center justify-center bg-black/20">
-                  <img src="/assets/images/logo2.png" alt="JITO Specialty Chemicals" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 group-hover:scale-105" />
+            ].map((item, idx) => (
+              <Link to={`/products?category=${item.id.replace('-', ' ').toUpperCase()}`} key={item.id} className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`} id={item.id} >
+                <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
+                  <img src={`/assets/images/${item.img}`} fetchpriority="high" alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="md:p-[30px] p-4">
-                  <span className="text-primary text-xs font-heading font-bold uppercase tracking-widest mb-2 block">JITO Brand</span>
-                  <h3 className="md:text-[1.4rem] text-lg mb-3">Specialty Chemicals</h3>
-                  <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Premium rust preventives, anti-corrosion compounds, and specialty surface treatment products engineered for industrial protection.</p>
+                  <h3 className="md:text-[1.4rem] text-lg mb-3">{item.title}</h3>
+                  <p className="md:text-[0.95rem] text-sm text-brand-muted">{item.desc}</p>
                 </div>
               </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      {/* Products Section End Here */}
+      {/* Lubricants Products Section End Here */}
+
+      {/* Special Chemicals Products Section Start Here */}
+      <section id="chemicals" className="section-padding bg-brand-main">
+        <div className="container">
+          <h3 className="brand-title reveal">Special Chemicals</h3>
+          <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
+            <Link to="/specialty-chemicals" className="bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-1">
+              <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary flex items-center justify-center bg-black/20">
+                <img src="/assets/images/logo2.png" alt="JITO Specialty Chemicals" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div className="md:p-[30px] p-4">
+                <span className="text-primary text-xs font-heading font-bold uppercase tracking-widest mb-2 block">JITO Brand</span>
+                <h3 className="md:text-[1.4rem] text-lg mb-3">Specialty Chemicals</h3>
+                <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Premium rust preventives, anti-corrosion compounds, and specialty surface treatment products engineered for industrial protection.</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* Special Chemicals Products Section End Here */}
 
       {/* Contact Section Start Here */}
       <section id="contact" className="section-padding bg-brand-panel border-t border-brand-border">

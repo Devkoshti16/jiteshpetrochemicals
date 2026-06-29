@@ -3,7 +3,7 @@ import { products as staticProducts } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
 // Filter specialty products directly from static data — no API needed
-const productsList = staticProducts.filter(p => p.category === 'OZONE SPECIALTY');
+const jitoSpecialtyProducts = staticProducts.filter(p => p.category === 'OZONE SPECIALTY');
 
 const SpecialtyChemicals = () => {
 
@@ -53,7 +53,7 @@ const SpecialtyChemicals = () => {
           </div>
 
           {/* Products Grid */}
-          {productsList.length === 0 ? (
+          {jitoSpecialtyProducts.length === 0 ? (
             <div className="text-center py-24 reveal">
               <div className="text-6xl mb-6">🧪</div>
               <h2 className="text-2xl font-heading font-bold text-white mb-3">Coming Soon</h2>
@@ -61,7 +61,7 @@ const SpecialtyChemicals = () => {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
-              {productsList.map((product, idx) => (
+              {jitoSpecialtyProducts.map((product, idx) => (
                 <ProductCard key={product.id} product={product} idx={idx} />
               ))}
             </div>
