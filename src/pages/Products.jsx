@@ -32,14 +32,7 @@ const Products = () => {
   }, [searchParams]);
 
 
-
   const [vehicleFilter, setVehicleFilter] = useState('All Vehicles');
-  const vehicleTypes = [
-    'Two Wheeler',
-    'Three Wheeler',
-    'Four Wheeler',
-    'Heavy Vehicle'
-  ];
 
   // Sync search params with state when category button is clicked
   const handleCategoryChange = (cat) => {
@@ -110,6 +103,10 @@ const Products = () => {
     p => p.vehicleType === 'Heavy Vehicle'
   );
 
+  const Others = filtered.filter(
+    p => p.vehicleType === 'Others'
+  );
+
   return (
     <main className="bg-brand-main">
       <section className="section-padding pt-[50px]! pb-24">
@@ -132,8 +129,7 @@ const Products = () => {
           {/* Category Filter Tabs */}
           <div className="flex flex-wrap md:gap-3 gap-2 justify-center lg:mb-16 mb-10 reveal">
             {categories.map(cat => (
-              <button key={cat} onClick={() => handleCategoryChange(cat)}
-                className={`md:py-2.5 py-1.5 sm:py-1.5 md:px-6 px-2 md:text-[0.85rem] text-[0.75rem] font-heading font-semibold uppercase tracking-wider border rounded-md transition-all duration-300 cursor-pointer ${activeCategory === cat ? 'bg-primary border-primary text-white shadow-[0_4px_12px_rgba(255,102,0,0.35)]' : 'bg-brand-panel/40 border-brand-border text-brand-muted hover:border-primary hover:text-white hover:bg-brand-panel/80'}`}>
+              <button key={cat} onClick={() => handleCategoryChange(cat)} className={`md:py-2.5 py-1.5 sm:py-1.5 md:px-6 px-2 md:text-[0.85rem] text-[0.75rem] font-heading font-semibold uppercase tracking-wider border rounded-md transition-all duration-300 cursor-pointer ${activeCategory === cat ? 'bg-primary border-primary text-white shadow-[0_4px_12px_rgba(255,102,0,0.35)]' : 'bg-brand-panel/40 border-brand-border text-brand-muted hover:border-primary hover:text-white hover:bg-brand-panel/80'}`}>
                 {cat === 'All' ? 'All Products' : cat.replace('OZONE ', '')}
               </button>
             ))}
@@ -175,8 +171,18 @@ const Products = () => {
                 Heavy vehicle Oils
               </h2>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6 mb-12">
                 {Hevay.map((product, idx) => (
+                  <ProductCard key={product.id} product={product} idx={idx} />
+                ))}
+              </div>
+
+              <h2 className="badge mb-8 md:text-xl text-lg">
+                Others
+              </h2>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
+                {Others.map((product, idx) => (
                   <ProductCard key={product.id} product={product} idx={idx} />
                 ))}
               </div>
