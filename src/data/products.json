@@ -730,6 +730,106 @@
     ]
   },
   {
+    "id": "coco-sure",
+    "name": "Coco Sure",
+    "category": "OZONE TEXTILE",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/textile/coco-sure.png",
+    "description": "Ozone+ CocoSure is Neat Cutting Oil designed for medium to severe cutting operations to metalized film cutting. The CocoSynth chemistry provides excellent lubrication to the cutter parts and makes the whole cutting system cooled down & provides smoother, well finished cutting operation without damaging the metalized film properties.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Straight Type Jari Cutter Oil"
+      },
+      {
+        "label": "Application",
+        "value": "Polyethylene based metalized film cutting operations where high performing lubricating and cooling properties are required."
+      },
+      {
+        "label": "Available Packs",
+        "value": "15.5L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Accelerates Heat Removal",
+        "description": "Accelerates heat removal from tool and work piece for optimal cooling.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Better Surface Finish",
+        "description": "Produces a better, smoother surface finish without damaging film properties.",
+        "icon": "shield"
+      },
+      {
+        "title": "Lowers Power",
+        "description": "Lowers power consumption during cutting operations.",
+        "icon": "clock"
+      },
+      {
+        "title": "Corrosion Protection",
+        "description": "Excellent residual corrosion protection for cutter parts.",
+        "icon": "shield"
+      },
+      {
+        "title": "Cooling Properties",
+        "description": "Excellent cooling properties that keep the whole system cooled down.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
+    "id": "kopra",
+    "name": "KOPRA",
+    "category": "OZONE TEXTILE",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/textile/kopra.png",
+    "description": "Ozone+ KOPRA is Neat Cutting Oil designed for severe cutting operations to metalized film cutting. Its Specialized chemistry provides excellent lubrication to the cutter parts, film formation, anti-wear & strong oxidative strength makes it perfectly suitable for heavy duty cutting and also provides whole cutting system cooled down & provides smoother, well finished cutting operation with providing extra gloss to the metalized film properties.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Straight Type Severe Jari Cutter Oil"
+      },
+      {
+        "label": "Application",
+        "value": "Specially formulated & recommended to use in all high-performance metalized film cutting operations with value added properties where severe blade cutting & cutting-edge lubricating and cooling & strong non oxidative strength is required."
+      },
+      {
+        "label": "Available Packs",
+        "value": "15.5L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Extra Gloss",
+        "description": "Provides extra gloss to the metalized film properties.",
+        "icon": "shield"
+      },
+      {
+        "title": "High Thermal Stability",
+        "description": "Provides high thermal stability during heavy duty operations.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Excellent Film Formation",
+        "description": "Provides excellent film formation & restricts metal-to-metal wearing.",
+        "icon": "shield"
+      },
+      {
+        "title": "Oxidative Strength",
+        "description": "Excellent oxidative strength and resistance to breakdown.",
+        "icon": "shield"
+      },
+      {
+        "title": "Cooling Properties",
+        "description": "Excellent cooling properties to keep the whole cutting system cooled down.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
     "id": "orecut-direct",
     "name": "streight cutting oils",
     "category": "OZONE METALWORK",
@@ -846,6 +946,206 @@
         "title": "Rust & Corrosion Resistance",
         "description": "Superior resistance to rust & corrosion and extends tool life.",
         "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "rust-guard-dry",
+    "name": "Rust Guard-Dry",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/rust-guard-dry.png",
+    "description": "Ozone+ Rust Guard-Dry is solvent-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film for indoor & outdoor storage. Providing touch drying protective film & can also be removed easily by a solvent wash after time.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Quick Dry Film Forming Solvent Based Rust Preventive (VG 11, 22)"
+      },
+      {
+        "label": "Application",
+        "value": "Ozone+ Rust Guard-Solvent is recommended for use where a non-corrosive metal protection, non-sticky and quick drying performance is required for short to medium term, indoor & outdoor storage. It’s applicable to all type metal surface during storage."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Quick Dry Barrier",
+        "description": "A Quick Dry thin protective non-corrosive barrier.",
+        "icon": "shield"
+      },
+      {
+        "title": "Long Storage Protection",
+        "description": "Comparatively long duration for indoor & outdoor storage.",
+        "icon": "clock"
+      },
+      {
+        "title": "Easy Removal",
+        "description": "Easily washed out after time.",
+        "icon": "shield"
+      },
+      {
+        "title": "Flexible Film Size",
+        "description": "Flexible for the Film forming size according to weather conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Non-Volatile",
+        "description": "Non-Volatile formulation.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
+    "id": "ore-grind",
+    "name": "Ore-Grind",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/ore-grind.png",
+    "description": "Ozone+ Ore-Grind is neat type oil designed for medium to severe grinding operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. Its thermally stable & comprehensive chemistry provides excellent mist control and provides high degree of surface finish.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Straight or Neat Type Non-Staining Grinding Oil (VG 32)"
+      },
+      {
+        "label": "Application",
+        "value": "Ore Grind is recommended to use in severe grinding applications where high degree of surface finish & mist control is required (ferrous and non-ferrous metals). Applicable to all type of grinding like Belt grinding, Centreless Grinding, Creep Feed Grinding, Flute grinding etc."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Accelerates Heat Removal",
+        "description": "Accelerates heat removal from tool and work piece.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Better Surface Finish",
+        "description": "Produces better surface finish.",
+        "icon": "shield"
+      },
+      {
+        "title": "Non-Staining",
+        "description": "Non-Staining formula.",
+        "icon": "shield"
+      },
+      {
+        "title": "Excellent Cooling",
+        "description": "Excellent cooling properties.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Low Foaming",
+        "description": "Low Foaming tendency.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "rust-guard-ol",
+    "name": "Rust Guard-OL",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/rust-guard-ol.png",
+    "description": "Ozone+ Rust Guard-OL is oil-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film on the metal surface for indoor & outdoor storage & it can also be removed easily by a solvent wash after time.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Film Forming Oil Based Rust Preventive (VG 11, 22)"
+      },
+      {
+        "label": "Application",
+        "value": "Ozone+ Rust Guard-OL is recommended for use where a non-corrosive metal protection is required for indoor & outdoor storage. It’s applicable to all type metal surface during storage."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Non-Corrosive Barrier",
+        "description": "A thin protective non-corrosive barrier.",
+        "icon": "shield"
+      },
+      {
+        "title": "Long Storage Protection",
+        "description": "Comparatively long duration for indoor & outdoor storage.",
+        "icon": "clock"
+      },
+      {
+        "title": "Easy Removal",
+        "description": "Easily washed out after time.",
+        "icon": "shield"
+      },
+      {
+        "title": "Flexible Film Size",
+        "description": "Flexible for the Film forming size according to weather conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Non-Volatile",
+        "description": "Non-Volatile formulation.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
+    "id": "tapp-ese",
+    "name": "Tapp Ese",
+    "category": "OZONE METALWORK",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/metalwork/tapp-ese.png",
+    "description": "Ozone+ Tapp Ese is Neat Oil designed for medium to severe threading and drilling operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. It helps severe machining operations drive smoother and hassle-free.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Neat Tapping(Threading) & Drilling Oil (VG 32, 100, 300, 450)"
+      },
+      {
+        "label": "Application",
+        "value": "OreCut Tapp Ese is recommended to use in severe machining and tapping (ferrous and non-ferrous metals). More particularly suitable for precision heavy duty tapping & drilling process, well finished thread surface."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Accelerates Heat Removal",
+        "description": "Accelerates heat removal from tool and work piece.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Better Surface Finish",
+        "description": "Produces better surface finish.",
+        "icon": "shield"
+      },
+      {
+        "title": "Lowers Power",
+        "description": "Lowers power consumption.",
+        "icon": "clock"
+      },
+      {
+        "title": "Corrosion Protection",
+        "description": "Excellent residual corrosion protection.",
+        "icon": "shield"
+      },
+      {
+        "title": "Excellent Cooling",
+        "description": "Excellent cooling properties.",
+        "icon": "thermometer"
       }
     ]
   },
