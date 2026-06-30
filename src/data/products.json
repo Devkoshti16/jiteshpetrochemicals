@@ -971,7 +971,7 @@
   },
   {
     "id": "chain-lub-prime",
-    "name": "Hight temperature chain oil",
+    "name": "High temperature chain oil",
     "category": "OZONE INDUSTRIAL",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -1010,7 +1010,7 @@
     ]
   },
   {
-    "id": "therm-ht",
+    "id": "heat-transfer-oils",
     "name": "heat transfer oils",
     "category": "OZONE INDUSTRIAL",
     "price": "Contact for Price",
@@ -1045,7 +1045,7 @@
     ]
   },
   {
-    "id": "static",
+    "id": "hydraulic-oils",
     "name": "hydraulic oils",
     "category": "OZONE INDUSTRIAL",
     "price": "Contact for Price",
