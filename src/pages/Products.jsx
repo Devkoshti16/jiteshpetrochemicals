@@ -113,14 +113,14 @@ const Products = () => {
         <div className="container">
 
           {/* Header */}
-          <div className="text-center mb-[20px] sm:mb-[40px] md:mb-[60px] reveal">
+          <div className="text-center mb-[10px] sm:mb-[20px] md:mb-[30px] reveal">
             <span className="text-primary font-heading font-semibold text-xs tracking-[0.2em] uppercase mb-2 block">
               Flagship Lubricants
             </span>
-            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-heading font-extrabold mb-4 uppercase tracking-wide">
+            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-heading font-extrabold mb-4 tracking-wide">
               Our <span className="text-primary">Products</span>
             </h1>
-            <div className="w-16 h-[3px] bg-gradient-to-r from-primary to-transparent mx-auto mb-6"></div>
+            <div className="w-[40%] h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6"></div>
             <p className="text-brand-muted md:text-[1.1rem] text-[0.9rem] lg:max-w-[620px] md:max-w-[480px] sm:max-w-[440px] max-w-[400px] mx-auto leading-relaxed">
               Explore our complete range of premium OZONE lubricants engineered for every automotive and industrial need.
             </p>
@@ -137,7 +137,7 @@ const Products = () => {
 
           {activeCategory === 'OZONE AUTO' ? (
             <>
-              <h2 className="badge mb-8 md:text-xl text-lg">
+              <h2 className="badge mb-8 md:text-xl text-lg reveal">
                 Two Wheeler Oils
               </h2>
 
@@ -147,7 +147,7 @@ const Products = () => {
                 ))}
               </div>
 
-              <h2 className="badge mb-8 md:text-xl text-lg">
+              <h2 className="badge mb-8 md:text-xl text-lg reveal">
                 Three Wheeler Oils
               </h2>
 
@@ -157,7 +157,7 @@ const Products = () => {
                 ))}
               </div>
 
-              <h2 className="badge mb-8 md:text-xl text-lg">
+              <h2 className="badge mb-8 md:text-xl text-lg reveal">
                 Four Wheeler Oils
               </h2>
 
@@ -167,7 +167,7 @@ const Products = () => {
                 ))}
               </div>
 
-              <h2 className="badge mb-8 md:text-xl text-lg">
+              <h2 className="badge mb-8 md:text-xl text-lg reveal">
                 Heavy vehicle Oils
               </h2>
 
@@ -177,7 +177,7 @@ const Products = () => {
                 ))}
               </div>
 
-              <h2 className="badge mb-8 md:text-xl text-lg">
+              <h2 className="badge mb-8 md:text-xl text-lg reveal">
                 Others
               </h2>
 
