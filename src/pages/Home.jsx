@@ -231,7 +231,7 @@ const Home = () => {
       {/* About Section End Here */}
 
       {/* Lubricants Products Section Start Here */}
-      <section id="lubricants" className="section-padding pb-0! bg-brand-main">
+      <section className="section-padding pb-0! bg-brand-main">
         <div className="container">
           <div className="text-center mb-[70px] reveal">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)]">Our <span className="text-primary">Brands & Products</span></h2>
@@ -249,7 +249,7 @@ const Home = () => {
             ].map((item, idx) => (
               <Link to={`/products?category=${item.id.replace('-', ' ').toUpperCase()}`} key={item.id} className={`bg-brand-panel border border-brand-border transition-all duration-300 relative group block hover:border-primary hover:shadow-[0_15px_30px_rgba(255,102,0,0.1)] reveal seq-${(idx % 3) + 1}`} id={item.id} >
                 <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
-                  <img src={`/assets/images/${item.img}`} fetchpriority="high" alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={`/assets/images/${item.img}`} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="md:p-[30px] p-4">
                   <h3 className="md:text-[1.4rem] text-lg mb-3">{item.title}</h3>
@@ -263,7 +263,7 @@ const Home = () => {
       {/* Lubricants Products Section End Here */}
 
       {/* Special Chemicals Products Section Start Here */}
-      <section id="chemicals" className="section-padding bg-brand-main">
+      <section className="section-padding bg-brand-main">
         <div className="container">
           <h3 className="brand-title reveal">Special Chemicals</h3>
           <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">

@@ -66,7 +66,7 @@ const Navbar = () => {
 
           <li className={`relative group ${activeDropdown === 'lubricants' ? 'active' : ''}`}>
             <a href="javascript:void(0)" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'lubricants')}>
-              Lubricants <span className="text-[0.8em] ml-1.5">&#9662;</span>
+              Lubricants <span className="ml-1.5 inline-block transition-transform duration-300 group-hover:rotate-180">&#9662;</span>
             </a>
             <ul className="nav-dropdown">
               {[
@@ -86,13 +86,13 @@ const Navbar = () => {
           </li>
 
           <li className={`relative group ${activeDropdown === 'chemicals' ? 'active' : ''}`}>
-            <a href="javascript:void(0)" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
-              Specialty Chemicals <span className="text-[0.8em] ml-1.5">&#9662;</span>
+            <a href="/specialty-chemicals" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
+              Specialty Chemicals
             </a>
             {/* <ul className="nav-dropdown">
               <li><a href="/#chemicals" className="nav-dropdown-item w-full">Coming soon...</a></li>
             </ul> */}
-            <ul className="nav-dropdown">
+            {/* <ul className="nav-dropdown">
               {[
                 { id: "coming-soon", name: "Coming Soon...", to: "/#chemicals" },
               ].map((cat) => (
@@ -102,7 +102,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </li>
 
           <li className="lg:hidden"><Link to="/#contact" className="nav-link" onClick={closeMobile}>Get Quote</Link></li>

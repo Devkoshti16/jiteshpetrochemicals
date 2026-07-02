@@ -1,62 +1,248 @@
 [
   {
-    "id": "trans-multi-a",
-    "name": "Trans Multi-A",
+    "id": "fast-4t-scootec",
+    "name": "Semi Synthetic Scooter Engine Oil",
     "category": "OZONE AUTO",
-    "vehicleType": "Four Wheeler",
+    "vehicleType": "Two Wheeler",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/trans-multi-a.png",
-    "description": "Ozone+ Trans Multi-A is specially formulated from highly refined mineral oils that impart thermo-oxidative stability, wearing, dispersancy, foaming and desired friction characteristics. Extremely high viscosity index ensures adequate low temperature fluidity, assists in good cold start performance and good foam control leads to smooth gear shifting.",
+    "image": "/assets/images/automotive/fast-4t-scootec.png",
+    "description": "High performance 4-stroke engine oil specially formulated for gearless scooters and bikes with dry clutch applications. Provides excellent film protection under high stress and temperature conditions.",
     "specs": [
       {
-        "label": "Type",
-        "value": "Transmission Fluid"
-      },
-      {
         "label": "Grade",
-        "value": "Type A / Suffix A"
+        "value": "SAE 10W-30"
       },
       {
-        "label": "Application",
-        "value": "Automatic Transmissions, Power Steering, Synchromesh Manual Transmissions, LCVs, Trucks, Buses"
+        "label": "API",
+        "value": "SL"
+      },
+      {
+        "label": "JASO",
+        "value": "MB"
       },
       {
         "label": "Available Packs",
-        "value": "500ml, 1 Ltr, 5 Ltrs, 210 Ltrs"
+        "value": "800ml, 210L"
       }
     ],
     "features": [
       {
-        "title": "Smooth Clutch Engagement",
-        "description": "Provides smooth, chatter-free clutch engagement ensuring comfortable and reliable driving experience under all conditions.",
+        "title": "Smooth Scooter Performance",
+        "description": "Specially designed for automatic gearless scooters.",
         "icon": "shield"
       },
       {
-        "title": "Thermo-Oxidative Stability",
-        "description": "Excellent thermo-oxidative stability prevents fluid breakdown at high temperatures, extending fluid and component life.",
+        "title": "Deposit Control",
+        "description": "Controls sludge and harmful deposits.",
         "icon": "thermometer"
       },
       {
-        "title": "Minimum Power Loss",
-        "description": "Ensures smooth operations with minimum power loss, optimizing the efficiency of the transmission system.",
+        "title": "Long Engine Life",
+        "description": "Ensures longer life of engine components.",
         "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "fast-4t-10w30",
+    "name": "Semi Synthetic Bike Engine Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Two Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/fast-4t-10w30.png",
+    "description": "Fuel-efficient motorcycle engine oil formulated for bikes and scooters with wet clutch systems. Provides superior wear protection, engine cleanliness and smooth clutch operation.",
+    "specs": [
+      {
+        "label": "Grade",
+        "value": "SAE 10W-30"
       },
       {
-        "title": "Keeps System Clean",
-        "description": "Minimizes formation of sludge and varnish, maintaining the system clean and efficient over extended service periods.",
+        "label": "API",
+        "value": "SL"
+      },
+      {
+        "label": "JASO",
+        "value": "MA"
+      },
+      {
+        "label": "Available Packs",
+        "value": "900ml, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Wet Clutch Stability",
+        "description": "Excellent clutch friction stability in severe conditions.",
         "icon": "shield"
       },
       {
-        "title": "Anti-Rust Protection",
-        "description": "Protects all internal parts against rusting even during idle periods, ensuring long-term reliability and durability.",
+        "title": "Engine Cleanliness",
+        "description": "Prevents sludge, deposits and varnish formation.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Gear Protection",
+        "description": "Enhanced protection for transmission gears.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "ride-20w-40",
+    "name": "4-Strock Bike Engine Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Two Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/ride-20w40.png",
+    "description": "Ozone+ Fast 4T provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "4-Stroke Motorcycle Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 20W-40 / API SL & below"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "5.5 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "120"
+      },
+      {
+        "label": "TBN",
+        "value": "7.9 mg KOH/gm"
+      },
+      {
+        "label": "Available Packs",
+        "value": "900ml, 1 Liter, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Wet Clutch Friction Stability",
+        "description": "Provides excellent friction stability in severe applications, ensuring smoother clutch operations without slippage.",
+        "icon": "shield"
+      },
+      {
+        "title": "Enhanced Gear Wear Protection",
+        "description": "Advanced chemistry delivers robust component protection for transmission gears, extending overall engine component life.",
+        "icon": "shield"
+      },
+      {
+        "title": "Prevents Oil Thickening",
+        "description": "Controls harmful varnish and oil thickening under high heat, effectively promoting long-term engine cleanliness.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
+    "id": "cruzer-jked-15w-50",
+    "name": "Synthetic Crusier Bike Engine Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Two Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/cruzer-jked-15w50.png",
+    "description": "Ozone+ Cruzer Jked is a fully synthetic cruiser bike engine oil specially developed with PEST technology for high-performance cruiser bike engines. It ensures superior prevention against clutch slippage, delivers excellent shear stability, and provides smoother performance under harsh operating conditions.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Fully Synthetic Cruiser Bike Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 15W50 / API SN / JASO MA 2"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "value": "18.5 mm²/s"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "150"
+      },
+      {
+        "label": "TBN",
+        "value": "9.7 mg KOH/gm"
+      },
+      {
+        "label": "Available Packs",
+        "value": "2.5 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Throttle Thrill Experience",
+        "description": "Engineered specifically for cruiser bikes to maximize power performance and provide an excellent throttle response.",
+        "icon": "clock"
+      },
+      {
+        "title": "High-Temperature Film Protection",
+        "description": "Forms an excellent protective layer that guards engine and gear components against wear during high-temperature operations.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Sludge & Varnish Control",
+        "description": "Keeps engine systems clean and effectively controls harmful deposit build-up, enabling lower emission levels.",
         "icon": "shield"
       }
     ]
   },
   {
+    "id": "cng-super-2t",
+    "name": "2 Strock Engine Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Three Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/cng-super-2t.png",
+    "description": "Semi-synthetic, low-smoke two-stroke engine oil for 2-wheelers, 3-wheelers and outboard boats. Enhances engine performance while minimizing deposits and spark plug fouling.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Two Stroke Engine Oil"
+      },
+      {
+        "label": "API",
+        "value": "TC"
+      },
+      {
+        "label": "JASO",
+        "value": "FC"
+      },
+      {
+        "label": "Available Packs",
+        "value": "500ml, 1L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Low Smoke Formula",
+        "description": "Environment-friendly formulation with very low smoke.",
+        "icon": "shield"
+      },
+      {
+        "title": "Cleaner Engine",
+        "description": "Reduces deposits and ring sticking.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Enhanced Power",
+        "description": "Improves acceleration and instant power delivery.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
     "id": "turbo-mini",
-    "name": "Turbo Mini",
+    "name": "Mini Truck Diesel Engine Oil",
     "category": "OZONE AUTO",
     "vehicleType": "Three Wheeler",
     "price": "Contact for Price",
@@ -110,328 +296,8 @@
     ]
   },
   {
-    "id": "gear-multi-80w-90",
-    "name": "Gear Multi 80W-90",
-    "category": "OZONE AUTO",
-    "vehicleType": "Four Wheeler",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/gear-multi-80w90.png",
-    "description": "Premium grade multigrade gear oil providing excellent lubrication for automotive transmissions, axles and final drives. Offers superior extreme pressure performance and protection against oxidation, rust and corrosion.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Gear Oil"
-      },
-      {
-        "label": "Grade",
-        "value": "80W-90"
-      },
-      {
-        "label": "Application",
-        "value": "Manual Transmission, Hypoid, Spiral Bevel & Worm Gear Axles"
-      },
-      {
-        "label": "Available Packs",
-        "value": "1L, 5L, 10L, 20L, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Excellent Gear Shift",
-        "description": "Smooth gear shifting and quiet transmission operation.",
-        "icon": "shield"
-      },
-      {
-        "title": "Extreme Pressure Protection",
-        "description": "Protects gears under heavy load and extreme operating conditions.",
-        "icon": "shield"
-      },
-      {
-        "title": "Low Temperature Fluidity",
-        "description": "Maintains excellent lubrication even at lower temperatures.",
-        "icon": "thermometer"
-      }
-    ]
-  },
-  {
-    "id": "fast-4t-scootec",
-    "name": "FAST 4T Scootec",
-    "category": "OZONE AUTO",
-    "vehicleType": "Two Wheeler",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/fast-4t-scootec.png",
-    "description": "High performance 4-stroke engine oil specially formulated for gearless scooters and bikes with dry clutch applications. Provides excellent film protection under high stress and temperature conditions.",
-    "specs": [
-      {
-        "label": "Grade",
-        "value": "SAE 10W-30"
-      },
-      {
-        "label": "API",
-        "value": "SL"
-      },
-      {
-        "label": "JASO",
-        "value": "MB"
-      },
-      {
-        "label": "Available Packs",
-        "value": "800ml, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Smooth Scooter Performance",
-        "description": "Specially designed for automatic gearless scooters.",
-        "icon": "shield"
-      },
-      {
-        "title": "Deposit Control",
-        "description": "Controls sludge and harmful deposits.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Long Engine Life",
-        "description": "Ensures longer life of engine components.",
-        "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "fast-4t-10w30",
-    "name": "Fast 4T 10W-30",
-    "category": "OZONE AUTO",
-    "vehicleType": "Two Wheeler",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/fast-4t-10w30.png",
-    "description": "Fuel-efficient motorcycle engine oil formulated for bikes and scooters with wet clutch systems. Provides superior wear protection, engine cleanliness and smooth clutch operation.",
-    "specs": [
-      {
-        "label": "Grade",
-        "value": "SAE 10W-30"
-      },
-      {
-        "label": "API",
-        "value": "SL"
-      },
-      {
-        "label": "JASO",
-        "value": "MA"
-      },
-      {
-        "label": "Available Packs",
-        "value": "900ml, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Wet Clutch Stability",
-        "description": "Excellent clutch friction stability in severe conditions.",
-        "icon": "shield"
-      },
-      {
-        "title": "Engine Cleanliness",
-        "description": "Prevents sludge, deposits and varnish formation.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Gear Protection",
-        "description": "Enhanced protection for transmission gears.",
-        "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "desart-cool",
-    "name": "Desart Cool",
-    "category": "OZONE AUTO",
-    "vehicleType": "Four Wheeler",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/desart-cool.png",
-    "description": "Green type engine coolant concentrate designed for passenger cars, tractors, LCVs and HCVs. Provides excellent cooling performance and protection against rust and corrosion.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Engine Coolant Concentrate"
-      },
-      {
-        "label": "Color",
-        "value": "Green"
-      },
-      {
-        "label": "Mix Ratio",
-        "value": "1:2 (Coolant : Water)"
-      },
-      {
-        "label": "Available Packs",
-        "value": "1L, 5L, 10L, 20L, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Excellent Cooling",
-        "description": "Provides efficient heat transfer and cooling.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Rust Protection",
-        "description": "Protects the cooling system from corrosion and rust.",
-        "icon": "shield"
-      },
-      {
-        "title": "Lower Maintenance",
-        "description": "Keeps cooling system clean and reduces maintenance cost.",
-        "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "cng-super-2t",
-    "name": "CNG Super 2T",
-    "category": "OZONE AUTO",
-    "vehicleType": "Two Wheeler",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/cng-super-2t.png",
-    "description": "Semi-synthetic, low-smoke two-stroke engine oil for 2-wheelers, 3-wheelers and outboard boats. Enhances engine performance while minimizing deposits and spark plug fouling.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Two Stroke Engine Oil"
-      },
-      {
-        "label": "API",
-        "value": "TC"
-      },
-      {
-        "label": "JASO",
-        "value": "FC"
-      },
-      {
-        "label": "Available Packs",
-        "value": "500ml, 1L, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Low Smoke Formula",
-        "description": "Environment-friendly formulation with very low smoke.",
-        "icon": "shield"
-      },
-      {
-        "title": "Cleaner Engine",
-        "description": "Reduces deposits and ring sticking.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Enhanced Power",
-        "description": "Improves acceleration and instant power delivery.",
-        "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "gear-multi-85w-140",
-    "name": "Gear Multi 85W-140",
-    "category": "OZONE AUTO",
-    "vehicleType": "Hevy",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/gear-multi-85w140.png",
-    "description": "Ozone+ Gear Multi 85W-140 is a premium multigrade gear oil engineered to provide excellent lubrication across a wide range of automotive transmissions, axles, and final drives. It delivers outstanding extreme pressure capabilities and protects critical components from oxidative degradation, rust, and corrosion.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Premium Multigrade Gear Oil"
-      },
-      {
-        "label": "Viscosity Grade",
-        "value": "SAE 85W-140"
-      },
-      {
-        "label": "Available Packs",
-        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
-      }
-    ],
-    "features": [
-      {
-        "title": "Extended Drain Intervals",
-        "description": "Advanced formula resists oil degradation, significantly extending standard oil change intervals.",
-        "icon": "clock"
-      },
-      {
-        "title": "Extreme Pressure Properties",
-        "description": "Provides exceptional film strength and anti-foaming properties to shield heavily loaded gears.",
-        "icon": "shield"
-      },
-      {
-        "title": "Smooth Transmission Performance",
-        "description": "Enables excellent gear shifting capabilities and ensures quiet, reliable transmission operations.",
-        "icon": "clock"
-      },
-      {
-        "title": "Low Temperature Fluidity",
-        "description": "Maintains good fluidity at lower temperatures while preserving strong seal capability and extreme shear stability.",
-        "icon": "thermometer"
-      }
-    ]
-  },
-  {
-    "id": "gear-ep-140",
-    "name": "Gear EP 140",
-    "category": "OZONE AUTO",
-    "vehicleType": "Heavy Vehicle",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/gear-ep-140.png",
-    "description": "Ozone+ Gear EP 140 is a high-performance monograde extreme pressure gear oil formulated from superior base stocks with exceptional thermal and chemical stability. Recommended for passenger cars, buses, tractors, and trucks requiring API GL-4 level protection.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Monograde Extreme Pressure Gear Oil"
-      },
-      {
-        "label": "Grade",
-        "value": "SAE 140 / API GL-4"
-      },
-      {
-        "label": "Kinematic Viscosity @ 100°C",
-        "value": "30.6 mm²/s"
-      },
-      {
-        "label": "Viscosity Index",
-        "value": "93"
-      },
-      {
-        "label": "Available Packs",
-        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
-      }
-    ],
-    "features": [
-      {
-        "title": "Exceptional Load Capacity",
-        "description": "Imparts exceptional load carrying ability specifically designed for hypoid, spiral bevel, and worm gear systems.",
-        "icon": "shield"
-      },
-      {
-        "title": "Severe Stress Resilience",
-        "description": "Delivers excellent performance under severe operating stress, heavy load environments, and lower temperatures.",
-        "icon": "shield"
-      },
-      {
-        "title": "Foam & Rust Resistance",
-        "description": "Offers good resistance to foaming and protects vital internal components against rust and corrosion.",
-        "icon": "thermometer"
-      }
-    ]
-  },
-  {
     "id": "krit-5w30",
-    "name": "Krit 5W30",
+    "name": "Semi Synthetic Car Engine Oil",
     "vehicleType": "Four Wheeler",
     "category": "OZONE AUTO",
     "price": "Contact for Price",
@@ -479,10 +345,156 @@
     ]
   },
   {
-    "id": "gear-ep-90",
-    "name": "Gear EP 90",
+    "id": "gear-multi-80w-90",
+    "name": "Multigrade Gear Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Four Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/gear-multi-80w90.png",
+    "description": "Premium grade multigrade gear oil providing excellent lubrication for automotive transmissions, axles and final drives. Offers superior extreme pressure performance and protection against oxidation, rust and corrosion.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Gear Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "80W-90"
+      },
+      {
+        "label": "Application",
+        "value": "Manual Transmission, Hypoid, Spiral Bevel & Worm Gear Axles"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1L, 5L, 10L, 20L, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Excellent Gear Shift",
+        "description": "Smooth gear shifting and quiet transmission operation.",
+        "icon": "shield"
+      },
+      {
+        "title": "Extreme Pressure Protection",
+        "description": "Protects gears under heavy load and extreme operating conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Low Temperature Fluidity",
+        "description": "Maintains excellent lubrication even at lower temperatures.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
+    "id": "trans-multi-a",
+    "name": "ATF Type A",
+    "category": "OZONE AUTO",
+    "vehicleType": "Four Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/trans-multi-a.png",
+    "description": "Ozone+ Trans Multi-A is specially formulated from highly refined mineral oils that impart thermo-oxidative stability, wearing, dispersancy, foaming and desired friction characteristics. Extremely high viscosity index ensures adequate low temperature fluidity, assists in good cold start performance and good foam control leads to smooth gear shifting.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Transmission Fluid"
+      },
+      {
+        "label": "Grade",
+        "value": "Type A / Suffix A"
+      },
+      {
+        "label": "Application",
+        "value": "Automatic Transmissions, Power Steering, Synchromesh Manual Transmissions, LCVs, Trucks, Buses"
+      },
+      {
+        "label": "Available Packs",
+        "value": "500ml, 1 Ltr, 5 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Smooth Clutch Engagement",
+        "description": "Provides smooth, chatter-free clutch engagement ensuring comfortable and reliable driving experience under all conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Thermo-Oxidative Stability",
+        "description": "Excellent thermo-oxidative stability prevents fluid breakdown at high temperatures, extending fluid and component life.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Minimum Power Loss",
+        "description": "Ensures smooth operations with minimum power loss, optimizing the efficiency of the transmission system.",
+        "icon": "clock"
+      },
+      {
+        "title": "Keeps System Clean",
+        "description": "Minimizes formation of sludge and varnish, maintaining the system clean and efficient over extended service periods.",
+        "icon": "shield"
+      },
+      {
+        "title": "Anti-Rust Protection",
+        "description": "Protects all internal parts against rusting even during idle periods, ensuring long-term reliability and durability.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
+    "id": "gear-multi-85w-140",
+    "name": "Gear Multi 85W-140",
     "category": "OZONE AUTO",
     "vehicleType": "Heavy Vehicle",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/gear-multi-85w140.png",
+    "description": "Ozone+ Gear Multi 85W-140 is a premium multigrade gear oil engineered to provide excellent lubrication across a wide range of automotive transmissions, axles, and final drives. It delivers outstanding extreme pressure capabilities and protects critical components from oxidative degradation, rust, and corrosion.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Premium Multigrade Gear Oil"
+      },
+      {
+        "label": "Viscosity Grade",
+        "value": "SAE 85W-140"
+      },
+      {
+        "label": "Available Packs",
+        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Extended Drain Intervals",
+        "description": "Advanced formula resists oil degradation, significantly extending standard oil change intervals.",
+        "icon": "clock"
+      },
+      {
+        "title": "Extreme Pressure Properties",
+        "description": "Provides exceptional film strength and anti-foaming properties to shield heavily loaded gears.",
+        "icon": "shield"
+      },
+      {
+        "title": "Smooth Transmission Performance",
+        "description": "Enables excellent gear shifting capabilities and ensures quiet, reliable transmission operations.",
+        "icon": "clock"
+      },
+      {
+        "title": "Low Temperature Fluidity",
+        "description": "Maintains good fluidity at lower temperatures while preserving strong seal capability and extreme shear stability.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
+    "id": "gear-ep-90",
+    "name": "Extreme Pressure Gear Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Others",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/gear-ep-90.png",
@@ -528,210 +540,102 @@
     ]
   },
   {
-    "id": "cruzer-jked-15w-50",
-    "name": "Cruzer Jked 15W 50",
+    "id": "gear-ep-140",
+    "name": "Extreme Pressure Gear Oil",
     "category": "OZONE AUTO",
-    "vehicleType": "Two Wheeler",
+    "vehicleType": "Others",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/cruzer-jked-15w50.png",
-    "description": "Ozone+ Cruzer Jked is a fully synthetic cruiser bike engine oil specially developed with PEST technology for high-performance cruiser bike engines. It ensures superior prevention against clutch slippage, delivers excellent shear stability, and provides smoother performance under harsh operating conditions.",
+    "image": "/assets/images/automotive/gear-ep-140.png",
+    "description": "Ozone+ Gear EP 140 is a high-performance monograde extreme pressure gear oil formulated from superior base stocks with exceptional thermal and chemical stability. Recommended for passenger cars, buses, tractors, and trucks requiring API GL-4 level protection.",
     "specs": [
       {
         "label": "Type",
-        "value": "Fully Synthetic Cruiser Bike Engine Oil"
+        "value": "Monograde Extreme Pressure Gear Oil"
       },
       {
         "label": "Grade",
-        "value": "SAE 15W50 / API SN / JASO MA 2"
+        "value": "SAE 140 / API GL-4"
       },
       {
         "label": "Kinematic Viscosity @ 100°C",
-        "value": "18.5 mm²/s"
+        "value": "30.6 mm²/s"
       },
       {
         "label": "Viscosity Index",
-        "value": "150"
-      },
-      {
-        "label": "TBN",
-        "value": "9.7 mg KOH/gm"
+        "value": "93"
       },
       {
         "label": "Available Packs",
-        "value": "2.5 Ltrs, 210 Ltrs"
+        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
       }
     ],
     "features": [
       {
-        "title": "Throttle Thrill Experience",
-        "description": "Engineered specifically for cruiser bikes to maximize power performance and provide an excellent throttle response.",
-        "icon": "clock"
-      },
-      {
-        "title": "High-Temperature Film Protection",
-        "description": "Forms an excellent protective layer that guards engine and gear components against wear during high-temperature operations.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Sludge & Varnish Control",
-        "description": "Keeps engine systems clean and effectively controls harmful deposit build-up, enabling lower emission levels.",
+        "title": "Exceptional Load Capacity",
+        "description": "Imparts exceptional load carrying ability specifically designed for hypoid, spiral bevel, and worm gear systems.",
         "icon": "shield"
+      },
+      {
+        "title": "Severe Stress Resilience",
+        "description": "Delivers excellent performance under severe operating stress, heavy load environments, and lower temperatures.",
+        "icon": "shield"
+      },
+      {
+        "title": "Foam & Rust Resistance",
+        "description": "Offers good resistance to foaming and protects vital internal components against rust and corrosion.",
+        "icon": "thermometer"
       }
     ]
   },
   {
-    "id": "ride-20w-40",
-    "name": "Ride 20W 40",
+    "id": "desart-cool",
+    "name": "Radiator Coolant",
     "category": "OZONE AUTO",
-    "vehicleType": "Two Wheeler",
+    "vehicleType": "Others",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/automotive/ride-20w40.png",
-    "description": "Ozone+ Fast 4T provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
+    "image": "/assets/images/automotive/desart-cool.png",
+    "description": "Green type engine coolant concentrate designed for passenger cars, tractors, LCVs and HCVs. Provides excellent cooling performance and protection against rust and corrosion.",
     "specs": [
       {
         "label": "Type",
-        "value": "4-Stroke Motorcycle Engine Oil"
+        "value": "Engine Coolant Concentrate"
       },
       {
-        "label": "Grade",
-        "value": "SAE 20W-40 / API SL & below"
+        "label": "Color",
+        "value": "Green"
       },
       {
-        "label": "Kinematic Viscosity @ 100°C",
-        "value": "5.5 mm²/s"
-      },
-      {
-        "label": "Viscosity Index",
-        "value": "120"
-      },
-      {
-        "label": "TBN",
-        "value": "7.9 mg KOH/gm"
+        "label": "Mix Ratio",
+        "value": "1:2 (Coolant : Water)"
       },
       {
         "label": "Available Packs",
-        "value": "900ml, 1 Liter, 210 Ltrs"
+        "value": "1L, 5L, 10L, 20L, 210L"
       }
     ],
     "features": [
       {
-        "title": "Wet Clutch Friction Stability",
-        "description": "Provides excellent friction stability in severe applications, ensuring smoother clutch operations without slippage.",
-        "icon": "shield"
-      },
-      {
-        "title": "Enhanced Gear Wear Protection",
-        "description": "Advanced chemistry delivers robust component protection for transmission gears, extending overall engine component life.",
-        "icon": "shield"
-      },
-      {
-        "title": "Prevents Oil Thickening",
-        "description": "Controls harmful varnish and oil thickening under high heat, effectively promoting long-term engine cleanliness.",
-        "icon": "thermometer"
-      }
-    ]
-  },
-  {
-    "id": "fineknit",
-    "name": " FineKnit",
-    "category": "OZONE TEXTILE",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/textile/finknit.png",
-    "description": "FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Washable Circular Knitting Machine Oil"
-      },
-      {
-        "label": "Application",
-        "value": "High-Speed Needle Knitting Machines, Circular Knitting Machines, Knitting Needles & Full Fashion Machines"
-      },
-      {
-        "label": "Viscosity Grade Options",
-        "value": "22, 32, 46"
-      },
-      {
-        "label": "Viscosity Index",
-        "value": ">110"
-      },
-      {
-        "label": "Available Packs",
-        "value": "20 Ltrs, 50 Ltrs, 210 Ltrs"
-      }
-    ],
-    "features": [
-      {
-        "title": "Stain-Free Processing",
-        "description": "Excellent washability / crushability provides stain-free processing for downstream textile manufacturing.",
-        "icon": "shield"
-      },
-      {
-        "title": "Thermal & Oxidative Stability",
-        "description": "Ensures maximum fluid performance under high-speed mechanical heat, preventing residue and sludge.",
+        "title": "Excellent Cooling",
+        "description": "Provides efficient heat transfer and cooling.",
         "icon": "thermometer"
       },
       {
-        "title": "Extended Needle Life",
-        "description": "Provides exceptionally low friction to significantly expand the service life of needles and their friction partners.",
+        "title": "Rust Protection",
+        "description": "Protects the cooling system from corrosion and rust.",
+        "icon": "shield"
+      },
+      {
+        "title": "Lower Maintenance",
+        "description": "Keeps cooling system clean and reduces maintenance cost.",
         "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "spine ee",
-    "name": "Spin EE",
-    "category": "OZONE TEXTILE",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/textile/spin-ee.png",
-    "description": "Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
-    "specs": [
-      {
-        "label": "Type",
-        "value": "Energy Efficient Spindle Oil"
-      },
-      {
-        "label": "Application",
-        "value": "High-speed spindles, machine tool spindle bearings, timing gears, positive displacement blowers, and precision machine tools hydraulics"
-      },
-      {
-        "label": "Viscosity Grade Options",
-        "value": "12, 22"
-      },
-      {
-        "label": "Viscosity Index",
-        "value": "90 Min."
-      },
-      {
-        "label": "Available Packs",
-        "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
-      }
-    ],
-    "features": [
-      {
-        "title": "Potentially Power Saving",
-        "description": "Engineered with energy-efficient properties that reduce mechanical drag, lowering overall power consumption of spinning frames.",
-        "icon": "clock"
-      },
-      {
-        "title": "High Wear Protection",
-        "description": "Forms a robust protective barrier over high-speed spindle bearings to guard components against friction wear.",
-        "icon": "shield"
-      },
-      {
-        "title": "Rust & Oxidation Resistance",
-        "description": "Maintains long-term chemical stability under operational stress, offering high resistance to rust, corrosion, and foaming.",
-        "icon": "thermometer"
       }
     ]
   },
   {
     "id": "coco-sure",
-    "name": "Coco Sure",
+    "name": "Jari Cutter Oil",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -781,7 +685,7 @@
   },
   {
     "id": "kopra",
-    "name": "KOPRA",
+    "name": "Jari Cutter Oil",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -830,8 +734,104 @@
     ]
   },
   {
+    "id": "fineknit",
+    "name": " Circular Knitting Machine Oil",
+    "category": "OZONE TEXTILE",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/textile/finknit.png",
+    "description": "FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Washable Circular Knitting Machine Oil"
+      },
+      {
+        "label": "Application",
+        "value": "High-Speed Needle Knitting Machines, Circular Knitting Machines, Knitting Needles & Full Fashion Machines"
+      },
+      {
+        "label": "Viscosity Grade Options",
+        "value": "22, 32, 46"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": ">110"
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 50 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Stain-Free Processing",
+        "description": "Excellent washability / crushability provides stain-free processing for downstream textile manufacturing.",
+        "icon": "shield"
+      },
+      {
+        "title": "Thermal & Oxidative Stability",
+        "description": "Ensures maximum fluid performance under high-speed mechanical heat, preventing residue and sludge.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Extended Needle Life",
+        "description": "Provides exceptionally low friction to significantly expand the service life of needles and their friction partners.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "spine ee",
+    "name": "Spindle Oil",
+    "category": "OZONE TEXTILE",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/textile/spin-ee.png",
+    "description": "Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Energy Efficient Spindle Oil"
+      },
+      {
+        "label": "Application",
+        "value": "High-speed spindles, machine tool spindle bearings, timing gears, positive displacement blowers, and precision machine tools hydraulics"
+      },
+      {
+        "label": "Viscosity Grade Options",
+        "value": "12, 22"
+      },
+      {
+        "label": "Viscosity Index",
+        "value": "90 Min."
+      },
+      {
+        "label": "Available Packs",
+        "value": "5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Potentially Power Saving",
+        "description": "Engineered with energy-efficient properties that reduce mechanical drag, lowering overall power consumption of spinning frames.",
+        "icon": "clock"
+      },
+      {
+        "title": "High Wear Protection",
+        "description": "Forms a robust protective barrier over high-speed spindle bearings to guard components against friction wear.",
+        "icon": "shield"
+      },
+      {
+        "title": "Rust & Oxidation Resistance",
+        "description": "Maintains long-term chemical stability under operational stress, offering high resistance to rust, corrosion, and foaming.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
     "id": "orecut-direct",
-    "name": "streight cutting oils",
+    "name": "Streight Cutting Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -870,48 +870,8 @@
     ]
   },
   {
-    "id": "ore-qunch",
-    "name": "quenching oil",
-    "category": "OZONE METALWORK",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/metalwork/ore-qunch.png",
-    "description": "Ozone+ Ore-Qunch is quenching oil which enhance and accelerate metal quenching performance. Its special chemical composition provides excellent thermal & oxidative strength & rapid heat dissipation, high flash point to minimize fire hazard.",
-    "specs": [
-      {
-        "label": "Type & Gradation",
-        "value": "Metal Quenching Oil (VG 33, 44)"
-      },
-      {
-        "label": "Application",
-        "value": "Ozone+ Ore-Qunch is recommended for use to accelerate quenching operations & are mainly used in hardening plain carbon and alloyed quenching steels."
-      },
-      {
-        "label": "Pack Size Available",
-        "value": "20L, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Rapid Heat Dissipation",
-        "description": "Rapid heat dissipation and exhibits high quenching speed.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Minimize Fire Hazard",
-        "description": "High flash point to minimize fire hazard and low volatility.",
-        "icon": "shield"
-      },
-      {
-        "title": "Thermal & Oxidative Strength",
-        "description": "Excellent thermal & oxidative strength.",
-        "icon": "clock"
-      }
-    ]
-  },
-  {
     "id": "orecut-sol",
-    "name": "mineral based soluble cutting oil",
+    "name": "Soluble Cutting Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -950,58 +910,8 @@
     ]
   },
   {
-    "id": "rust-guard-dry",
-    "name": "Rust Guard-Dry",
-    "category": "OZONE METALWORK",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/metalwork/rust-guard-dry.png",
-    "description": "Ozone+ Rust Guard-Dry is solvent-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film for indoor & outdoor storage. Providing touch drying protective film & can also be removed easily by a solvent wash after time.",
-    "specs": [
-      {
-        "label": "Type & Gradation",
-        "value": "Quick Dry Film Forming Solvent Based Rust Preventive (VG 11, 22)"
-      },
-      {
-        "label": "Application",
-        "value": "Ozone+ Rust Guard-Solvent is recommended for use where a non-corrosive metal protection, non-sticky and quick drying performance is required for short to medium term, indoor & outdoor storage. It’s applicable to all type metal surface during storage."
-      },
-      {
-        "label": "Pack Size Available",
-        "value": "20L, 210L"
-      }
-    ],
-    "features": [
-      {
-        "title": "Quick Dry Barrier",
-        "description": "A Quick Dry thin protective non-corrosive barrier.",
-        "icon": "shield"
-      },
-      {
-        "title": "Long Storage Protection",
-        "description": "Comparatively long duration for indoor & outdoor storage.",
-        "icon": "clock"
-      },
-      {
-        "title": "Easy Removal",
-        "description": "Easily washed out after time.",
-        "icon": "shield"
-      },
-      {
-        "title": "Flexible Film Size",
-        "description": "Flexible for the Film forming size according to weather conditions.",
-        "icon": "shield"
-      },
-      {
-        "title": "Non-Volatile",
-        "description": "Non-Volatile formulation.",
-        "icon": "shield"
-      }
-    ]
-  },
-  {
     "id": "ore-grind",
-    "name": "Ore-Grind",
+    "name": "Neat Grinding Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -1050,21 +960,21 @@
     ]
   },
   {
-    "id": "rust-guard-ol",
-    "name": "Rust Guard-OL",
+    "id": "ore-qunch",
+    "name": "Quenching Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/metalwork/rust-guard-ol.png",
-    "description": "Ozone+ Rust Guard-OL is oil-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film on the metal surface for indoor & outdoor storage & it can also be removed easily by a solvent wash after time.",
+    "image": "/assets/images/metalwork/ore-qunch.png",
+    "description": "Ozone+ Ore-Qunch is quenching oil which enhance and accelerate metal quenching performance. Its special chemical composition provides excellent thermal & oxidative strength & rapid heat dissipation, high flash point to minimize fire hazard.",
     "specs": [
       {
         "label": "Type & Gradation",
-        "value": "Film Forming Oil Based Rust Preventive (VG 11, 22)"
+        "value": "Metal Quenching Oil (VG 33, 44)"
       },
       {
         "label": "Application",
-        "value": "Ozone+ Rust Guard-OL is recommended for use where a non-corrosive metal protection is required for indoor & outdoor storage. It’s applicable to all type metal surface during storage."
+        "value": "Ozone+ Ore-Qunch is recommended for use to accelerate quenching operations & are mainly used in hardening plain carbon and alloyed quenching steels."
       },
       {
         "label": "Pack Size Available",
@@ -1073,35 +983,25 @@
     ],
     "features": [
       {
-        "title": "Non-Corrosive Barrier",
-        "description": "A thin protective non-corrosive barrier.",
+        "title": "Rapid Heat Dissipation",
+        "description": "Rapid heat dissipation and exhibits high quenching speed.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Minimize Fire Hazard",
+        "description": "High flash point to minimize fire hazard and low volatility.",
         "icon": "shield"
       },
       {
-        "title": "Long Storage Protection",
-        "description": "Comparatively long duration for indoor & outdoor storage.",
+        "title": "Thermal & Oxidative Strength",
+        "description": "Excellent thermal & oxidative strength.",
         "icon": "clock"
-      },
-      {
-        "title": "Easy Removal",
-        "description": "Easily washed out after time.",
-        "icon": "shield"
-      },
-      {
-        "title": "Flexible Film Size",
-        "description": "Flexible for the Film forming size according to weather conditions.",
-        "icon": "shield"
-      },
-      {
-        "title": "Non-Volatile",
-        "description": "Non-Volatile formulation.",
-        "icon": "shield"
       }
     ]
   },
   {
     "id": "tapp-ese",
-    "name": "Tapp Ese",
+    "name": "Tapping Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
@@ -1150,122 +1050,102 @@
     ]
   },
   {
-    "id": "fors-ep",
-    "name": "gear oils",
-    "category": "OZONE INDUSTRIAL",
+    "id": "rust-guard-ol",
+    "name": "Oil Based Rust Preventive",
+    "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/industrial/fors-ep.png",
-    "description": "Ozone+ Fors EP is a high performance all-purpose non-critical gear oil. It is specially formulated for non-critical lubrication systems and oiling applications involving lubrication bearings, open gears, enclosed gears, highly loaded slides and guideways of machine tools.",
+    "image": "/assets/images/metalwork/rust-guard-ol.png",
+    "description": "Ozone+ Rust Guard-OL is oil-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film on the metal surface for indoor & outdoor storage & it can also be removed easily by a solvent wash after time.",
     "specs": [
       {
         "label": "Type & Gradation",
-        "value": "Premium Grade Non-Critical Gear Oil (AISE.224, David Brown SI.53.101 [E], AGMA 9005 E02 and strong FAG FE-8)"
+        "value": "Film Forming Oil Based Rust Preventive (VG 11, 22)"
       },
       {
         "label": "Application",
-        "value": "Recommended for use in non-critical lubrication systems and all types of hand oiling applications."
+        "value": "Ozone+ Rust Guard-OL is recommended for use where a non-corrosive metal protection is required for indoor & outdoor storage. It’s applicable to all type metal surface during storage."
       },
       {
-        "label": "Available Packs",
-        "value": "10 Ltrs, 20 Ltrs, 210 Ltrs"
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
       }
     ],
     "features": [
       {
-        "title": "High Wear Protection",
-        "description": "Formulated to protect open and enclosed gears as well as bearings from wear under pressure.",
+        "title": "Non-Corrosive Barrier",
+        "description": "A thin protective non-corrosive barrier.",
         "icon": "shield"
       },
       {
-        "title": "Foaming Minimization",
-        "description": "Minimizes foaming tendency to provide excellent lubrication performance.",
-        "icon": "thermometer"
+        "title": "Long Storage Protection",
+        "description": "Comparatively long duration for indoor & outdoor storage.",
+        "icon": "clock"
       },
       {
-        "title": "Wide Viscosity Range",
-        "description": "Available in a wide range of viscosities to meet specific equipment lubrication demands.",
-        "icon": "clock"
+        "title": "Easy Removal",
+        "description": "Easily washed out after time.",
+        "icon": "shield"
+      },
+      {
+        "title": "Flexible Film Size",
+        "description": "Flexible for the Film forming size according to weather conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Non-Volatile",
+        "description": "Non-Volatile formulation.",
+        "icon": "shield"
       }
     ]
   },
   {
-    "id": "koarct",
-    "name": "Compressor Oils",
-    "category": "OZONE INDUSTRIAL",
+    "id": "rust-guard-dry",
+    "name": "Touch Dry Rust Preventive",
+    "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/industrial/koarct.png",
-    "description": "Ozone+ Compressor / Koarct is a mineral-type air compressor oil developed to deliver optimum value and operation through enhanced wear protection, long life, and high system efficiency. It also provides incomparable corrosion protection & highest oxidative strength.",
+    "image": "/assets/images/metalwork/rust-guard-dry.png",
+    "description": "Ozone+ Rust Guard-Dry is solvent-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film for indoor & outdoor storage. Providing touch drying protective film & can also be removed easily by a solvent wash after time.",
     "specs": [
       {
         "label": "Type & Gradation",
-        "value": "Mineral Type Compressor Oil (ISO VG 32, 46, 68, 150, 220)"
+        "value": "Quick Dry Film Forming Solvent Based Rust Preventive (VG 11, 22)"
       },
       {
         "label": "Application",
-        "value": "Recommended for use in centrifugal, reciprocating, rotary screw, rotary vane & dry screw compressors."
+        "value": "Ozone+ Rust Guard-Solvent is recommended for use where a non-corrosive metal protection, non-sticky and quick drying performance is required for short to medium term, indoor & outdoor storage. It’s applicable to all type metal surface during storage."
       },
       {
-        "label": "Available Packs",
-        "value": "20 Ltrs, 210 Ltrs"
+        "label": "Pack Size Available",
+        "value": "20L, 210L"
       }
     ],
     "features": [
       {
-        "title": "Thermal & Oxidation Protection",
-        "description": "Superior thermal stability and oxidation protection for cleaner compressor internals.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Wear & Corrosion Protection",
-        "description": "Excellent wear & corrosion protection with seal compatibility.",
+        "title": "Quick Dry Barrier",
+        "description": "A Quick Dry thin protective non-corrosive barrier.",
         "icon": "shield"
       },
       {
-        "title": "Anti-Foaming",
-        "description": "Excellent anti-foaming and demulsibility properties.",
+        "title": "Long Storage Protection",
+        "description": "Comparatively long duration for indoor & outdoor storage.",
         "icon": "clock"
-      }
-    ]
-  },
-  {
-    "id": "proplast",
-    "name": "thermo plastic oils",
-    "category": "OZONE INDUSTRIAL",
-    "price": "Contact for Price",
-    "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/industrial/proplast.png",
-    "description": "Ozone+ Proplast is a heavily paraffined processing fluid, free from daylight fluorescence. It is odourless, tasteless, and colourless, providing improved flexibility and flow during the application and compound processing.",
-    "specs": [
-      {
-        "label": "Type & Gradation",
-        "value": "Hydro Treated Heavy Content Paraffinic Fluid"
       },
       {
-        "label": "Application",
-        "value": "Applicable to all processing of thermoplastics like Co-polymerisation, Vulcanization, Moulding, etc. The chemistry also complies with processing of Elastomers & Rubber Compounding."
-      },
-      {
-        "label": "Available Packs",
-        "value": "20 Ltrs, 210 Ltrs"
-      }
-    ],
-    "features": [
-      {
-        "title": "Thermal & Temperature Resistance",
-        "description": "Excellent thermal stability and temperature resistance during moulding and compounding.",
-        "icon": "thermometer"
-      },
-      {
-        "title": "Improved Flexibility",
-        "description": "Provides improved flexibility and durability to final thermoplastic products.",
+        "title": "Easy Removal",
+        "description": "Easily washed out after time.",
         "icon": "shield"
       },
       {
-        "title": "Optimizing Flow",
-        "description": "Optimizes flow and workability, completely non-staining.",
-        "icon": "clock"
+        "title": "Flexible Film Size",
+        "description": "Flexible for the Film forming size according to weather conditions.",
+        "icon": "shield"
+      },
+      {
+        "title": "Non-Volatile",
+        "description": "Non-Volatile formulation.",
+        "icon": "shield"
       }
     ]
   },
@@ -1345,6 +1225,86 @@
     ]
   },
   {
+    "id": "proplast",
+    "name": "thermo plastic oils",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/proplast.png",
+    "description": "Ozone+ Proplast is a heavily paraffined processing fluid, free from daylight fluorescence. It is odourless, tasteless, and colourless, providing improved flexibility and flow during the application and compound processing.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Hydro Treated Heavy Content Paraffinic Fluid"
+      },
+      {
+        "label": "Application",
+        "value": "Applicable to all processing of thermoplastics like Co-polymerisation, Vulcanization, Moulding, etc. The chemistry also complies with processing of Elastomers & Rubber Compounding."
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Thermal & Temperature Resistance",
+        "description": "Excellent thermal stability and temperature resistance during moulding and compounding.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Improved Flexibility",
+        "description": "Provides improved flexibility and durability to final thermoplastic products.",
+        "icon": "shield"
+      },
+      {
+        "title": "Optimizing Flow",
+        "description": "Optimizes flow and workability, completely non-staining.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "fors-ep",
+    "name": "gear oils",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/fors-ep.png",
+    "description": "Ozone+ Fors EP is a high performance all-purpose non-critical gear oil. It is specially formulated for non-critical lubrication systems and oiling applications involving lubrication bearings, open gears, enclosed gears, highly loaded slides and guideways of machine tools.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Premium Grade Non-Critical Gear Oil (AISE.224, David Brown SI.53.101 [E], AGMA 9005 E02 and strong FAG FE-8)"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in non-critical lubrication systems and all types of hand oiling applications."
+      },
+      {
+        "label": "Available Packs",
+        "value": "10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "High Wear Protection",
+        "description": "Formulated to protect open and enclosed gears as well as bearings from wear under pressure.",
+        "icon": "shield"
+      },
+      {
+        "title": "Foaming Minimization",
+        "description": "Minimizes foaming tendency to provide excellent lubrication performance.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Wide Viscosity Range",
+        "description": "Available in a wide range of viscosities to meet specific equipment lubrication demands.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
     "id": "hydraulic-oils",
     "name": "hydraulic oils",
     "category": "OZONE INDUSTRIAL",
@@ -1381,6 +1341,157 @@
         "title": "Low Foaming Tendency",
         "description": "Low foaming tendency and good oxidative strength for better fluidity.",
         "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "koarct",
+    "name": "Compressor Oils",
+    "category": "OZONE INDUSTRIAL",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/industrial/koarct.png",
+    "description": "Ozone+ Compressor / Koarct is a mineral-type air compressor oil developed to deliver optimum value and operation through enhanced wear protection, long life, and high system efficiency. It also provides incomparable corrosion protection & highest oxidative strength.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Mineral Type Compressor Oil (ISO VG 32, 46, 68, 150, 220)"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in centrifugal, reciprocating, rotary screw, rotary vane & dry screw compressors."
+      },
+      {
+        "label": "Available Packs",
+        "value": "20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "Thermal & Oxidation Protection",
+        "description": "Superior thermal stability and oxidation protection for cleaner compressor internals.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Wear & Corrosion Protection",
+        "description": "Excellent wear & corrosion protection with seal compatibility.",
+        "icon": "shield"
+      },
+      {
+        "title": "Anti-Foaming",
+        "description": "Excellent anti-foaming and demulsibility properties.",
+        "icon": "clock"
+      }
+    ]
+  },
+  {
+    "id": "radiator-coolant",
+    "name": "Radiator Coolant Additive Gel",
+    "category": "OZONE SPECIALTY",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/specialty/jito-cool.png",
+    "description": "Jito’Cool is the most desirable & unique Radiator Coolant Additive in the market as it provides better corrosion protection for all the metals like Copper, Aluminium, Cast Iron, Steel, Brass, Solder etc. as it is tested in extreme conditions with In House Testing Methods. Its unique formulation provides low foaming & efficient cooling characteristics to the final product. Jit’oCool is the only Coolant Additive which fulfil all the desired characteristics like Tackiness & High Cooling Performance itself with no required addition of extra additives.",
+    "specs": [
+      {
+        "label": "Formulation (1:3 Concentrate)",
+        "value": "Jito’Cool Additive: 24.00 Kgs, Tap Water: 76.00 Kgs. (Ready for Packaging)"
+      },
+      {
+        "label": "Formulation (Ready to Use)",
+        "value": "Jito’Cool Additive: 06.00 Kgs, Tap Water: 94.00 Kgs. (Ready for Packaging)"
+      },
+      {
+        "label": "Suitable Metals",
+        "value": "Copper, Aluminium, Cast Iron, Steel, Brass, Solder"
+      }
+    ],
+    "features": [
+      {
+        "title": "Provides High Tackiness",
+        "description": "Provides High Tackiness which is desired in the market the most.",
+        "icon": "shield"
+      },
+      {
+        "title": "High Cooling Performance",
+        "description": "High Cooling Performance in extreme conditions.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Non-Corrosive to All Metals",
+        "description": "Non-corrosive properties protect copper, brass, aluminium, cast iron, steel, and solder.",
+        "icon": "shield"
+      },
+      {
+        "title": "Low Foaming Tendency",
+        "description": "Low foaming tendency ensuring efficient heat transfer.",
+        "icon": "clock"
+      },
+      {
+        "title": "Eco-friendly Formulation",
+        "description": "Formulated with environmentally friendly chemical compounds.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
+    "id": "sps-sodium-petroleum-sulphonate",
+    "name": "SPS Sodium Petroleum Sulphonate",
+    "category": "OZONE SPECIALTY",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/specialty/jito-sps.png",
+    "description": "Jito’SPS is average molecular weight & highly soluble Sodium Petroleum Sulphonate. The product is specially designed for solubility & stability even in Group II oils. Jito’SPS is effective Rust & Corrosion Inhibitor, dispersant & Wetting agent. It is widely used in Metal Working Fluids, Textile Auxiliaries & Ink Industry.",
+    "specs": [
+      {
+        "label": "Mineral Oil (% by wt)",
+        "value": "30-35%"
+      },
+      {
+        "label": "Average Molecular Weight",
+        "value": "430-460"
+      },
+      {
+        "label": "Density",
+        "value": "1.0 - 1.1"
+      },
+      {
+        "label": "Active Matter (% by wt)",
+        "value": "58-62%"
+      },
+      {
+        "label": "Inorganic Salts (% by wt)",
+        "value": "0.5-1%"
+      },
+      {
+        "label": "Water (ppm)",
+        "value": "30000 ppm Max"
+      },
+      {
+        "label": "Packing",
+        "value": "200 Kgs Metal Drum"
+      }
+    ],
+    "features": [
+      {
+        "title": "Excellent Solubility & Stability",
+        "description": "Specially designed for maximum solubility and stability, even in Group II base oils.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Rust & Corrosion Inhibition",
+        "description": "Highly effective rust and corrosion inhibitor on metal surfaces.",
+        "icon": "shield"
+      },
+      {
+        "title": "Dispersant & Wetting Properties",
+        "description": "Provides superior wetting and dispersion qualities required in industrial fluids.",
+        "icon": "clock"
+      },
+      {
+        "title": "Versatile Applications",
+        "description": "Widely used in metal working fluids, textile auxiliaries, and the ink industry.",
+        "icon": "shield"
       }
     ]
   }
