@@ -97,7 +97,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/ride-20w40.png",
-    "description": "Ozone+ Fast 4T provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
+    "description": "Ride 4 stroke bike engine oil provides excellent protection under high torque and high stress to your motorcycle. It is specially formulated with tremendous thermo-oxidative stability to reduce wear, inhibit rust, and prevent deposit or sludge build-up for an unbeatably smooth ride.",
     "specs": [
       {
         "label": "Type",
@@ -150,7 +150,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/cruzer-jked-15w50.png",
-    "description": "Ozone+ Cruzer Jked is a fully synthetic cruiser bike engine oil specially developed with PEST technology for high-performance cruiser bike engines. It ensures superior prevention against clutch slippage, delivers excellent shear stability, and provides smoother performance under harsh operating conditions.",
+    "description": "Cruzer Jked is a fully synthetic cruiser bike engine oil specially developed with PEST technology for high-performance cruiser bike engines. It ensures superior prevention against clutch slippage, delivers excellent shear stability, and provides smoother performance under harsh operating conditions.",
     "specs": [
       {
         "label": "Type",
@@ -397,7 +397,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/trans-multi-a.png",
-    "description": "Ozone+ Trans Multi-A is specially formulated from highly refined mineral oils that impart thermo-oxidative stability, wearing, dispersancy, foaming and desired friction characteristics. Extremely high viscosity index ensures adequate low temperature fluidity, assists in good cold start performance and good foam control leads to smooth gear shifting.",
+    "description": "Specially formulated from highly refined mineral oils that impart thermo-oxidative stability, wearing, dispersancy, foaming and desired friction characteristics. Extremely high viscosity index ensures adequate low temperature fluidity, assists in good cold start performance and good foam control leads to smooth gear shifting.",
     "specs": [
       {
         "label": "Type",
@@ -446,17 +446,17 @@
   },
   {
     "id": "gear-multi-85w-140",
-    "name": "Gear Multi 85W-140",
+    "name": "multi grade gear oil",
     "category": "OZONE AUTO",
     "vehicleType": "Heavy Vehicle",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/gear-multi-85w140.png",
-    "description": "Ozone+ Gear Multi 85W-140 is a premium multigrade gear oil engineered to provide excellent lubrication across a wide range of automotive transmissions, axles, and final drives. It delivers outstanding extreme pressure capabilities and protects critical components from oxidative degradation, rust, and corrosion.",
+    "description": "Premium Multi grade gear oil is a premium multigrade gear oil engineered to provide excellent lubrication across a wide range of automotive transmissions, axles, and final drives. It delivers outstanding extreme pressure capabilities and protects critical components from oxidative degradation, rust, and corrosion.",
     "specs": [
       {
         "label": "Type",
-        "value": "Premium Multigrade Gear Oil"
+        "value": "Premium Multi Grade Gear Oil"
       },
       {
         "label": "Viscosity Grade",
@@ -498,7 +498,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/gear-ep-90.png",
-    "description": "Ozone+ Gear EP 90 is a monograde extreme pressure gear oil made from premium base stocks. It features excellent thermal and chemical stability to provide longer trouble-free operation across manual transmissions, hypoid axles, and steering gear units.",
+    "description": "Gear EP 90 is a monograde extreme pressure gear oil made from premium base stocks. It features excellent thermal and chemical stability to provide longer trouble-free operation across manual transmissions, hypoid axles, and steering gear units.",
     "specs": [
       {
         "label": "Type",
@@ -547,7 +547,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/automotive/gear-ep-140.png",
-    "description": "Ozone+ Gear EP 140 is a high-performance monograde extreme pressure gear oil formulated from superior base stocks with exceptional thermal and chemical stability. Recommended for passenger cars, buses, tractors, and trucks requiring API GL-4 level protection.",
+    "description": "Gear EP 140 is a high-performance monograde extreme pressure gear oil formulated from superior base stocks with exceptional thermal and chemical stability. Recommended for passenger cars, buses, tractors, and trucks requiring API GL-4 level protection.",
     "specs": [
       {
         "label": "Type",
@@ -640,7 +640,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/textile/coco-sure.png",
-    "description": "Ozone+ CocoSure is Neat Cutting Oil designed for medium to severe cutting operations to metalized film cutting. The CocoSynth chemistry provides excellent lubrication to the cutter parts and makes the whole cutting system cooled down & provides smoother, well finished cutting operation without damaging the metalized film properties.",
+    "description": "Jari Cutter Oil is a Neat Cutting Oil designed for medium to severe cutting operations to metalized film cutting. The CocoSynth chemistry provides excellent lubrication to the cutter parts and makes the whole cutting system cooled down & provides smoother, well finished cutting operation without damaging the metalized film properties.",
     "specs": [
       {
         "label": "Type",
@@ -690,7 +690,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/textile/kopra.png",
-    "description": "Ozone+ KOPRA is Neat Cutting Oil designed for severe cutting operations to metalized film cutting. Its Specialized chemistry provides excellent lubrication to the cutter parts, film formation, anti-wear & strong oxidative strength makes it perfectly suitable for heavy duty cutting and also provides whole cutting system cooled down & provides smoother, well finished cutting operation with providing extra gloss to the metalized film properties.",
+    "description": "Jari Cutter Oil is a Neat Cutting Oil designed for severe cutting operations to metalized film cutting. Its Specialized chemistry provides excellent lubrication to the cutter parts, film formation, anti-wear & strong oxidative strength makes it perfectly suitable for heavy duty cutting and also provides whole cutting system cooled down & provides smoother, well finished cutting operation with providing extra gloss to the metalized film properties.",
     "specs": [
       {
         "label": "Type",
@@ -735,12 +735,12 @@
   },
   {
     "id": "fineknit",
-    "name": " Circular Knitting Machine Oil",
+    "name": "Circular Knitting Machine Oil",
     "category": "OZONE TEXTILE",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/textile/finknit.png",
-    "description": "FineKnit is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
+    "description": "Circular Knitting Machine Oil is a high-performance washable textile machinery oil formulated from highly refined base stocks. It provides a strong, thin film to ensure smooth high-speed movement of needles and sinkers over varying operating conditions and temperature zones without leaving residual properties or sludge.",
     "specs": [
       {
         "label": "Type",
@@ -788,7 +788,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/textile/spin-ee.png",
-    "description": "Spin EE is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
+    "description": "Spindle oil is a premium-grade, high-performance textile machinery oil specifically designed and developed to meet strict spindle lubrication requirements. Its special chemical composition acts as an energy-efficient spindle lubricant possessing excellent anti-wear, anti-foam, and anti-rust characteristics.",
     "specs": [
       {
         "label": "Type",
@@ -830,13 +830,57 @@
     ]
   },
   {
+    "id": "mother-yarn-grease",
+    "name": "Mother Yarn Grease",
+    "category": "OZONE TEXTILE",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/textile/Mother_Yarn_Grease.png",
+    "description": "Mother Yarn Grease is a type of processing wax, required where multi ply yarn needs un-plying into thinner or individual strands. Mother Yarn Grease is specifically applied to achieve nourishing, strengthen & anti-friction properties for the splitting strands.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Mother Yarn Grease"
+      },
+      {
+        "label": "Type & Gradation",
+        "value": "Hydrocarbon Wax"
+      },
+      {
+        "label": "Application",
+        "value": "Multi-ply yarn un-plying into thinner or individual strands; provides nourishing, strengthening & anti-friction properties for splitting strands"
+      },
+      {
+        "label": "Available Packs",
+        "value": "45 KG, 180 KG"
+      }
+    ],
+    "features": [
+      {
+        "title": "Anti-Friction Properties",
+        "description": "Provides tremendous anti-friction properties, ensuring smooth and efficient yarn splitting without damage to strands.",
+        "icon": "shield"
+      },
+      {
+        "title": "Universal Synthetic Fiber Compatibility",
+        "description": "Complies with all Synthetic Fibers, making it a versatile wax for a wide range of textile processing applications.",
+        "icon": "clock"
+      },
+      {
+        "title": "Nourishment & Strength",
+        "description": "Provides excellent nourishment and strength to the strands while keeping ceramic & splitter holes clear and residual-free.",
+        "icon": "thermometer"
+      }
+    ]
+  },
+  {
     "id": "orecut-direct",
     "name": "Streight Cutting Oil",
     "category": "OZONE METALWORK",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/orecut-direct.png",
-    "description": "Ozone+ Ore cut Direct Neat Cutting Oil designed for medium to severe cutting operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built up edges and increasing the life of machine tools & components.",
+    "description": "Ore cut Direct Neat Cutting Oil designed for medium to severe cutting operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built up edges and increasing the life of machine tools & components.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -876,7 +920,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/ore-sol.png",
-    "description": "Ozone+ Orecut Sol is semi-synthetic, non-staining general use cutting lubricant that facilitates metal cutting, produces clean sharp edges and extends cutting tool life. It specially designed for use on ferrous & non-ferrous metals, including copper, brass and aluminium. The low odor formula is pleasant to work with and compatible with manual or motor driven cutting tools.",
+    "description": "Orecut Sol is semi-synthetic, non-staining general use cutting lubricant that facilitates metal cutting, produces clean sharp edges and extends cutting tool life. It specially designed for use on ferrous & non-ferrous metals, including copper, brass and aluminium. The low odor formula is pleasant to work with and compatible with manual or motor driven cutting tools.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -916,7 +960,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/ore-grind.png",
-    "description": "Ozone+ Ore-Grind is neat type oil designed for medium to severe grinding operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. Its thermally stable & comprehensive chemistry provides excellent mist control and provides high degree of surface finish.",
+    "description": "Ore-Grind is neat type oil designed for medium to severe grinding operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. Its thermally stable & comprehensive chemistry provides excellent mist control and provides high degree of surface finish.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -966,7 +1010,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/ore-qunch.png",
-    "description": "Ozone+ Ore-Qunch is quenching oil which enhance and accelerate metal quenching performance. Its special chemical composition provides excellent thermal & oxidative strength & rapid heat dissipation, high flash point to minimize fire hazard.",
+    "description": "Ore-Qunch is quenching oil which enhance and accelerate metal quenching performance. Its special chemical composition provides excellent thermal & oxidative strength & rapid heat dissipation, high flash point to minimize fire hazard.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1006,7 +1050,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/tapp-ese.png",
-    "description": "Ozone+ Tapp Ese is Neat Oil designed for medium to severe threading and drilling operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. It helps severe machining operations drive smoother and hassle-free.",
+    "description": "Tapp Ese is Neat Oil designed for medium to severe threading and drilling operations. It’s excellent anti wear and extreme pressure performance preventing the formation of built-up edges and increasing the life of machine tools & components. It helps severe machining operations drive smoother and hassle-free.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1056,7 +1100,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/rust-guard-ol.png",
-    "description": "Ozone+ Rust Guard-OL is oil-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film on the metal surface for indoor & outdoor storage & it can also be removed easily by a solvent wash after time.",
+    "description": "Rust Guard-OL is oil-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film on the metal surface for indoor & outdoor storage & it can also be removed easily by a solvent wash after time.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1106,7 +1150,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/metalwork/rust-guard-dry.png",
-    "description": "Ozone+ Rust Guard-Dry is solvent-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film for indoor & outdoor storage. Providing touch drying protective film & can also be removed easily by a solvent wash after time.",
+    "description": "Rust Guard-Dry is solvent-based rust preventive which provides excellent film forming while applying by brush, cotton or spray. It provides a non-corrosive high protective barrier on the metal surface by creating a thin film for indoor & outdoor storage. Providing touch drying protective film & can also be removed easily by a solvent wash after time.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1156,7 +1200,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/chain-lub-prime.png",
-    "description": "Ozone+ Chain Lub Prime is a primary level lubricant specially designed to lubricate chains, hinges, joints, and slideways at higher temperatures. It provides excellent anti-friction properties with optimum wear and oxidation resistance.",
+    "description": "Chain Lub Prime is a primary level lubricant specially designed to lubricate chains, hinges, joints, and slideways at higher temperatures. It provides excellent anti-friction properties with optimum wear and oxidation resistance.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1196,7 +1240,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/therm-ht.png",
-    "description": "Ozone+ Therm-HT Oil is a high performance thermic fluid specially formulated for thermic fluid heating systems. Its special chemical composition provides excellent anti-oxidant properties and high & low temperature stability.",
+    "description": "Heat Transfer oils is a high performance thermic fluid specially formulated for thermic fluid heating systems. Its special chemical composition provides excellent anti-oxidant properties and high & low temperature stability.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1231,7 +1275,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/proplast.png",
-    "description": "Ozone+ Proplast is a heavily paraffined processing fluid, free from daylight fluorescence. It is odourless, tasteless, and colourless, providing improved flexibility and flow during the application and compound processing.",
+    "description": "Thermo plastic oils is a heavily paraffined processing fluid, free from daylight fluorescence. It is odourless, tasteless, and colourless, providing improved flexibility and flow during the application and compound processing.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1271,7 +1315,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/fors-ep.png",
-    "description": "Ozone+ Fors EP is a high performance all-purpose non-critical gear oil. It is specially formulated for non-critical lubrication systems and oiling applications involving lubrication bearings, open gears, enclosed gears, highly loaded slides and guideways of machine tools.",
+    "description": "Fors ep 320 gear oils is a high performance all-purpose non-critical gear oil. It is specially formulated for non-critical lubrication systems and oiling applications involving lubrication bearings, open gears, enclosed gears, highly loaded slides and guideways of machine tools.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1311,7 +1355,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/static.png",
-    "description": "Ozone+ Static Series Oils are engineered anti-wear oils designed to resist thermal & oxidative breakdown, provide extended drain intervals, and protect against equipment wear.",
+    "description": "Hydraulic Oils are engineered anti-wear oils designed to resist thermal & oxidative breakdown, provide extended drain intervals, and protect against equipment wear.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1351,7 +1395,7 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/industrial/koarct.png",
-    "description": "Ozone+ Compressor / Koarct is a mineral-type air compressor oil developed to deliver optimum value and operation through enhanced wear protection, long life, and high system efficiency. It also provides incomparable corrosion protection & highest oxidative strength.",
+    "description": "Compressor Oils / Koarct is a mineral-type air compressor oil developed to deliver optimum value and operation through enhanced wear protection, long life, and high system efficiency. It also provides incomparable corrosion protection & highest oxidative strength.",
     "specs": [
       {
         "label": "Type & Gradation",
@@ -1391,15 +1435,15 @@
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
     "image": "/assets/images/specialty/jito-cool.png",
-    "description": "Jito’Cool is the most desirable & unique Radiator Coolant Additive in the market as it provides better corrosion protection for all the metals like Copper, Aluminium, Cast Iron, Steel, Brass, Solder etc. as it is tested in extreme conditions with In House Testing Methods. Its unique formulation provides low foaming & efficient cooling characteristics to the final product. Jit’oCool is the only Coolant Additive which fulfil all the desired characteristics like Tackiness & High Cooling Performance itself with no required addition of extra additives.",
+    "description": "Jito coolant is the most desirable & unique Radiator Coolant Additive in the market as it provides better corrosion protection for all the metals like Copper, Aluminium, Cast Iron, Steel, Brass, Solder etc. as it is tested in extreme conditions with In House Testing Methods. Its unique formulation provides low foaming & efficient cooling characteristics to the final product. Jit’oCool is the only Coolant Additive which fulfil all the desired characteristics like Tackiness & High Cooling Performance itself with no required addition of extra additives.",
     "specs": [
       {
         "label": "Formulation (1:3 Concentrate)",
-        "value": "Jito’Cool Additive: 24.00 Kgs, Tap Water: 76.00 Kgs. (Ready for Packaging)"
+        "value": "Jito Coolant Additive: 24.00 Kgs, Tap Water: 76.00 Kgs. (Ready for Packaging)"
       },
       {
         "label": "Formulation (Ready to Use)",
-        "value": "Jito’Cool Additive: 06.00 Kgs, Tap Water: 94.00 Kgs. (Ready for Packaging)"
+        "value": "Jito Coolant Additive: 06.00 Kgs, Tap Water: 94.00 Kgs. (Ready for Packaging)"
       },
       {
         "label": "Suitable Metals",
