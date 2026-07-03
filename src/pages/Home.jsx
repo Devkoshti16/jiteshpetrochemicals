@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   {
+    image: '/assets/images/branding.png',
+    tag: 'Flagship Brands',
+    title: (
+      <>
+        OZONE <span className="text-primary">JITO.</span>
+      </>
+    ),
+    desc: 'Premium quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
+    link1: '/products?category=OZONE BRAND',
+    link1Text: 'Explore Lubricants',
+    link2: '/#contact',
+    link2Text: 'Bulk Inquiry'
+  },
+  {
     image: '/assets/images/slider_industrial.png',
     tag: 'Established 1981',
     title: (
