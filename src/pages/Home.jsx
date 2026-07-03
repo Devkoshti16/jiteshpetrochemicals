@@ -1,20 +1,21 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const slides = [
   {
     image: '/assets/images/branding.png',
     tag: 'Flagship Brands',
     title: (
       <>
-        OZONE <span className="text-primary">JITO.</span>
+        {/* OZONE <span className="text-primary">JITO.</span> */}
       </>
     ),
     desc: 'Premium quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
     link1: '/products?category=OZONE BRAND',
     link1Text: 'Explore Lubricants',
-    link2: '/#contact',
-    link2Text: 'Bulk Inquiry'
+    link2: '/specialty-chemicals',
+    link2Text: 'Explore Specialtys'
   },
   {
     image: '/assets/images/slider_industrial.png',
@@ -148,21 +149,15 @@ const Home = () => {
     <>
       {/* Hero Section Start Here */}
       <section id="home" className="relative min-h-screen flex items-center pt-20 bg-brand-panel overflow-hidden">
+
         {/* Slider Backgrounds */}
         <div className="absolute inset-0 z-0">
           {slides.map((slide, idx) => (
-            <div
-              key={idx}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                }`}
-            >
+            <div key={idx} className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}>
+
               {/* Background Image with slight zoom transition */}
-              <img
-                src={slide.image}
-                alt={slide.tag}
-                className={`w-full h-full object-cover transition-transform duration-[10000ms] ease-out ${idx === currentSlide ? 'scale-110' : 'scale-100'
-                  }`}
-              />
+              <img src={slide.image} alt={slide.tag} className={`w-full h-full object-cover transition-transform duration-[10000ms] ease-out ${idx === currentSlide ? 'scale-110' : 'scale-100'}`} />
+
               {/* Dark Overlay to ensure text readability */}
               <div className="absolute inset-0 bg-brand-main/75"></div>
             </div>
@@ -172,13 +167,9 @@ const Home = () => {
         {/* Slider Content */}
         <div className="container relative z-20 w-full grid grid-cols-1 grid-rows-1 py-12 sm:py-20">
           {slides.map((slide, idx) => (
-            <div
-              key={idx}
-              className={`col-start-1 row-start-1 w-full transition-all duration-[800ms] ease-in-out transform ${idx === currentSlide
-                ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
-                : 'opacity-0 translate-y-10 pointer-events-none z-0'
-                }`}
-            >
+            <div key={idx} className={`col-start-1 row-start-1 w-full transition-all duration-[800ms] ease-in-out transform ${idx === currentSlide
+              ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
+              : 'opacity-0 translate-y-10 pointer-events-none z-0'}`}>
               <div className="max-w-[850px]">
                 <div className="relative inline-block px-4 py-1.5 bg-brand-panel border-l-[3px] border-l-primary text-brand-text font-heading text-[0.9rem] uppercase tracking-[2px] mb-4 sm:mb-6 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-full before:bg-primary before:shadow-[0_0_10px_#FF6600,0_0_20px_rgba(255,102,0,0.5)] before:animate-[rightleft_3s_cubic-bezier(0.4,0,0.2,1)_infinite]">
                   {slide.tag}

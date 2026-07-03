@@ -235,6 +235,12 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 8px 15px !important;
     font-size: 0.9rem !important;
   }
+
+  :is(&):empty {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+  }
 }
 
 .btn-primary:hover {
@@ -266,6 +272,12 @@ input[type="number"]::-webkit-inner-spin-button {
   @media (max-width: 768px) {
     padding: 8px 15px !important;
     font-size: 0.9rem !important;
+  }
+
+  :is(&):empty {
+    padding: 0px;
+    margin: 0px;
+    border: none;
   }
 }
 
@@ -401,6 +413,14 @@ input[type="number"]::-webkit-inner-spin-button {
   inset: 0;
   background: linear-gradient(90deg, rgba(18, 20, 24, 0.98) 0%, rgba(18, 20, 24, 0.6) 100%);
   z-index: 1;
+}
+
+#home :is(h1):empty,
+#home :is(p):empty,
+#home .bg-brand-panel:is(:empty) {
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 @keyframes drop-bounce {
