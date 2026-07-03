@@ -1538,5 +1538,57 @@
         "icon": "shield"
       }
     ]
+  },
+  {
+    "id": "meta-shine",
+    "name": "Meta Shine",
+    "category": "OZONE AUTO",
+    "vehicleType": "Others",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/meta-shine.png",
+    "description": "Meta Shine unique formulations provides a thin protective film which provides protection against ultra violet rays. It also provides protection against rust by its non-rusting formulation, it also protects against dust & provide smooth glossy shining surface. Especially recommended for two-wheeler vehicles.",
+    "specs": [
+      {
+        "label": "Type & Gradation",
+        "value": "Multi-Purpose Metal Shiner & UV Protective Liquid"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use on metal surfaces requiring UV protection and bright shine & glaze, especially two-wheeler vehicles."
+      },
+      {
+        "label": "Pack Size Available",
+        "value": "100ml, 1 Ltr, 5 Ltr"
+      }
+    ],
+    "features": [
+      {
+        "title": "UV & Dust & Rust Protection",
+        "description": "A thin micro layer protects against UV rays, dust & rust.",
+        "icon": "shield"
+      },
+      {
+        "title": "Extends Paint Life",
+        "description": "Extend the paint life & gives new look to the surface.",
+        "icon": "clock"
+      },
+      {
+        "title": "Hides Dark Spots",
+        "description": "Effectively hides dark spots for a flawless finish.",
+        "icon": "shield"
+      },
+      {
+        "title": "Easy Surface Cleansing",
+        "description": "Provides easy cleansing of the surface.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Excellent Shine & Glaze",
+        "description": "Provides excellent shine & glaze for a smooth glossy shining surface.",
+        "icon": "shield"
+      }
+    ],
+    "howToUse": "Clean and dust off the surface using fibre cloth. Spray the shiner liquid and scrub with sponge to the surface & let it sit for 10 to 15 minutes. Finally buff off the surface with cotton cloth or pad."
   }
 ]
