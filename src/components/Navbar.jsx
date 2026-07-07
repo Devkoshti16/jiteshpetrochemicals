@@ -86,7 +86,7 @@ const Navbar = () => {
           </li>
 
           <li className={`relative group ${activeDropdown === 'chemicals' ? 'active' : ''}`}>
-            <a href="/specialty-chemicals" className="nav-link lg:py-6" onClick={(e) => handleDropdownClick(e, 'chemicals')}>
+            <a href="/specialty-chemicals" className="nav-link lg:py-6">
               Specialties
             </a>
             {/* <ul className="nav-dropdown">
