@@ -40,9 +40,6 @@ export default function WelcomePopup() {
 
         {/* Content on top of background */}
         <div className="relative z-10 flex flex-col items-center">
-          <span className="inline-block px-3 py-1 mb-3 text-[10px] font-bold tracking-widest uppercase bg-primary/20 border border-primary/30 rounded-full" style={{ color: 'var(--color-primary)', backgroundColor: 'rgba(255, 102, 0, 0.15)', borderColor: 'rgba(255, 102, 0, 0.3)' }}>
-            Established 1981
-          </span>
 
           <h2 className="text-2xl md:text-3xl font-bold font-heading text-white tracking-wider mb-3">
             Welcome to <br /><span style={{ color: 'var(--color-primary)' }}>Jitesh Petrochemicals</span>
