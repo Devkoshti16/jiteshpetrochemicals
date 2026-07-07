@@ -196,6 +196,73 @@
     ]
   },
   {
+    "id": "ride-10w30",
+    "name": "Ethanol Compatible 4-Strock Engine Oil",
+    "category": "OZONE AUTO",
+    "vehicleType": "Two Wheeler",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/ride-10w30.png",
+    "description": "Ozone+ RIDE 10W30 provides excellent protection under high torque, high stress riding conditions. It is specially formulated for ethanol fuel like E20, E85 & E100. It reducing wear, inhibition of rust and corrosion and having tremendous thermo-oxidative stability to prevent deposits, sludge and varnish. So, it gives the unstoppable smoother ride as you always feel a newer bike experience.",
+    "specs": [
+      {
+        "label": "Application",
+        "value": "Bikes & scooters with wet & dry clutch using super ethanol or ethanol blended fuel where OE recommendation is API SM & below"
+      },
+      {
+        "label": "Fuel Compatibility",
+        "value": "Ethanol E20, E85 & E100 fuel compatible"
+      },
+      {
+        "label": "Type",
+        "value": "Fuel Efficient 4-Stroke Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 10W 30"
+      },
+      {
+        "label": "API",
+        "value": "SM"
+      },
+      {
+        "label": "JASO",
+        "value": "MA 2"
+      },
+      {
+        "label": "Available Packs",
+        "value": "900ml, 210L"
+      }
+    ],
+    "features": [
+      {
+        "title": "Ethanol Fuel Compatibility",
+        "description": "Ethanol fuel compatibility with un-dried chemistry, fully compatible with E20, E85 & E100 ethanol blended fuels.",
+        "icon": "shield"
+      },
+      {
+        "title": "Wet Clutch Friction Stability",
+        "description": "Excellent wet clutch friction stability in severe applications gives smoother clutch operations.",
+        "icon": "shield"
+      },
+      {
+        "title": "Engine Cleanliness",
+        "description": "Engine cleanliness promoting longer engine life with controls harmful deposit and oil thickening.",
+        "icon": "thermometer"
+      },
+      {
+        "title": "Sludge & Varnish Control",
+        "description": "Sludge & Varnish control to enabling lower emission levels and extending both engine & oil life.",
+        "icon": "clock"
+      },
+      {
+        "title": "Rust & Corrosion Inhibition",
+        "description": "Inhibition of rust and corrosion with tremendous thermo-oxidative stability to prevent deposits.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
     "id": "cng-super-2t",
     "name": "2 Strock Engine Oil",
     "category": "OZONE AUTO",
@@ -1434,7 +1501,7 @@
     "category": "OZONE SPECIALTY",
     "price": "Contact for Price",
     "priceUnit": "/ Bulk Inquiry",
-    "image": "/assets/images/specialty/jito-cool.png",
+    "image": "/assets/images/specialty/radiator_coolant_gel.png",
     "description": "Jito coolant is the most desirable & unique Radiator Coolant Additive in the market as it provides better corrosion protection for all the metals like Copper, Aluminium, Cast Iron, Steel, Brass, Solder etc. as it is tested in extreme conditions with In House Testing Methods. Its unique formulation provides low foaming & efficient cooling characteristics to the final product. Jit’oCool is the only Coolant Additive which fulfil all the desired characteristics like Tackiness & High Cooling Performance itself with no required addition of extra additives.",
     "specs": [
       {
