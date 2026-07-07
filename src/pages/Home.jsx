@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 const slides = [
   {
     image: '/assets/images/branding.png',
-    tag: 'Flagship Brands',
-    title: (
-      <>
-        {/* OZONE <span className="text-primary">JITO.</span> */}
-      </>
-    ),
-    desc: 'Premium quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
-    link1: '/products?category=OZONE BRAND',
-    link1Text: 'Explore Lubricants',
-    link2: '/specialty-chemicals',
-    link2Text: 'Explore Specialtys'
+    // tag: 'Flagship Brands: OZONE & JITO',
+    // title: (
+    //   <>
+    //     {/* OZONE <span className="text-primary">JITO.</span> */}
+    //   </>
+    // ),
+    // desc: 'Premium quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
+    // link1: '/products?category=OZONE BRAND',
+    // link1Text: 'Explore Lubricants',
+    // link2: '/specialty-chemicals',
+    // link2Text: 'Explore Specialtys'
   },
   {
     image: '/assets/images/slider_industrial.png',
@@ -33,7 +33,7 @@ const slides = [
   },
   {
     image: '/assets/images/slider_automotive.png',
-    tag: 'Flagship Brands: OZONE & JITO',
+    tag: 'Flagship Brands: OZONE',
     title: (
       <>
         High-Performance <span className="text-primary">Automotive Oils.</span>

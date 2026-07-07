@@ -12,6 +12,7 @@ import SpecialtyChemicals from './pages/SpecialtyChemicals.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Loader from './components/Loader.jsx'
+import WelcomePopup from './components/WelcomePopup.jsx'
 
 // Scroll restoration and hash scroll component
 function ScrollHandler() {
@@ -54,6 +55,9 @@ function Layout() {
       <ScrollHandler />
       {/* Loader */}
       <Loader />
+
+      {/* Welcome Popup for First-time visitors */}
+      <WelcomePopup />
 
       {/* Navbar */}
       <Navbar />
