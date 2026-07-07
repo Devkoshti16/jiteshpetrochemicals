@@ -148,7 +148,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section Start Here */}
-      <section id="home" className="relative min-h-screen flex items-center pt-20 bg-brand-panel overflow-hidden">
+      <section id="home" className="relative min-h-[95dvh] flex items-center md:pt-20 bg-brand-panel overflow-hidden">
 
         {/* Slider Backgrounds */}
         <div className="absolute inset-0 z-0">
@@ -165,7 +165,7 @@ const Home = () => {
         </div>
 
         {/* Slider Content */}
-        <div className="container relative z-20 w-full grid grid-cols-1 grid-rows-1 py-12 sm:py-20">
+        <div className="container relative z-20 w-full grid grid-cols-1 grid-rows-1 lg:py-12 md:py-20 py-0">
           {slides.map((slide, idx) => (
             <div key={idx} className={`col-start-1 row-start-1 w-full transition-all duration-[800ms] ease-in-out transform ${idx === currentSlide
               ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
@@ -174,7 +174,7 @@ const Home = () => {
                 <div className="relative inline-block px-4 py-1.5 bg-brand-panel border-l-[3px] border-l-primary text-brand-text font-heading text-[0.9rem] uppercase tracking-[2px] mb-4 sm:mb-6 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-full before:bg-primary before:shadow-[0_0_10px_#FF6600,0_0_20px_rgba(255,102,0,0.5)] before:animate-[rightleft_3s_cubic-bezier(0.4,0,0.2,1)_infinite]">
                   {slide.tag}
                 </div>
-                <h1 className="text-[clamp(1.8rem,6vw,4rem)] mb-4 sm:mb-5 font-bold leading-tight tracking-wide text-brand-text uppercase">
+                <h1 className="text-[clamp(1.6rem,6vw,4rem)] mb-4 sm:mb-5 font-bold leading-tight tracking-wide text-brand-text uppercase">
                   {slide.title}
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-brand-muted max-w-[650px] mb-8 sm:mb-10 leading-relaxed">
