@@ -121,7 +121,7 @@ const Products = () => {
               Our <span className="text-primary">Products</span>
             </h1>
             <div className="w-[40%] h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6"></div>
-            <p className="text-brand-muted md:text-[1.1rem] text-[0.9rem] lg:max-w-[620px] md:max-w-[480px] sm:max-w-[440px] max-w-[400px] mx-auto leading-relaxed">
+            <p className="text-brand-muted capitalize md:text-[1.1rem] text-[0.9rem] lg:max-w-[620px] md:max-w-[480px] sm:max-w-[440px] max-w-[400px] mx-auto leading-relaxed">
               Explore our complete range of premium Ozone+ lubricants engineered for every automotive and industrial need.
             </p>
           </div>
