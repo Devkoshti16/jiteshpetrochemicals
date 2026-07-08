@@ -45,7 +45,7 @@ export default function WelcomePopup() {
             Welcome to <br /><span style={{ color: 'var(--color-primary)' }}>Jitesh Petrochemicals</span>
           </h2>
 
-          <p className="text-brand-muted text-xs md:text-sm font-body leading-relaxed mb-6 max-w-md">
+          <p className="text-brand-muted capitalize text-xs md:text-sm font-body leading-relaxed mb-6 max-w-md">
             Discover our premium automotive lubricants, industrial fluids, and advanced specialty petrochemical products built for durability and peak performance.
           </p>
         </div>

@@ -212,7 +212,7 @@ const Home = () => {
               Four Decades of <br /><span className="text-primary">Oil Manufacturing</span>
             </h2>
             <p className="text-brand-muted text-sm sm:text-base md:text-lg">Based in Surat, Gujarat, Jitesh Trading Company has been a trusted name in the manufacturing and bulk distribution of premium oils since 1981.</p>
-            <p className="text-brand-muted my-3 sm:my-4 md:my-6 text-sm sm:text-base md:text-lg">We craft the finest engine oils, gear fluids, and industrial lubricants, ensuring high-volume supply with unmatched quality through our flagship brands: <strong>OZONE</strong> and <strong>JITO</strong>.</p>
+            <p className="text-brand-muted capitalize my-3 sm:my-4 md:my-6 text-sm sm:text-base md:text-lg">We craft the finest engine oils, gear fluids, and industrial lubricants, ensuring high-volume supply with unmatched quality through our flagship brands: <strong>Ozone+</strong> and <strong>Jito</strong>.</p>
             <ul className="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-5 mt-10 pt-10 border-t border-brand-border">
               <li>
                 <h3 className="stat-number counter md:text-5xl text-3xl mb-1" data-target="40" data-suffix="+">0+</h3>
@@ -241,7 +241,7 @@ const Home = () => {
           <div className="text-center mb-[70px] reveal">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)]">Our <span className="text-primary">Brands & Products</span></h2>
             <div className="w-[60px] h-1 bg-primary mx-auto my-5"></div>
-            <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>OZONE</strong> & <strong>JITO</strong>.</p>
+            <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>Ozone+</strong> & <strong>Jito</strong>.</p>
           </div>
           <h3 className="brand-title reveal">lubricants Categories</h3>
           <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
@@ -256,9 +256,9 @@ const Home = () => {
                 <div className="h-[220px] overflow-hidden relative after:content-[''] after:absolute after:inset-0 after:border-b-[3px] after:border-primary">
                   <img src={`/assets/images/${item.img}`} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
-                <div className="md:p-[30px] p-4">
+                <div className="md:p-[20px] p-4">
                   <h3 className="md:text-[1.4rem] text-lg mb-3">{item.title}</h3>
-                  <p className="md:text-[0.95rem] text-sm text-brand-muted">{item.desc}</p>
+                  <p className="md:text-[0.95rem] capitalize text-sm text-brand-muted">{item.desc}</p>
                 </div>
               </Link>
             ))}
@@ -279,7 +279,7 @@ const Home = () => {
               <div className="md:p-[30px] p-4">
                 <span className="text-primary text-xs font-heading font-bold uppercase tracking-widest mb-2 block">JITO Brand</span>
                 <h3 className="md:text-[1.4rem] text-lg mb-3">Specialty Chemicals</h3>
-                <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Premium rust preventives, anti-corrosion compounds, and specialty surface treatment products engineered for industrial protection.</p>
+                <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Engineered Chemistry For Auto, Industrial & Consumer Solution.</p>
               </div>
             </Link>
           </div>

@@ -512,6 +512,66 @@
     ]
   },
   {
+    "id": "super-charge-15w-40",
+    "name": "Super Charge 15W 40",
+    "category": "OZONE AUTO",
+    "vehicleType": "Heavy Vehicle",
+    "price": "Contact for Price",
+    "priceUnit": "/ Bulk Inquiry",
+    "image": "/assets/images/automotive/super-charge-15w40.png",
+    "description": "Super Charge 15W 40 oil is ultimate performer specially made for new generation turbocharged engines. It is designed to meet the latest global specification and exceeds the lubrication requirements of the latest ultra-low emission diesel engines. This advanced diesel engine oil minimizes performance by advanting special chemical composition.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Diesel Engine Oil"
+      },
+      {
+        "label": "Grade",
+        "value": "SAE 15W 40, API CI-4"
+      },
+      {
+        "label": "Application",
+        "value": "Recommended for use in modern turbo charged diesel engines of trucks, buses, levs, utility vehicles, diesel cars, construction equipment and other mobile stationery equipment."
+      },
+      {
+        "label": "Available Packs",
+        "value": "1 Ltr, 5 Ltrs, 10 Ltrs, 20 Ltrs, 210 Ltrs"
+      }
+    ],
+    "features": [
+      {
+        "title": "High Load Performance",
+        "description": "Excellent performance under higher loads & multi trailer applications.",
+        "icon": "shield"
+      },
+      {
+        "title": "Low Oil Consumption",
+        "description": "Low oil consumption & provides better fuel economy.",
+        "icon": "clock"
+      },
+      {
+        "title": "Engine Protection",
+        "description": "Controls Oil thickening, sludge, & protects engine parts against rust & corrosion.",
+        "icon": "shield"
+      },
+      {
+        "title": "Superior Cleanliness",
+        "description": "Ensures superior engine cleanliness at extended drain intervals.",
+        "icon": "clock"
+      },
+      {
+        "title": "Soot & Wear Control",
+        "description": "Ensures excellent control our soot induced wear, higher temperature piston deposits, corrosion, foam and oxidation stability.",
+        "icon": "shield"
+      },
+      {
+        "title": "Reduce Scuffing",
+        "description": "Reduce engine scuffing & bore Polishing.",
+        "icon": "shield"
+      }
+    ]
+  },
+  {
     "id": "gear-multi-85w-140",
     "name": "Difrential & Rear Axel Oil",
     "category": "OZONE AUTO",

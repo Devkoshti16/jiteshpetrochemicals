@@ -70,7 +70,7 @@ const Navbar = () => {
             </a>
             <ul className="nav-dropdown">
               {[
-                { id: 'all', name: 'lubricen and Specialties' },
+                { id: 'all', name: 'All Lubricants and Specialties' },
                 { id: 'auto', name: 'Auto' },
                 { id: 'industrial', name: 'Industrial' },
                 { id: 'textile', name: 'Textile' },
