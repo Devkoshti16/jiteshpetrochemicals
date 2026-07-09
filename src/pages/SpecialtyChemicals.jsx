@@ -46,7 +46,7 @@ const SpecialtyChemicals = () => {
             Specialty <span className="text-primary">Chemicals</span>
           </h1>
           <div className="w-[40%] h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6"></div>
-          <p className="text-brand-muted md:text-[1.1rem] text-[0.9rem] lg:max-w-[60%] md:max-w-[480px] sm:max-w-[440px] max-w-[400px] mx-auto leading-relaxed">
+          <p className="text-brand-muted capitalize md:text-[1.1rem] text-[0.9rem] lg:max-w-[60%] md:max-w-[480px] sm:max-w-[440px] max-w-[400px] mx-auto leading-relaxed">
             Premium specialty chemical solutions engineered for industrial-grade rust prevention, anti-corrosion protection, and surface treatment under the trusted Jito brand.
           </p>
         </div>

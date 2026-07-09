@@ -177,7 +177,7 @@ const Home = () => {
                 <h1 className="text-[clamp(1.6rem,6vw,4rem)] mb-4 sm:mb-5 font-bold leading-tight tracking-wide text-brand-text uppercase">
                   {slide.title}
                 </h1>
-                <p className="text-sm sm:text-base md:text-lg text-brand-muted max-w-[650px] mb-8 sm:mb-10 leading-relaxed">
+                <p className="text-sm capitalize sm:text-base md:text-lg text-brand-muted max-w-[650px] mb-8 sm:mb-10 leading-relaxed">
                   {slide.desc}
                 </p>
                 <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1 w-full max-w-[420px] sm:flex sm:gap-5 sm:max-w-none">
@@ -241,7 +241,7 @@ const Home = () => {
           <div className="text-center mb-[70px] reveal">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)]">Our <span className="text-primary">Brands & Products</span></h2>
             <div className="w-[60px] h-1 bg-primary mx-auto my-5"></div>
-            <p className="text-brand-muted text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>Ozone+</strong> & <strong>Jito</strong>.</p>
+            <p className="text-brand-muted capitalize text-[1.1rem] max-w-[600px] mx-auto">Delivering high-volume excellence through our flagship brands: <strong>Ozone+</strong> & <strong>Jito</strong>.</p>
           </div>
           <h3 className="brand-title reveal">lubricants Categories</h3>
           <div className="grid mt-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 md:gap-[30px]">
@@ -292,7 +292,7 @@ const Home = () => {
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[60px] items-start">
           <div className="reveal fade-left">
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] mb-[25px]">Get in <span className="text-primary">Touch</span></h2>
-            <p className="text-brand-muted mb-10 text-[1.05rem]">Connect with us for inquiries and bulk orders.</p>
+            <p className="text-brand-muted capitalize mb-10 text-[1.05rem]">Connect with us for inquiries and bulk orders.</p>
             <div className="flex flex-col gap-[30px]">
               <div className="flex gap-5">
                 <svg className="w-7 h-7 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
