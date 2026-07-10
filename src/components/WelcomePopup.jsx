@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function WelcomePopup() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     // Check if the user has already visited the site
@@ -17,6 +18,15 @@ export default function WelcomePopup() {
     }
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const closePopup = () => {
     setIsOpen(false);
     localStorage.setItem('hasVisitedOzone', 'true');
@@ -26,8 +36,8 @@ export default function WelcomePopup() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-popup-fade transition-all duration-300" onClick={closePopup}>
-      <div className="relative w-full max-w-[750px] min-h-[400px] rounded-xl overflow-hidden shadow-2xl animate-popup-scale flex flex-col justify-end p-8 text-center" onClick={(e) => e.stopPropagation()} style={{ backgroundImage: 'url("/assets/images/branding.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-popup-fade transition-all duration-300">
+      <div className="relative w-full max-w-[750px] min-h-[400px] rounded-xl overflow-hidden shadow-2xl animate-popup-scale flex flex-col justify-end p-8 text-center" style={{ backgroundImage: `url("${isMobile ? '/assets/images/branding_mobile.png' : '/assets/images/branding.png'}")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} >
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary)] via-black/80 to-black/40 z-0" />
 
