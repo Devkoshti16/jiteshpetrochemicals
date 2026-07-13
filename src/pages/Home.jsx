@@ -25,7 +25,7 @@ const slides = [
         Premium Industrial <span className="text-primary">Lubricants.</span>
       </>
     ),
-    desc: 'Crafting high-quality engine oils, gear fluids, and specialty industrial lubricants for peak machinery performance.',
+    desc: 'Crafting high-quality  hydraulic fluid, gear fluids, and specialty industrial lubricants for peak machinery performance.',
     link1: '/products?category=OZONE INDUSTRIAL',
     link1Text: 'Industrial Products',
     link2: '/#about',
@@ -53,7 +53,7 @@ const slides = [
         Textile & Specialty <span className="text-primary">Chemicals.</span>
       </>
     ),
-    desc: 'Premium quality loom lubricants and metalworking fluids designed for precision operations and high-speed machinery.',
+    desc: 'Premium Quality Auxiliaries & Machinery Fluids Designed For Filaments & High Speed Operations.',
     link1: '/products?category=OZONE TEXTILE',
     link1Text: 'Special Chemicals',
     link2: '/#contact',
@@ -279,7 +279,7 @@ const Home = () => {
               <div className="md:p-[30px] p-4">
                 <span className="text-primary text-xs font-heading font-bold uppercase tracking-widest mb-2 block">JITO Brand</span>
                 <h3 className="md:text-[1.4rem] text-lg mb-3">Specialty Chemicals</h3>
-                <p className="md:text-[0.95rem] text-sm text-brand-muted mb-4">Engineered Chemistry For Auto, Industrial & Consumer Solution.</p>
+                <p className="md:text-[0.95rem] capitalize text-sm text-brand-muted mb-4">Engineered Chemistry for Auto, Industrial & all types of Consumer Solution.</p>
               </div>
             </Link>
           </div>
@@ -312,7 +312,7 @@ const Home = () => {
                 <svg className="w-7 h-7 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <div>
                   <h4 className="text-[1.2rem] mb-1">Email</h4>
-                  <a className="text-brand-muted hover:text-primary transition-all" href="mailto:jitco11@gmail.com">jitco11@gmail.com</a>
+                  <a className="text-brand-muted hover:text-primary transition-all" href="mailto:chintan@jiteshpetrochemicals.com">chintan@jiteshpetrochemicals.com</a>
                 </div>
               </div>
             </div>
