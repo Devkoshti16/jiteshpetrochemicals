@@ -13,6 +13,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Loader from './components/Loader.jsx'
 import WelcomePopup from './components/WelcomePopup.jsx'
+import BackToTop from './components/BackToTop.jsx'
 
 // Scroll restoration and hash scroll component
 function ScrollHandler() {
@@ -58,6 +59,9 @@ function Layout() {
 
       {/* Welcome Popup for First-time visitors */}
       <WelcomePopup />
+
+      {/* Back to Top button with scroll progress */}
+      <BackToTop />
 
       {/* Navbar */}
       <Navbar />
