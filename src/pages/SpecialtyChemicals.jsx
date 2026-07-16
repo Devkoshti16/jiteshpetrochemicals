@@ -7,12 +7,11 @@ const jitoSpecialtyProducts = staticProducts.filter(p => p.category === 'OZONE S
 
 const SpecialtyChemicals = () => {
 
-  // SEO - runs once
   useEffect(() => {
-    document.title = 'Specialty Chemicals | Jitesh Trading Company';
+    document.title = 'Specialty Chemicals | Jitesh Petrochemicals';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Explore JITO Specialty Chemicals — premium rust preventives, anti-corrosion compounds, and specialty surface treatment products by Jitesh Trading Company.');
+      metaDesc.setAttribute('content', 'Explore JITO Specialty Chemicals — premium rust preventives, anti-corrosion compounds, and specialty surface treatment products by Jitesh Petrochemicals.');
     }
   }, []);
 

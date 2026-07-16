@@ -48,12 +48,11 @@ const Products = () => {
     }
   };
 
-  // SEO - runs once
   useEffect(() => {
-    document.title = 'Products | Jitesh Trading Company';
+    document.title = 'Products | Jitesh Petrochemicals';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Browse our full range of OZONE premium industrial lubricants, automotive oils, textile oils, and metalwork fluids by Jitesh Trading Company.');
+      metaDesc.setAttribute('content', 'Browse our full range of OZONE premium industrial lubricants, automotive oils, textile oils, and metalwork fluids by Jitesh Petrochemicals.');
     }
   }, []);
 

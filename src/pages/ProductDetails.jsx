@@ -17,10 +17,10 @@ const ProductDetails = () => {
   useEffect(() => {
     // Dynamic SEO
     if (product) {
-      document.title = `${product.name} | Jitesh Trading Company`;
+      document.title = `${product.name} | Jitesh Petrochemicals`;
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.setAttribute('content', product.description.substring(0, 155) + '...');
+        metaDesc.setAttribute('content', `${product.name} - Premium quality fluid by Jitesh Petrochemicals: ` + product.description.substring(0, 120) + '...');
       }
     }
 

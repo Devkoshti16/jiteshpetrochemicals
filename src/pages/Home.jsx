@@ -81,10 +81,10 @@ const Home = () => {
 
   useEffect(() => {
     // Reset SEO title for Home
-    document.title = "Jitesh Trading Company | Premium Industrial Lubricants & Oils";
+    document.title = "Jitesh Petrochemicals | Premium Industrial Lubricants & Oils";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Leading manufacturers and bulk suppliers of high-quality engine oils, industrial lubricants, textile oils, and specialty chemicals since 1981.");
+      metaDesc.setAttribute('content', "Jitesh Petrochemicals is a leading manufacturer and bulk supplier of high-quality engine oils, industrial lubricants, textile oils, and specialty chemicals since 1981.");
     }
 
     // Reveal Observer
