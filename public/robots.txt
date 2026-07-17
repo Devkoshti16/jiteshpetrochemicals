@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jiteshpetrochemicals.com/sitemap.xml
+Sitemap: https://www.jiteshpetrochemicals.com/sitemap.xml
