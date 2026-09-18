@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
 import Products from './pages/Products.jsx'
 import SpecialtyChemicals from './pages/SpecialtyChemicals.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 
 // Components
 import Navbar from './components/Navbar.jsx'
@@ -73,6 +74,7 @@ function Layout() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/specialty-chemicals" element={<SpecialtyChemicals />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
 
